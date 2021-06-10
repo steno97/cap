@@ -54,9 +54,9 @@ architecture dlx_cu_hw of dlx_cu is
   signal cw_mem : mem_array := ("111100010000111", -- R type: IS IT CORRECT?
                                 "000000000000000", 
                                 "111011111001100", -- J (0X02) instruction encoding corresponds to the address to this ROM
-                                "111011111011101", -- JAL to be filled
+                                "111011111011101", -- JAL to be filled          -- to be completed (enlarged and filled)   
                                 "000000000000000", -- BEQZ to be filled
-                                "000000000000000", -- BNEZ
+                                "000000000000000", -- BNEZ                       -- to be completed (enlarged and filled)   
                                 "000000000000000", -- 
                                 "000000000000000",
                                 "111010110000111", -- ADD i (0X08): FILL IT!!!
@@ -76,17 +76,17 @@ architecture dlx_cu_hw of dlx_cu is
                                 "111010110000111", --SRLI (22)
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000",--SNEI (25)
+                                "000000000000000",--SNEI (25)  -- to be completed (enlarged and filled)   
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000", --SLEI (28)
-                                "000000000000000", --SGEI (29)
+                                "000000000000000", --SLEI (28)  -- to be completed (enlarged and filled)   
+                                "000000000000000", --SGEI (29)  -- to be completed (enlarged and filled)   
                                 "000000000000000",
                                 "000000000000000",
                                 "000000000000000",
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000", --LW (35)
+                                "000000000000000", --LW (35)   -- to be completed (enlarged and filled)   
                                 "000000000000000",
                                 "000000000000000",
                                 "000000000000000",
