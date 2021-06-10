@@ -1,9 +1,3 @@
-
---Logical Shifts:
---Version 1: the first operand is shifted by one position
---Version 2: the first operand is shifted by a number of positions defined by the value of the second operand 
-
-  
 library IEEE;
 use IEEE.std_logic_1164.all;
 --use IEEE.std_logic_unsigned.all;
@@ -36,12 +30,12 @@ end component;
 
 component P4_ADDER
 generic (
-		NBIT :		integer := Numbit);
+		NBIT :		integer := N);
 	port (
-		A :	in	std_logic_vector(NBIT-1 downto 0);
-		B :	in	std_logic_vector(NBIT-1 downto 0);
+		A :	in	std_logic_vector(N-1 downto 0);
+		B :	in	std_logic_vector(N-1 downto 0);
 		Cin :	in	std_logic;
-		S :	out	std_logic_vector(NBIT-1 downto 0);
+		S :	out	std_logic_vector(N-1 downto 0);
 		Cout :	out	std_logic)
 end component;
 
@@ -62,13 +56,14 @@ end component;
 signal LOGIC_ARITH_i : std_logic;
 signal LEFT_RIGHT_i : std_logic;
 signal SHIFT_ROTATE_i : std_logic;
-signal Cin_i: std_logic;
+signal OUTPUT1: std_logic;
+signal OUTPUT2: std_logic;
 
   shifter: SHIFTER_GENERIC
 	generic(N: integer);
 	port map(
 		A 			=> 			DATA1,
-		B 			=> 			DATA2,
+		B 			=> 			DATA2(4 downto 0),
 		LOGIC_ARITH =>			LOGIC_ARITH_i, --da inserire il segnale -- 1 = logic, 0 = arith
 		LEFT_RIGHT 	=> 			LEFT_RIGHT_i , --da inserire il segnale	-- 1 = left, 0 = right
 		SHIFT_ROTATE => 		SHIFT_ROTATE_i ,	--da inserire il segnale -- 1 = shift, 0 = rotate
@@ -76,7 +71,7 @@ signal Cin_i: std_logic;
      
      
   shifter: SHIFTER_GENERIC
-    generic ( NBIT :		integer := Numbit);
+    generic ( N :		integer := Numbit);
 	port map (
 		A 		=> DATA1,
 		B 		=> DATA2,
@@ -84,12 +79,6 @@ signal Cin_i: std_logic;
 		S 		=> OUTPUT   ,  --da inserire 0
 		Cout :	open); --we mantain the Cout signal for future implementation of the DLX with status flags
 
-
-  
-  
-  
-  
-  
   
 ----da fare tutto il process
 P_ALU: process (FUNC, DATA1, DATA2)
@@ -97,24 +86,38 @@ variable tmp_arithmetic: unsigned (N downto 0); --temporary signal for arithmeti
 
   begin
 	
-    case FUNC is
-	when ADD 	=> tmp_arithmetic := (('0'& unsigned(DATA1))+('0' & unsigned(DATA2)));
-                           if tmp_arithmetic(N)='1' then OUTALU <= (others => '1'); -- saturation (overflow management)
-                           else OUTALU <= std_logic_vector(tmp_arithmetic(N-1 downto 0));
-                           end if;
-                           
-        when SUB 	=> if unsigned(DATA1) < unsigned(DATA2) then OUTALU <= (others => '0'); -- saturation (underflow management)
-                           else tmp_arithmetic := ( ('0' & unsigned(DATA1)) - ('0' & unsigned(DATA2)) ) ;
-			 	OUTALU <= std_logic_vector(tmp_arithmetic(N-1 downto 0));
-                           end if;
+    case conv_integer(unsigned(FUNC)) is
+	
+
+		
+	when ADD 	=> 
+    --ricordarsi di gestire l'unsigned          
+    when SUB 	=> 
+	    --ricordarsi di gestire l'unsigned
+      
+      
+      
+      
+      
+	when slli => 	LOGIC_ARITH_i <=1; --da inserire il segnale -- 1 = logic, 0 = arith
+		 			LEFT_RIGHT_i  <=1; --da inserire il segnale	-- 1 = left, 0 = right
+					SHIFT_ROTATE_i <=1;
+					OUTALU<= output1;
+				 
+	when slll => LOGIC_ARITH_i <=1; --da inserire il segnale -- 1 = logic, 0 = arith
+		 			LEFT_RIGHT_i  <=1; --da inserire il segnale	-- 1 = left, 0 = right
+					SHIFT_ROTATE_i <=1;
+					OUTALU<= output1;
+    when srli => LOGIC_ARITH_i <=0; --da inserire il segnale -- 1 = logic, 0 = arith
+		 			LEFT_RIGHT_i  <=0; --da inserire il segnale	-- 1 = left, 0 = right
+					SHIFT_ROTATE_i <=1;
+					OUTALU<= output1;
+	when srll => LOGIC_ARITH_i <=0; --da inserire il segnale -- 1 = logic, 0 = arith
+		 			LEFT_RIGHT_i  <=0; --da inserire il segnale	-- 1 = left, 0 = right
+					SHIFT_ROTATE_i <=1;
+					OUTALU<= output1;
+     
                                                                                  
-	when MULT 	=>  if (N mod 2)=0  then tmp_arithmetic(N-1 downto 0) := unsigned(DATA1((N/2)-1 downto 0)) * unsigned(DATA2((N/2)-1 downto 0));
-                    else tmp_arithmetic(N-1 downto 0) := '0' &(unsigned(DATA1((N/2)-1 downto 0)) * unsigned(DATA2((N/2)-1 downto 0))) ;
-					end if;						
-		-- if N%2==0 then multiplication is on N bit else N mul is on N-1 bit
- 					OUTALU <= std_logic_vector (tmp_arithmetic(N-1 downto 0));
-        -- bitwise operations 
-                                                        
 	when BITAND => gen_and: for i in 0 to N-1 loop
 								OUTALU(i) <= DATA1(i) and DATA2(i); 	-- and op
 						 end loop;  
@@ -124,11 +127,7 @@ variable tmp_arithmetic: unsigned (N downto 0); --temporary signal for arithmeti
 	when BITXOR => gen_xor: for i in 0 to N-1 loop
 								OUTALU(i) <= DATA1(i) xor DATA2(i);	--xor op
 						 end loop; 
-	-- Logical shifts (version 1)				 
-	when FUNCLSL 	=> OUTALU <= DATA1(N-2 downto 0) & '0';	       	-- logical shift left
-	when FUNCLSR 	=> OUTALU <= '0' & DATA1(N-1 downto 1);			-- logical shift right
-	when FUNCRL 	=> OUTALU <= DATA1(N-2 downto 0) & DATA1(N-1);	-- rotate left
-	when FUNCRR 	=> OUTALU <= DATA1(0) & DATA1(N-1 downto 1); 	-- rotate right
+						 
 	when others => null;
     end case; 
   end process P_ALU;
