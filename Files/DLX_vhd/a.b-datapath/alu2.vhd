@@ -58,6 +58,7 @@ signal LEFT_RIGHT_i : std_logic;
 signal SHIFT_ROTATE_i : std_logic;
 signal OUTPUT1: std_logic;
 signal OUTPUT2: std_logic;
+signal data2i: std_logic;
 
   shifter: SHIFTER_GENERIC
 	generic(N: integer);
@@ -67,16 +68,16 @@ signal OUTPUT2: std_logic;
 		LOGIC_ARITH =>			LOGIC_ARITH_i, --da inserire il segnale -- 1 = logic, 0 = arith
 		LEFT_RIGHT 	=> 			LEFT_RIGHT_i , --da inserire il segnale	-- 1 = left, 0 = right
 		SHIFT_ROTATE => 		SHIFT_ROTATE_i ,	--da inserire il segnale -- 1 = shift, 0 = rotate
-		OUTPUT 		 => 		OUTPUT);
+		OUTPUT 		 => 		OUTPUT1);
      
      
   shifter: SHIFTER_GENERIC
     generic ( N :		integer := Numbit);
 	port map (
 		A 		=> DATA1,
-		B 		=> DATA2,
+		B 		=> DATA2i,
 		Cin 	=> Cin_i   , -- da inserire 0
-		S 		=> OUTPUT   ,  --da inserire 0
+		S 		=> OUTPUT2   ,  --da inserire 0
 		Cout :	open); --we mantain the Cout signal for future implementation of the DLX with status flags
 
   
@@ -90,11 +91,22 @@ variable tmp_arithmetic: unsigned (N downto 0); --temporary signal for arithmeti
 	
 
 		
-	when ADD 	=> 
+	when ADDI 	=>  Cin_i<=0;
+					OUTALU<= output2;	
+	
+					
     --ricordarsi di gestire l'unsigned          
-    when SUB 	=> 
+    when SUBI 	=> 	Cin_i<=0;
+					OUTALU<= output2;
+					data2i<=not(data2)+'00000000000000000000000000000001';
+
 	    --ricordarsi di gestire l'unsigned
-      
+    when ADD 	=> 	Cin_i<=0
+					OUTALU<= output2;
+    when SUB 	=> 	Cin_i<=0;
+					OUTALU<= output2;
+					data2i<= not(data2)+'00000000000000000000000000000001';
+	    --ricordarsi di gestire l'unsigned
       
       
       
