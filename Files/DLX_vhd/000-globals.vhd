@@ -10,7 +10,7 @@ package myTypes is
 			
 	constant OP_CODE_SIZE : integer :=  6;                                              -- OPCODE field size
     constant FUNC_SIZE    : integer :=  11;                                             -- FUNC field size
-
+	constant numBit : integer :=  32; 
 -- R-Type instruction -> FUNC field
 	LLS : std_logic_vector(FUNC_SIZE - 1 downto 0) :=  "00000010000";   	-- 				 func 15
 	LRS : std_logic_vector(FUNC_SIZE - 1 downto 0) :=  "00000010001";   	--  			func 16

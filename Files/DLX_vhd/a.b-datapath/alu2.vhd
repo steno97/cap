@@ -1,14 +1,15 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
---use IEEE.std_logic_unsigned.all;
---use IEEE.std_logic_arith.all;
+use IEEE.std_logic_unsigned.all;
+use IEEE.std_logic_signed.all;
+use IEEE.std_logic_arith.all;
 use IEEE.numeric_std.all;
-use WORK.constants.all;
-use WORK.alu_type.all;
+use WORK.myTypes.all;
+--use WORK.alu_type.all;
 
 entity ALU is
   generic (N : integer := numBit);
-  port 	 ( FUNC: IN TYPE_OP;
+  port 	 ( FUNC: IN std_logic_vector(10 downto 0);
            DATA1, DATA2: IN std_logic_vector(N-1 downto 0);
            OUTALU: OUT std_logic_vector(N-1 downto 0));
 end ALU;
@@ -89,21 +90,39 @@ variable tmp_arithmetic: unsigned (N downto 0); --temporary signal for arithmeti
 	
     case conv_integer(unsigned(FUNC)) is
 	
-
+	when 0 => null;
 		
-	when ADDI 	=>  Cin_i<=0;
+	--sono da fare le istruzioni di branch-------------------------------------------------------------		
+	when 1 => if (conv_integer(signed(data1))!= conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000000';----snei
+				end if;
+				 if (conv_integer(signed(data1))== conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000001';----snei
+				end if;
+	when 2 => if (conv_integer(signed(data1))== conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000000';----snei
+				end if;
+				 if (conv_integer(signed(data1))!= conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000001';----snei
+				end if;	
+	--sono da fare le istruzioni di branch-------------------------------------------------------------		
+		
+		
+		
+		
+	when 3 	=>  Cin_i<=0;
 					OUTALU<= output2;	
 	
-					
+			
     --ricordarsi di gestire l'unsigned          
-    when SUBI 	=> 	Cin_i<=0;
+    when 4 	=> 	Cin_i<=0;
 					OUTALU<= output2;
 					data2i<=not(data2)+'00000000000000000000000000000001';
 
 	    --ricordarsi di gestire l'unsigned
-    when ADD 	=> 	Cin_i<=0
+    when 17 	=> 	Cin_i<=0
 					OUTALU<= output2;
-    when SUB 	=> 	Cin_i<=0;
+    when 18 	=> 	Cin_i<=0;
 					OUTALU<= output2;
 					data2i<= not(data2)+'00000000000000000000000000000001';
 	    --ricordarsi di gestire l'unsigned
@@ -111,35 +130,93 @@ variable tmp_arithmetic: unsigned (N downto 0); --temporary signal for arithmeti
       
       
       
-	when slli => 	LOGIC_ARITH_i <=1; --da inserire il segnale -- 1 = logic, 0 = arith
+	when 8 => 	LOGIC_ARITH_i <=1; --da inserire il segnale -- 1 = logic, 0 = arith
 		 			LEFT_RIGHT_i  <=1; --da inserire il segnale	-- 1 = left, 0 = right
 					SHIFT_ROTATE_i <=1;
 					OUTALU<= output1;
 				 
-	when slll => LOGIC_ARITH_i <=1; --da inserire il segnale -- 1 = logic, 0 = arith
-		 			LEFT_RIGHT_i  <=1; --da inserire il segnale	-- 1 = left, 0 = right
-					SHIFT_ROTATE_i <=1;
-					OUTALU<= output1;
-    when srli => LOGIC_ARITH_i <=0; --da inserire il segnale -- 1 = logic, 0 = arith
+	when 9 => LOGIC_ARITH_i <=0; --da inserire il segnale -- 1 = logic, 0 = arith
 		 			LEFT_RIGHT_i  <=0; --da inserire il segnale	-- 1 = left, 0 = right
 					SHIFT_ROTATE_i <=1;
 					OUTALU<= output1;
-	when srll => LOGIC_ARITH_i <=0; --da inserire il segnale -- 1 = logic, 0 = arith
+					
+	when 15 => LOGIC_ARITH_i <=1; --da inserire il segnale -- 1 = logic, 0 = arith
+		 			LEFT_RIGHT_i  <=1; --da inserire il segnale	-- 1 = left, 0 = right
+					SHIFT_ROTATE_i <=1;
+					OUTALU<= output1;
+    
+	when 16 => LOGIC_ARITH_i <=0; --da inserire il segnale -- 1 = logic, 0 = arith
 		 			LEFT_RIGHT_i  <=0; --da inserire il segnale	-- 1 = left, 0 = right
 					SHIFT_ROTATE_i <=1;
 					OUTALU<= output1;
      
                                                                                  
-	when BITAND => gen_and: for i in 0 to N-1 loop
+	when 19 => gen_and: for i in 0 to N-1 loop
 								OUTALU(i) <= DATA1(i) and DATA2(i); 	-- and op
 						 end loop;  
-	when BITOR  => gen_or: for i in 0 to N-1 loop
+	when 20  => gen_or: for i in 0 to N-1 loop
 								OUTALU(i) <= DATA1(i) or DATA2(i);    	-- or op
 						 end loop; 
-	when BITXOR => gen_xor: for i in 0 to N-1 loop
+	when 21 => gen_xor: for i in 0 to N-1 loop
+								OUTALU(i) <= DATA1(i) xor DATA2(i);	--xor op
+						 end loop; 
+	when 5 => gen_and: for i in 0 to N-1 loop
+								OUTALU(i) <= DATA1(i) and DATA2(i); 	-- and op
+						 end loop;  
+	when 6  => gen_or: for i in 0 to N-1 loop
+								OUTALU(i) <= DATA1(i) or DATA2(i);    	-- or op
+						 end loop; 
+	when 7 => gen_xor: for i in 0 to N-1 loop
 								OUTALU(i) <= DATA1(i) xor DATA2(i);	--xor op
 						 end loop; 
 						 
+	when 10 => if (conv_integer(signed(data1))!= conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000000';----snei
+				end if;
+				 if (conv_integer(signed(data1))== conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000001';----snei
+				end if;
+				
+	when 11 =>      if (conv_integer(signed(data1)) > conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000000';--slei
+				end if;
+				 if (conv_integer(signed(data1))< conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000001';--slei
+				end if;	
+	
+	when 12 =>    if (conv_integer(signed(data1)) < conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000000';--sgei
+				end if;
+				 if (conv_integer(signed(data1)) > conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000001'; --sgei
+				end if;		
+	when 22 => if (conv_integer(signed(data1))!= conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000000';----snei
+				end if;
+				 if (conv_integer(signed(data1))== conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000001';----snei
+				end if;
+				
+	when 23 =>      if (conv_integer(signed(data1)) > conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000000';--slei
+				end if;
+				 if (conv_integer(signed(data1))< conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000001';--slei
+				end if;	
+	
+	when 24 =>    if (conv_integer(signed(data1)) < conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000000';--sgei
+				end if;
+				 if (conv_integer(signed(data1)) > conv_integer(signed(data2)))
+					OUTALU<='00000000000000000000000000000001'; --sgei
+				end if;		
+	when 13	=> 	Cin_i<=0
+				OUTALU<= output2;
+	when 14 =>	Cin_i<=0
+				OUTALU<= output2;
+				
+				
+	
 	when others => null;
     end case; 
   end process P_ALU;
