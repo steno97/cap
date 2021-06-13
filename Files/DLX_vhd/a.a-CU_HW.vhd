@@ -76,25 +76,25 @@ architecture dlx_cu_hw of dlx_cu is
                                 "111010110000111", --SRLI (22)
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000",--SNEI (25)  -- to be completed (enlarged and filled)   
+                                "111010110000111",--SNEI (25)  -- to be completed (enlarged and filled)   
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000", --SLEI (28)  -- to be completed (enlarged and filled)   
-                                "000000000000000", --SGEI (29)  -- to be completed (enlarged and filled)   
-                                "000000000000000",
-                                "000000000000000",
-                                "000000000000000",
-                                "000000000000000",
-                                "000000000000000",
-                                "000000000000000", --LW (35)   -- to be completed (enlarged and filled)   
+                                "111010110000111", --SLEI (28)  -- to be completed (enlarged and filled)   
+                                "111010110000111", --SGEI (29)  -- to be completed (enlarged and filled)   
                                 "000000000000000",
                                 "000000000000000",
                                 "000000000000000",
                                 "000000000000000",
                                 "000000000000000",
+                                "111010110110100", --LW (35)   -- to be completed (enlarged and filled)   
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000")--SW (43);-- to be completed (enlarged and filled)                             
+                                "000000000000000",
+                                "000000000000000",
+                                "000000000000000",
+                                "000000000000000",
+                                "000000000000000",
+                                "111010110110100");--SW (43);-- to be completed (enlarged and filled)                             
                                 
   signal IR_opcode : std_logic_vector(OP_CODE_SIZE -1 downto 0);  -- OpCode part of IR
   signal IR_func : std_logic_vector(FUNC_SIZE downto 0);   -- Func part of IR when Rtype

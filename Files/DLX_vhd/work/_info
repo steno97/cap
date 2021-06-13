@@ -10,12 +10,12 @@ cModel Technology
 Z0 d/home/ms21.42/DLX/Files/DLX_vhd
 Ealu
 w1623577737
-DPx4 work 7 mytypes 0 22 6dQLQD43FaMP2h3M`33o_0
+Z1 DPx4 work 7 mytypes 0 22 6dQLQD43FaMP2h3M`33o_0
 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
-Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 R0
 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
@@ -23,7 +23,7 @@ l0
 L11
 VWmXc4IB]_5[V2;P6Oo;PG2
 !s100 AERd^B8=@OPLIh?`bARR82
-Z3 OL;C;10.7c;67
+Z5 OL;C;10.7c;67
 32
 !s110 1623577773
 !i10b 1
@@ -31,11 +31,97 @@ Z3 OL;C;10.7c;67
 !s90 -reportprogress|300|-work|work|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd|
 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd|
 !i113 0
-Z4 o-work work
-Z5 tExplicit 1 CvgOpt 0
-Pmytypes
+Z6 o-work work
+Z7 tExplicit 1 CvgOpt 0
+Edlx
+Z8 w1622405686
+R1
+R3
+R4
+R0
+Z9 8/home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd
+Z10 F/home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd
+l0
+L5
+VA=BL9FmZSSkcdBYZJ0SST3
+!s100 H_MV_d_a7d@W;X>1nGa`K3
+R5
+32
+Z11 !s110 1623589872
+!i10b 1
+Z12 !s108 1623589872.000000
+Z13 !s90 -reportprogress|300|-work|work|/home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd|
+Z14 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd|
+!i113 0
+R6
+R7
+Adlx_rtl
+R1
+R3
+R4
+DEx4 work 3 dlx 0 22 A=BL9FmZSSkcdBYZJ0SST3
+l120
+L23
+V[[5;g:GV8mjZK@=n>QDRW3
+!s100 W8NNmJh?`NG?`ZYeOl@FD2
+R5
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R6
+R7
+Edlx_cu
+Z15 w1623590224
 R1
 R2
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+R0
+Z17 8/home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
+Z18 F/home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
+l0
+L9
+VKE>>zoAd1EcM_EoHQ7;8`2
+!s100 oDbF5fOe1O3`AH@B[GI^>1
+R5
+32
+Z19 !s110 1623590236
+!i10b 1
+Z20 !s108 1623590235.000000
+Z21 !s90 -reportprogress|300|-work|work|/home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd|
+Z22 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd|
+!i113 0
+R6
+R7
+Adlx_cu_hw
+R1
+R2
+R16
+R3
+R4
+Z23 DEx4 work 6 dlx_cu 0 22 KE>>zoAd1EcM_EoHQ7;8`2
+l118
+L52
+Z24 V3UYUknNfNiL<=1Sl3[d]m1
+Z25 !s100 N[9gLbAkC>QH=hN2Sn?QQ3
+R5
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R6
+R7
+Pmytypes
+R3
+R4
 w1623575304
 R0
 8/home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
@@ -44,13 +130,13 @@ l0
 L4
 V6dQLQD43FaMP2h3M`33o_0
 !s100 dNDVYRobXj2R:H<J5EjEA1
-R3
+R5
 32
-!s110 1623575622
+!s110 1623589871
 !i10b 1
-!s108 1623575622.000000
+!s108 1623589871.000000
 !s90 -reportprogress|300|-work|work|/home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd|
 !s107 /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd|
 !i113 0
-R4
-R5
+R6
+R7

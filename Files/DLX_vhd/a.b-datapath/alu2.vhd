@@ -169,49 +169,50 @@ P_ALU: process (FUNC, DATA1, DATA2)
 								OUTALU(i) <= DATA1(i) xor DATA2(i);	--xor op
 						 end loop; 
 						 
-	when SNEI => if (conv_integer(signed(data1))/= conv_integer(signed(data2)))
+	when SNEI => if (data1 /= data2) then
 					OUTALU<="00000000000000000000000000000000";----snei
 				end if;
-				 if (conv_integer(signed(data1))= conv_integer(signed(data2)))
+				 if (data1 = data2) then
+					OUTALU<="00000000000000000000000000000001";----snei
+				end if;
+	when SLEI =>    if (data1 > data2) then
+					OUTALU<="00000000000000000000000000000000";----slei
+				end if;
+				 if (data1 < data2) then
+					OUTALU<="00000000000000000000000000000001";----slei
+				end if;
+	
+	when SGEI =>    if (data1 < data2) then
+					OUTALU<="00000000000000000000000000000000";----slei
+				end if;
+				 if (data1 > data2) then
+					OUTALU<="00000000000000000000000000000001";----slei
+				end if;
+	when SNE => if (data1 /= data2) then
+					OUTALU<="00000000000000000000000000000000";----snei
+				end if;
+				 if (data1 = data2) then
 					OUTALU<="00000000000000000000000000000001";----snei
 				end if;
 				
-	when SLEI =>      if (conv_integer(signed(data1)) > conv_integer(signed(data2)))
-					OUTALU<="00000000000000000000000000000000";--slei
+	when SLE =>      if (data1 > data2) then
+					OUTALU<="00000000000000000000000000000000";----slei
 				end if;
-				 if (conv_integer(signed(data1))< conv_integer(signed(data2)))
-					OUTALU<="00000000000000000000000000000001";--slei
-				end if;	
+				 if (data1 < data2) then
+					OUTALU<="00000000000000000000000000000001";----slei
+				end if;
 	
-	when SGEI =>    if (conv_integer(signed(data1)) < conv_integer(signed(data2)))
-					OUTALU<="00000000000000000000000000000000";--sgei
-				end if;
-				 if (conv_integer(signed(data1)) > conv_integer(signed(data2)))
-					OUTALU<="00000000000000000000000000000001"; --sgei
-				end if;		
-	when SNE => if (conv_integer(signed(data1))/= conv_integer(signed(data2)))
-					OUTALU<="00000000000000000000000000000000";----snei
-				end if;
-				 if (conv_integer(signed(data1))= conv_integer(signed(data2)))
-					OUTALU<="00000000000000000000000000000001";----snei
-				end if;
-				
-	when SLE =>      if (conv_integer(signed(data1)) > conv_integer(signed(data2)))
-					OUTALU<="00000000000000000000000000000000";--slei
-				end if;
-				 if (conv_integer(signed(data1))< conv_integer(signed(data2)))
-					OUTALU<="00000000000000000000000000000001";--slei
-				end if;	
 	
-	when SGE =>    if (conv_integer(signed(data1)) < conv_integer(signed(data2)))
-					OUTALU<="00000000000000000000000000000000";--sgei
+	when SGE =>    if (data1 < data2) then
+					OUTALU<="00000000000000000000000000000000";----slei
 				end if;
-				 if (conv_integer(signed(data1)) > conv_integer(signed(data2)))
-					OUTALU<="00000000000000000000000000000001"; --sgei
-				end if;		
-	when LW	=> 	Cin_i<='0'
+				 if (data1 > data2) then
+					OUTALU<="00000000000000000000000000000001";----slei
+				end if;
+	
+	when LW	=> 	Cin_i<='0';
 				OUTALU<= output2;
-	when SW =>	Cin_i<='0'
+	when SW =>	Cin_i<='0';
 				OUTALU<= output2;
 				
 				
