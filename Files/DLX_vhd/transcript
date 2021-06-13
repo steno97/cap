@@ -1,0 +1,900 @@
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 10:52:37 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package myTypes
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd(15): near "LLS": (vcom-1576) expecting END.
+# End time: 10:52:37 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:13:42 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package myTypes
+# End time: 11:13:42 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:13:50 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(30): near "end": (vcom-1576) expecting ';'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(34): Generic "NBIT" must be of class CONSTANT.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(41): near "end": (vcom-1576) expecting ';'.
+# End time: 11:13:50 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:15:05 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(41): near "end": (vcom-1576) expecting ';'.
+# End time: 11:15:05 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:15:20 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(43): near "/": syntax error
+# End time: 11:15:20 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:17:25 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(64): near "shifter": (vcom-1576) expecting BEGIN.
+# End time: 11:17:26 on Jun 13,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:19:36 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(65): near "(": (vcom-1576) expecting MAP.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(75): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(76): near "(": (vcom-1576) expecting MAP.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(86): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(87): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(91): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): Enumeration literal "NOP" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): Enumeration literal "BEQZ" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(99): near "=": syntax error
+# End time: 11:19:36 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:21:40 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(65): near "(": (vcom-1576) expecting MAP.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(75): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(76): near "(": (vcom-1576) expecting MAP.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(86): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(87): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(91): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): Enumeration literal "NOP" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): Enumeration literal "BEQZ" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(99): near "=": syntax error
+# End time: 11:21:40 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:23:39 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(65): near "is": (vcom-1576) expecting ';'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(77): near "(": (vcom-1576) expecting MAP.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(87): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(88): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(92): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(94): Enumeration literal "NOP" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(97): Enumeration literal "BEQZ" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(97): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(100): near "=": syntax error
+# End time: 11:23:39 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:25:23 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(65): (vcom-1294) Declaration with designator "SHIFTER_GENERIC" already exists in this region.
+# ** =====> Prior declaration of "SHIFTER_GENERIC" is at /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(21).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(67): near "map": (vcom-1576) expecting '('.
+# End time: 11:25:23 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:27:59 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(66): near "integer": (vcom-1576) expecting '['.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(75): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(76): near "integer": (vcom-1576) expecting '['.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(85): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(86): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(90): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(92): Enumeration literal "NOP" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(95): Enumeration literal "BEQZ" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(95): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(98): near "=": syntax error
+# End time: 11:27:59 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:28:25 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(66): near "integer": (vcom-1576) expecting '['.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(75): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(76): near "integer": (vcom-1576) expecting '['.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(85): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(86): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(90): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(92): Enumeration literal "NOP" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(95): Enumeration literal "BEQZ" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(95): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(98): near "=": syntax error
+# End time: 11:28:25 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:29:02 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(72): (vcom-1031) Formal generic "N" has OPEN or no actual associated with it.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(72): Signal "OUTPUT1" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(80): near ":": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(83): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(84): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(88): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(90): Enumeration literal "NOP" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): Enumeration literal "BEQZ" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): near "=": syntax error
+# End time: 11:29:02 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:30:00 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(72): Signal "OUTPUT1" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(80): near ":": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(83): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(84): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(88): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(90): Enumeration literal "NOP" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): Enumeration literal "BEQZ" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): near "=": syntax error
+# End time: 11:30:00 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:30:54 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(80): near ":": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(83): Statement cannot be labeled.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(84): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(88): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(90): Enumeration literal "NOP" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): Enumeration literal "BEQZ" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): near "=": syntax error
+# End time: 11:30:54 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:31:13 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(78): (vcom-1136) Unknown identifier "Cin_i".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(84): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(88): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(90): Enumeration literal "NOP" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): Enumeration literal "BEQZ" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): near "=": syntax error
+# End time: 11:31:13 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:31:55 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(84): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(88): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(90): Enumeration literal "NOP" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): Enumeration literal "BEQZ" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): near "=": syntax error
+# End time: 11:31:55 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:31:57 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(84): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(88): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(90): Enumeration literal "NOP" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): Enumeration literal "BEQZ" is type work.myTypes.aluOp; expecting type (error).
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): near "=": syntax error
+# End time: 11:31:57 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:33:06 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): near "=": syntax error
+# End time: 11:33:07 on Jun 13,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:34:48 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(93): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(94): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(97): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 11:34:49 on Jun 13,2021, Elapsed time: 0:00:01
+# Errors: 8, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:36:07 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find ieee.std.
+# ** Error (suppressible): /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(7): (vcom-1195) Cannot find expanded name "ieee.std".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(7): Unknown expanded name.
+# -- Loading package myTypes
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(11): VHDL Compiler exiting
+# End time: 11:36:07 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:38:22 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(95): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(97): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(97): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(97): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(98): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 11:38:22 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:40:13 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(96): near "'": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(99): near "'": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(101): near "then": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(105): near "'": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(112): near "when": (vcom-1576) expecting END.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(117): near "when": (vcom-1576) expecting END.
+# End time: 11:40:14 on Jun 13,2021, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:40:36 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(99): near "'": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(101): near "then": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(105): near "'": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(112): near "when": (vcom-1576) expecting END.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(117): near "when": (vcom-1576) expecting END.
+# End time: 11:40:36 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:41:35 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(101): near "then": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(112): near "when": (vcom-1576) expecting END.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(117): near "when": (vcom-1576) expecting END.
+# End time: 11:41:35 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:42:17 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(112): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(117): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(123): Physical unit hidden by declaration of 'OUTALU' at line 15.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(123): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(124): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(132): (vcom-1136) Unknown identifier "SSLI".
+# ** Error (suppressible): /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(132): (vcom-1937) Choice in CASE statement alternative must be locally static.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(132): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(133): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(134): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(137): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(138): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(139): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(142): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(143): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(144): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(147): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(148): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(149): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(162): Symbol "gen_and" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(165): Symbol "gen_or" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(168): Symbol "gen_xor" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(173): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(176): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 11:42:17 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 30, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:45:05 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(112): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(117): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(122): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(123): near "OUTALU": (vcom-1576) expecting ';'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(124): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(132): (vcom-1136) Unknown identifier "SSLI".
+# ** Error (suppressible): /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(132): (vcom-1937) Choice in CASE statement alternative must be locally static.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(132): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(133): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(134): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(137): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(138): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(139): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(142): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(143): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(144): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(147): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(148): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(149): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(162): Symbol "gen_and" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(165): Symbol "gen_or" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(168): Symbol "gen_xor" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(173): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(176): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 11:45:05 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 30, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:45:37 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(117): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(122): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(123): near "OUTALU": (vcom-1576) expecting ';'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(124): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(132): (vcom-1136) Unknown identifier "SSLI".
+# ** Error (suppressible): /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(132): (vcom-1937) Choice in CASE statement alternative must be locally static.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(132): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(133): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(134): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(137): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(138): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(139): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(142): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(143): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(144): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(147): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(148): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(149): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(162): Symbol "gen_and" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(165): Symbol "gen_or" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(168): Symbol "gen_xor" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(173): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(176): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 11:45:37 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 29, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:47:26 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(123): near "OUTALU": (vcom-1576) expecting ';'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(132): (vcom-1136) Unknown identifier "SSLI".
+# ** Error (suppressible): /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(132): (vcom-1937) Choice in CASE statement alternative must be locally static.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(162): Symbol "gen_and" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(165): Symbol "gen_or" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(168): Symbol "gen_xor" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(173): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(176): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 11:47:26 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 14, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:48:35 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(162): Symbol "gen_and" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(165): Symbol "gen_or" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(168): Symbol "gen_xor" has already been declared in this region.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(173): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(176): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 11:48:36 on Jun 13,2021, Elapsed time: 0:00:01
+# Errors: 11, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:49:33 on Jun 13,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(172): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(173): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(175): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(176): near "OUTALU": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 11:49:33 on Jun 13,2021, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
