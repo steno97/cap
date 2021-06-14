@@ -8,7 +8,7 @@ use work.myTypes.all;
 
 entity dlx_cu is
   generic (
-    MICROCODE_MEM_SIZE :     integer := 44;  -- Microcode Memory Size
+    MICROCODE_MEM_SIZE :     integer := MEM_SIZE;  -- Microcode Memory Size
     FUNC_SIZE          :     integer := 11;  -- Func Field Size for R-Type Ops
     OP_CODE_SIZE       :     integer := 6;  -- Op Code Size
     -- ALU_OPC_SIZE       :     integer := 6;  -- ALU Op Code Word Size
@@ -97,7 +97,7 @@ architecture dlx_cu_hw of dlx_cu is
                                 "111010110110100");--SW (43);-- to be completed (enlarged and filled)                             
                                 
   signal IR_opcode : std_logic_vector(OP_CODE_SIZE -1 downto 0);  -- OpCode part of IR
-  signal IR_func : std_logic_vector(FUNC_SIZE downto 0);   -- Func part of IR when Rtype
+  signal IR_func : std_logic_vector(FUNC_SIZE-1 downto 0);   -- Func part of IR when Rtype
   signal cw   : std_logic_vector(CW_SIZE - 1 downto 0); -- full control word read from cw_mem
 
 

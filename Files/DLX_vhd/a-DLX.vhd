@@ -44,7 +44,7 @@ architecture dlx_rtl of DLX is
   -- Control Unit
   component dlx_cu
   generic (
-    MICROCODE_MEM_SIZE :     integer := 10;  -- Microcode Memory Size
+    MICROCODE_MEM_SIZE :     integer := MEM_SIZE;  -- Microcode Memory Size
     FUNC_SIZE          :     integer := 11;  -- Func Field Size for R-Type Ops
     OP_CODE_SIZE       :     integer := 6;  -- Op Code Size
     --ALU_OPC_SIZE       :     integer := 6;  -- ALU Op Code Word Size
