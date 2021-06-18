@@ -37,6 +37,9 @@ entity dlx_cu is
     -- ALU Operation Code
     ALU_OPCODE         : out aluOp; -- choose between implicit or exlicit coding, like std_logic_vector(ALU_OPC_SIZE -1 downto 0);
     
+ --   signed_unsigned		: out std_logic;
+    
+    
     -- MEM Control Signals
     DRAM_WE            : out std_logic;  -- Data RAM Write Enable
     LMD_LATCH_EN       : out std_logic;  -- LMD Register Latch Enable
@@ -46,7 +49,10 @@ entity dlx_cu is
     -- WB Control signals
     WB_MUX_SEL         : out std_logic;  -- Write Back MUX Sel
     RF_WE              : out std_logic);  -- Register File Write Enable
+	
+	
 
+	
 end dlx_cu;
 
 architecture dlx_cu_hw of dlx_cu is
@@ -114,6 +120,11 @@ architecture dlx_cu_hw of dlx_cu is
   signal aluOpcode3: aluOp := NOP;
 
 
+--  signal signed_unsigned_i: std_logic := NOP; -- ALUOP defined in package
+--  signal signed_unsigned_1: std_logic := NOP;
+--  signal signed_unsigned_2: std_logic := NOP;
+--  signal signed_unsigned_3: std_logic := NOP;
+
  
 begin  -- dlx_cu_rtl
 
@@ -170,6 +181,10 @@ begin  -- dlx_cu_rtl
       aluOpcode1 <= aluOpcode_i;
       aluOpcode2 <= aluOpcode1;
       aluOpcode3 <= aluOpcode2;
+      
+      --signed_unsigned_1 <= signed_unsigned_i;
+      --signed_unsigned_2 <= signed_unsigned_1;
+      --signed_unsigned_3 <= signed_unsigned_2;
     end if;
   end process CW_PIPE;
 
@@ -186,35 +201,62 @@ begin  -- dlx_cu_rtl
 		when 0 =>
 			case conv_integer(unsigned(IR_func)) is
 				when 4 => aluOpcode_i <= LLS; -- sll according to instruction set coding
+						--signed_unsigned_i<=0;
 				when 6 => aluOpcode_i <= LRS; -- srl
+						--signed_unsigned_i<=0;
 				when 32 => aluOpcode_i <= ADD; -- ADD
+							--signed_unsigned_i<=0;
 				when 34 => aluOpcode_i <= SUB; -- SUB
+						--signed_unsigned_i<=0;
 				when 36 => aluOpcode_i <= ANDR; -- AND
+						--signed_unsigned_i<=0;
 				when 37 => aluOpcode_i <= ORR; -- OR
+						--signed_unsigned_i<=0;
 				when 38 => aluOpcode_i <= XORR; -- XOR
+						--signed_unsigned_i<=0;
 				when 41 => aluOpcode_i <= SNE; -- SNE
+						--signed_unsigned_i<=0;
 				when 44 => aluOpcode_i <= SLE; -- SLE
+						--signed_unsigned_i<=0;
 				when 45 => aluOpcode_i <= SGE; -- SGE
+						--signed_unsigned_i<=0;
 				-- to be continued and filled with all the other instructions  
 				when others => aluOpcode_i <= NOP;
 			end case;
 		when 2 => aluOpcode_i <= NOP; -- j
+				--signed_unsigned_i<=0;
 		when 3 => aluOpcode_i <= NOP; -- jal
+				--signed_unsigned_i<=0;
 		when 4 => aluOpcode_i <= BEQZ; --beqz
+				--signed_unsigned_i<=0;
 		when 5 => aluOpcode_i <= BNEZ; --BNEZ
+				--signed_unsigned_i<=0;
 		when 8 => aluOpcode_i <= ADDS; -- addi
+				--signed_unsigned_i<=0;
 		when 10 => aluOpcode_i <= SUBI; --SUBI
+				--signed_unsigned_i<=0;
 		when 12 => aluOpcode_i <= ANDI; --ANDI
+				--signed_unsigned_i<=0;
 		when 13 => aluOpcode_i <= ORI; --ORI
+				--signed_unsigned_i<=0;
 		when 14 => aluOpcode_i <= XORI; --XORI
+				--signed_unsigned_i<=0;
 		when 20 => aluOpcode_i <= SLLI; --SLLI
+				--signed_unsigned_i<=0;
 		when 21 => aluOpcode_i <= NOP; --NOP
+				--signed_unsigned_i<=0;
 		when 22 => aluOpcode_i <= SRLI; --SRLI
+				--signed_unsigned_i<=0;
 		when 25 => aluOpcode_i <= SNEI; --SNEI
+				--signed_unsigned_i<=0;
 		when 28 => aluOpcode_i <= SLEI; --SLEI
+				--signed_unsigned_i<=0;
 		when 29 => aluOpcode_i <= SGEI; --SGEI
+				--signed_unsigned_i<=0;
 		when 35 => aluOpcode_i <= LW; --LW
+				--signed_unsigned_i<=0;
 		when 43 => aluOpcode_i <= SW; --SW
+				--signed_unsigned_i<=0;
 		-- to be continued and filled with other cases
 		when others => aluOpcode_i <= NOP;
 	 end case;
