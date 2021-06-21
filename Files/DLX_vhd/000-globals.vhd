@@ -6,7 +6,7 @@ package myTypes is
 	type aluOp is (
 		NOP, ADDS, LLS, LRS, ADD, SUB, ANDR, ORR, XORR, SNE, SLE, SGE, BEQZ, BNEZ, SUBI, ANDI,
 		ORI, XORI, SLLI, SRLI, SNEI, SLEI, SGEI, LW, SW --- to be completed
-			);
+			);--,SUBU,SUBUI,ADDU,ADDUI
 	constant MEM_SIZE : integer := 44; 
 	constant OP_CODE_SIZE : integer :=  6;                                              -- OPCODE field size
     constant FUNC_SIZE    : integer :=  11;                                             -- FUNC field size

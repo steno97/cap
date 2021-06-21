@@ -66,9 +66,9 @@ architecture dlx_cu_hw of dlx_cu is
                                 "000000000000000", -- 
                                 "000000000000000",
                                 "111010110000111", -- ADD i (0X08): FILL IT!!!
-                                "000000000000000",
+                                "000000000000000", -- ADDUI
                                 "111010110000111", --SUBI (10)
-                                "000000000000000",
+                                "000000000000000",  --SUBUI
                                 "111010110000111", --ANDI (12)
                                 "111010110000111", --ORI (13)
                                 "111010110000111", --xori (14)
@@ -206,8 +206,12 @@ begin  -- dlx_cu_rtl
 						--signed_unsigned_i<=0;
 				when 32 => aluOpcode_i <= ADD; -- ADD
 							--signed_unsigned_i<=0;
+				--when 33 => aluOpcode_i <= ADDU; -- ADDU
+							--signed_unsigned_i<=1;
 				when 34 => aluOpcode_i <= SUB; -- SUB
 						--signed_unsigned_i<=0;
+				--when 35 => aluOpcode_i <= SUBU; -- SUBU
+						--signed_unsigned_i<=1;
 				when 36 => aluOpcode_i <= ANDR; -- AND
 						--signed_unsigned_i<=0;
 				when 37 => aluOpcode_i <= ORR; -- OR
@@ -233,7 +237,11 @@ begin  -- dlx_cu_rtl
 				--signed_unsigned_i<=0;
 		when 8 => aluOpcode_i <= ADDS; -- addi
 				--signed_unsigned_i<=0;
+		--when 9 => aluOpcode_i <= ADDUI; -- addUi
+				--signed_unsigned_i<=1;
 		when 10 => aluOpcode_i <= SUBI; --SUBI
+				--signed_unsigned_i<=0;
+		--when 11 => aluOpcode_i <= SUBUI; --SUBUI
 				--signed_unsigned_i<=0;
 		when 12 => aluOpcode_i <= ANDI; --ANDI
 				--signed_unsigned_i<=0;
