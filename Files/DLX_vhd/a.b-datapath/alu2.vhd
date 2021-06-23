@@ -109,19 +109,19 @@ P_ALU: process (FUNC, DATA1, DATA2)
 		
 		
 		
-	when ADDS 	=>  Cin_i<='0';
+	when ADDS | ADDUI 	=>  Cin_i<='0';
 					OUTALU<= output2;	
 	
 			
     --ricordarsi di gestire l"unsigned          
-    when SUBI 	=> 	Cin_i<='0';
+    when SUBI | SUBUI	=> 	Cin_i<='0';
 					OUTALU<= output2;
 					data2i<=not(data2)+"00000000000000000000000000000001";
 
 	    --ricordarsi di gestire l"unsigned
-    when ADD 	=> 	Cin_i<='0';
+    when ADD | ADDU	=> 	Cin_i<='0';
 					OUTALU<= output2;
-    when SUB 	=> 	Cin_i<='0';
+    when SUB | SUBU	=> 	Cin_i<='0';
 					OUTALU<= output2;
 					data2i<= not(data2)+"00000000000000000000000000000001";
 	    --ricordarsi di gestire l"unsigned
@@ -182,7 +182,7 @@ P_ALU: process (FUNC, DATA1, DATA2)
 					OUTALU<="00000000000000000000000000000001";----slei
 				end if;
 	
-	when SGEI =>    if (data1 < data2) then
+	when SGEI | SGEUI =>    if (data1 < data2) then
 					OUTALU<="00000000000000000000000000000000";----slei
 				end if;
 				 if (data1 > data2) then
@@ -203,7 +203,7 @@ P_ALU: process (FUNC, DATA1, DATA2)
 				end if;
 	
 	
-	when SGE =>    if (data1 < data2) then
+	when SGE | SGEU =>    if (data1 < data2) then
 					OUTALU<="00000000000000000000000000000000";----slei
 				end if;
 				 if (data1 > data2) then
