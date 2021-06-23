@@ -72,27 +72,35 @@ architecture dlx_cu_hw of dlx_cu is
                                 "111010110000111", --ANDI (12)
                                 "111010110000111", --ORI (13)
                                 "111010110000111", --xori (14)
+                                "000000000000000", --LHI
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000",
-                                "000000000000000",
-                                "000000000000000",
+                                "000000000000000", --JR
+                                "000000000000000", --JALR
                                 "111010110000111", --SLLI (20)
                                 "110000000000000", --nop (21)
                                 "111010110000111", --SRLI (22)
-                                "000000000000000",
-                                "000000000000000",
+                                "000000000000000", --SRAI
+                                "000000000000000", --SEQI
                                 "111010110000111",--SNEI (25)  -- to be completed (enlarged and filled)   
-                                "000000000000000",
-                                "000000000000000",
+                                "000000000000000", --SLTI
+                                "000000000000000", --SGTI
                                 "111010110000111", --SLEI (28)  -- to be completed (enlarged and filled)   
                                 "111010110000111", --SGEI (29)  -- to be completed (enlarged and filled)   
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000",
+                                "000000000000000", --LB
                                 "000000000000000",
                                 "000000000000000",
                                 "111010110110100", --LW (35)   -- to be completed (enlarged and filled)   
+                                "000000000000000", --LBU
+                                "000000000000000", --LHU
+                                "000000000000000",
+                                "000000000000000",
+                                "000000000000000", --SB
+                                "000000000000000",
+                                "000000000000000",
+                                "111010110110100",--SW (43);-- to be completed (enlarged and filled)
                                 "000000000000000",
                                 "000000000000000",
                                 "000000000000000",
@@ -100,7 +108,17 @@ architecture dlx_cu_hw of dlx_cu is
                                 "000000000000000",
                                 "000000000000000",
                                 "000000000000000",
-                                "111010110110100");--SW (43);-- to be completed (enlarged and filled)                             
+                                "000000000000000",
+                                "000000000000000",
+                                "000000000000000",
+                                "000000000000000",
+                                "000000000000000",
+                                "000000000000000",
+                                "000000000000000",
+                                "000000000000000",--SLTUI
+                                "000000000000000",--SGTUI
+                                "000000000000000",
+                                "000000000000000");    --SGEUI                         
                                 
   signal IR_opcode : std_logic_vector(OP_CODE_SIZE -1 downto 0);  -- OpCode part of IR
   signal IR_func : std_logic_vector(FUNC_SIZE-1 downto 0);   -- Func part of IR when Rtype
@@ -204,6 +222,8 @@ begin  -- dlx_cu_rtl
 							signed_unsigned_i<=0;
 				when 6 => aluOpcode_i <= LRS; -- srl
 							signed_unsigned_i<=0;
+				when 7 => aluOpcode_i <= SRA1; -- SRA
+							signed_unsigned_i<=1;
 				when 32 => aluOpcode_i <= ADD; -- ADD
 							signed_unsigned_i<=0;
 				when 33 => aluOpcode_i <= ADDU; -- ADDU
@@ -218,12 +238,24 @@ begin  -- dlx_cu_rtl
 							signed_unsigned_i<=0;
 				when 38 => aluOpcode_i <= XORR; -- XOR
 							signed_unsigned_i<=0;
+				when 40 => aluOpcode_i <= SEQ; -- SEQ
+							signed_unsigned_i<=0;
 				when 41 => aluOpcode_i <= SNE; -- SNE
+							signed_unsigned_i<=0;
+				when 42 => aluOpcode_i <= SLT; -- SLT
+							signed_unsigned_i<=0;
+				when 43 => aluOpcode_i <= SGT; -- SGT
 							signed_unsigned_i<=0;
 				when 44 => aluOpcode_i <= SLE; -- SLE
 							signed_unsigned_i<=0;
 				when 45 => aluOpcode_i <= SGE; -- SGE
 							signed_unsigned_i<=0;
+				when 58 => aluOpcode_i <= SLTU; -- SLTU
+							signed_unsigned_i<=1;
+				when 59 => aluOpcode_i <= SGTU; -- SGTU
+							signed_unsigned_i<=1;
+				when 61 => aluOpcode_i <= SGEU; -- SGEU
+							signed_unsigned_i<=1;
 				-- to be continued and filled with all the other instructions  
 				when others => aluOpcode_i <= NOP;
 			end case;
@@ -249,22 +281,50 @@ begin  -- dlx_cu_rtl
 				signed_unsigned_i<=0;
 		when 14 => aluOpcode_i <= XORI; --XORI
 				signed_unsigned_i<=0;
+		when 15 => aluOpcode_i <= LHI; --LHI
+				signed_unsigned_i<=0;
+		when 18 => aluOpcode_i <= JR; --SLLI
+				signed_unsigned_i<=1;
+		when 19 => aluOpcode_i <= JALR; --JALR
+				signed_unsigned_i<=0;
 		when 20 => aluOpcode_i <= SLLI; --SLLI
 				signed_unsigned_i<=0;
 		when 21 => aluOpcode_i <= NOP; --NOP
 				signed_unsigned_i<=0;
 		when 22 => aluOpcode_i <= SRLI; --SRLI
 				signed_unsigned_i<=0;
+		when 23 => aluOpcode_i <= SRAI; --SRAI
+				signed_unsigned_i<=1;
+		when 24 => aluOpcode_i <= SEQI; --SEQI
+				signed_unsigned_i<=0;		
 		when 25 => aluOpcode_i <= SNEI; --SNEI
 				signed_unsigned_i<=0;
+		when 26 => aluOpcode_i <= SLTI; --SLTI
+				signed_unsigned_i<=0;
+		when 27 => aluOpcode_i <= SGTI; --SGTI
+				signed_unsigned_i<=0;		
 		when 28 => aluOpcode_i <= SLEI; --SLEI
 				signed_unsigned_i<=0;
 		when 29 => aluOpcode_i <= SGEI; --SGEI
 				signed_unsigned_i<=0;
+		when 32 => aluOpcode_i <= LB; --LB
+				signed_unsigned_i<=0;
 		when 35 => aluOpcode_i <= LW; --LW
 				signed_unsigned_i<=0;
+		when 36 => aluOpcode_i <= LBU; --LBU
+				signed_unsigned_i<=0;
+		when 37 => aluOpcode_i <= LHU; --LHU
+				signed_unsigned_i<=0;
+		when 40 => aluOpcode_i <= SB; --SB
+				signed_unsigned_i<=0;		
 		when 43 => aluOpcode_i <= SW; --SW
 				signed_unsigned_i<=0;
+		when 58 => aluOpcode_i <= SLTUI; --SLTUI
+				signed_unsigned_i<=1;
+		when 59 => aluOpcode_i <= SGTUI; --SGTUI
+				signed_unsigned_i<=1;
+		when 61 => aluOpcode_i <= SGEUI; --SGEUI
+				signed_unsigned_i<=1;
 		-- to be continued and filled with other cases
 		when others => aluOpcode_i <= NOP;
 	 end case;
