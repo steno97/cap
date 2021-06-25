@@ -92,7 +92,7 @@ architecture dlx_cu_hw of dlx_cu is
                                 "000000000000000", --LB
                                 "000000000000000",
                                 "000000000000000",
-                                "111010110110100", --LW (35)   -- to be completed (enlarged and filled)   
+                                "111010110110100", --LW (35)   -- to be completed (enlarged and filled)   --da riveere
                                 "000000000000000", --LBU
                                 "000000000000000", --LHU
                                 "000000000000000",
