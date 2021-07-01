@@ -51,7 +51,10 @@ entity dlx_cu is
     RF_WE              : out std_logic);  -- Register File Write Enable
 	
 	
-
+-- muxA 0 = regA
+-- muxA 1 = NPC
+-- muxB 0 = regB
+-- muxB 1 = immediato
 	
 end dlx_cu;
 
@@ -60,44 +63,44 @@ architecture dlx_cu_hw of dlx_cu is
   signal cw_mem : mem_array := ("111100010000111", -- R type: IS IT CORRECT?
                                 "000000000000000", 
                                 "111011111001100", -- J (0X02) instruction encoding corresponds to the address to this ROM
-                                "111011111011101", -- JAL to be filled          -- to be completed (enlarged and filled)   
+                                "111011111001111", -- JAL to be filled          -- to be completed (enlarged and filled)   
                                 "000000000000000", -- BEQZ to be filled
                                 "000000000000000", -- BNEZ                       -- to be completed (enlarged and filled)   
                                 "000000000000000", 
                                 "000000000000000",
                                 "111010110000111", -- ADD i (0X08): FILL IT!!!
-                                "111010110000111", -- ADDUI
+                                "111010110000111", -- ADDUI       unsigned
                                 "111010110000111", --SUBI (10)
-                                "111010110000111",  --SUBUI
-                                "111010110000111", --ANDI (12)
+                                "111010110000111",  --SUBUI      unsigned
+                                "111010110000111", --ANDI (12)   unsigned
                                 "111010110000111", --ORI (13)
                                 "111010110000111", --xori (14)
-                                "000000000000000", --LHI
+                                "110010110000111", --LHI
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000", --JR
-                                "000000000000000", --JALR
+                                "111000001001100", --JR
+                                "111001101001111", --JALR          ----------da rivedere per pc+4 in r32,  forse da rivedere JALR
                                 "111010110000111", --SLLI (20)
-                                "110000000000000", --nop (21)
+                                "110000000000100", --NOP (21)
                                 "111010110000111", --SRLI (22)
-                                "000000000000000", --SRAI
-                                "000000000000000", --SEQI
+                                "111010110000111", --SRAI ---
+                                "111010110000111", --SEQI
                                 "111010110000111",--SNEI (25)  -- to be completed (enlarged and filled)   
-                                "000000000000000", --SLTI
-                                "000000000000000", --SGTI
+                                "111010110000111", --SLTI
+                                "111010110000111", --SGTI
                                 "111010110000111", --SLEI (28)  -- to be completed (enlarged and filled)   
                                 "111010110000111", --SGEI (29)  -- to be completed (enlarged and filled)   
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000", --LB
+                                "111010110110111", --LB
                                 "000000000000000",
                                 "000000000000000",
-                                "111010110110100", --LW (35)   -- to be completed (enlarged and filled)   --da riveere
-                                "000000000000000", --LBU
-                                "000000000000000", --LHU
+                                "111010110110111", --LW (35)   -- to be completed (enlarged and filled)   --da riveere
+                                "111010110110111", --LBU
+                                "111010110110111", --LHU
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000", --SB
+                                "111010110110100", --SB
                                 "000000000000000",
                                 "000000000000000",
                                 "111010110110100",--SW (43);-- to be completed (enlarged and filled)
@@ -115,10 +118,10 @@ architecture dlx_cu_hw of dlx_cu is
                                 "000000000000000",
                                 "000000000000000",
                                 "000000000000000",
-                                "000000000000000",--SLTUI
-                                "000000000000000",--SGTUI
+                                "111010110000111",--SLTUI
+                                "111010110000111",--SGTUI
                                 "000000000000000",
-                                "000000000000000");    --SGEUI                         
+                                "111010110000111");    --SGEUI                         
                                 
   signal IR_opcode : std_logic_vector(OP_CODE_SIZE -1 downto 0);  -- OpCode part of IR
   signal IR_func : std_logic_vector(FUNC_SIZE-1 downto 0);   -- Func part of IR when Rtype
@@ -219,11 +222,11 @@ begin  -- dlx_cu_rtl
 		when 0 =>
 			case conv_integer(unsigned(IR_func)) is
 				when 4 => aluOpcode_i <= LLS; -- sll according to instruction set coding
-							signed_unsigned_i<=0;
-				when 6 => aluOpcode_i <= LRS; -- srl
-							signed_unsigned_i<=0;
-				when 7 => aluOpcode_i <= SRA1; -- SRA
 							signed_unsigned_i<=1;
+				when 6 => aluOpcode_i <= LRS; -- srl
+							signed_unsigned_i<=1;
+				when 7 => aluOpcode_i <= SRA1; -- SRA
+							signed_unsigned_i<=0;
 				when 32 => aluOpcode_i <= ADD; -- ADD
 							signed_unsigned_i<=0;
 				when 33 => aluOpcode_i <= ADDU; -- ADDU
@@ -233,11 +236,11 @@ begin  -- dlx_cu_rtl
 				when 35 => aluOpcode_i <= SUBU; -- SUBU
 							signed_unsigned_i<=1;
 				when 36 => aluOpcode_i <= ANDR; -- AND
-							signed_unsigned_i<=0;
+							signed_unsigned_i<=1;
 				when 37 => aluOpcode_i <= ORR; -- OR
-							signed_unsigned_i<=0;
+							signed_unsigned_i<=1;
 				when 38 => aluOpcode_i <= XORR; -- XOR
-							signed_unsigned_i<=0;
+							signed_unsigned_i<=1;
 				when 40 => aluOpcode_i <= SEQ; -- SEQ
 							signed_unsigned_i<=0;
 				when 41 => aluOpcode_i <= SNE; -- SNE
@@ -276,25 +279,25 @@ begin  -- dlx_cu_rtl
 		when 11 => aluOpcode_i <= SUBUI; --SUBUI
 				signed_unsigned_i<=0;
 		when 12 => aluOpcode_i <= ANDI; --ANDI
-				signed_unsigned_i<=0;
+				signed_unsigned_i<=1;
 		when 13 => aluOpcode_i <= ORI; --ORI
-				signed_unsigned_i<=0;
+				signed_unsigned_i<=1;
 		when 14 => aluOpcode_i <= XORI; --XORI
-				signed_unsigned_i<=0;
-		when 15 => aluOpcode_i <= LHI; --LHI
+				signed_unsigned_i<=1;
+		when 15 => aluOpcode_i <= NOP; --LHI , LHI carica solo un valore nel registro non deve essere eseguita alcuna operazione
 				signed_unsigned_i<=0;
 		when 18 => aluOpcode_i <= JR; --SLLI
 				signed_unsigned_i<=1;
 		when 19 => aluOpcode_i <= JALR; --JALR
 				signed_unsigned_i<=0;
 		when 20 => aluOpcode_i <= SLLI; --SLLI
-				signed_unsigned_i<=0;
+				signed_unsigned_i<=1;
 		when 21 => aluOpcode_i <= NOP; --NOP
 				signed_unsigned_i<=0;
 		when 22 => aluOpcode_i <= SRLI; --SRLI
-				signed_unsigned_i<=0;
-		when 23 => aluOpcode_i <= SRAI; --SRAI
 				signed_unsigned_i<=1;
+		when 23 => aluOpcode_i <= SRAI; --SRAI
+				signed_unsigned_i<=0;
 		when 24 => aluOpcode_i <= SEQI; --SEQI
 				signed_unsigned_i<=0;		
 		when 25 => aluOpcode_i <= SNEI; --SNEI
@@ -310,7 +313,7 @@ begin  -- dlx_cu_rtl
 		when 32 => aluOpcode_i <= LB; --LB
 				signed_unsigned_i<=0;
 		when 35 => aluOpcode_i <= LW; --LW
-				signed_unsigned_i<=0;
+				signed_unsigned_i<=1;
 		when 36 => aluOpcode_i <= LBU; --LBU
 				signed_unsigned_i<=0;
 		when 37 => aluOpcode_i <= LHU; --LHU
@@ -318,7 +321,7 @@ begin  -- dlx_cu_rtl
 		when 40 => aluOpcode_i <= SB; --SB
 				signed_unsigned_i<=0;		
 		when 43 => aluOpcode_i <= SW; --SW
-				signed_unsigned_i<=0;
+				signed_unsigned_i<=1;
 		when 58 => aluOpcode_i <= SLTUI; --SLTUI
 				signed_unsigned_i<=1;
 		when 59 => aluOpcode_i <= SGTUI; --SGTUI
