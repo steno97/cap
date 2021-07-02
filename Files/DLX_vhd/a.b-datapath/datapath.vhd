@@ -6,11 +6,11 @@
 --stage 5: WRITE BACK WB
 library IEEE;
 use IEEE.std_logic_1164.all; 
-use IEEE.std_logic_arith.all;
 use work.myTypes.all;
+use IEEE.numeric_std.all;
 
 entity DATAPTH is
-Generic (NBIT: integer:= numBit);
+Generic (NBIT: integer:= numBit; REG_BIT: integer:= REG_SIZE);
 	Port (	
 		CLK:	in	std_logic;
 		RST:	in	std_logic;
@@ -35,7 +35,7 @@ Generic (NBIT: integer:= numBit);
 		EN3: in	std_logic;
 		S3: in	std_logic;
 		--alu signals
-		instruction_alu:  in TYPE_OP;
+		instruction_alu:  in aluOp;
 		
 		--data memory signals
 		DATA_MEM_ADDR: out	std_logic_vector(NBIT-1 downto 0);
@@ -77,7 +77,7 @@ Generic (NBIT: integer:= numBit);
 end component;
 
 component IR_DECODE is 
-Generic (NBIT: integer:= numBit;opBIT: integer:= OP_size; regBIT: integer:= REG_SIZE ); 
+Generic (NBIT: integer:= numBit;opBIT: integer:= OP_CODE_SIZE; regBIT: integer:= REG_SIZE ); 
 	Port (	
 		IR_26:	in	std_logic_vector(NBIT-opBIT-1 downto 0); 
 		OPCODE:	in	std_logic_vector(opBIT-1 downto 0); 
@@ -97,36 +97,37 @@ component register_file is
 	 RD1: 		IN std_logic;
 	 RD2: 		IN std_logic;
 	 WR: 			IN std_logic;
-	 ADD_WR: 	IN std_logic_vector(REG_BIT-1 downto 0);
-	 ADD_RD1: 	IN std_logic_vector(REG_BIT-1 downto 0);
-	 ADD_RD2: 	IN std_logic_vector(REG_BIT-1 downto 0);
-	 DATAIN: 	IN std_logic_vector(BIT_DLX-1 downto 0);
-    OUT1: 		OUT std_logic_vector(BIT_DLX-1 downto 0);
-	 OUT2: 		OUT std_logic_vector(BIT_DLX-1 downto 0));
+	 ADD_WR: 	IN std_logic_vector(REG_SIZE-1 downto 0);
+	 ADD_RD1: 	IN std_logic_vector(REG_SIZE-1 downto 0);
+	 ADD_RD2: 	IN std_logic_vector(REG_SIZE-1 downto 0);
+	 DATAIN: 	IN std_logic_vector(NBIT-1 downto 0);
+    OUT1: 		OUT std_logic_vector(NBIT-1 downto 0);
+	 OUT2: 		OUT std_logic_vector(NBIT-1 downto 0));
 end component;
 
 
 component ALU is
-  generic (N : integer := BIT_DLX);
-  port 	 ( FUNC: IN TYPE_OP;
+  generic (N : integer := NBIT);
+  port 	 ( FUNC: IN AluOp;
            DATA1, DATA2: IN std_logic_vector(N-1 downto 0);
            OUTALU: OUT std_logic_vector(N-1 downto 0));
 end component;
 
 component zero_eval is
-  generic (NBIT:integer:= BIT_DLX);
+  generic (NBIT:integer:= NBIT);
   port (
     input: in  std_logic_vector(NBIT-1 downto 0);
     res: out std_logic );
 end component;
 
 component COND_BT is
+Generic (NBIT: integer:= numBit); 
 	Port (	
 		ZERO_BIT:	in	std_logic;
-		OPCODE:	in	std_logic_vector(OP_BIT-1 downto 0);
+		OPCODE_0:	in	std_logic; --OpCODE(0) <= IR(26)
+		branch_op:	in	std_logic;
 		con_sign: out	std_logic);
 end component;
-
 
 --RIGUARDA TUTTI I MUXSELECT
 --metti windowedRF (+ bypass+ read and write @same time ecc)
@@ -165,6 +166,7 @@ end component;
 	signal regB_mem: std_logic_vector(NBIT-1 downto 0);
 	signal RD_mem: std_logic_vector(REG_BIT-1 downto 0);
 	--stage 4:
+	signal sel_npc: std_logic;
 	signal PC_fetch: std_logic_vector(NBIT-1 downto 0);
 	--pipe
 	signal ALU_wb: std_logic_vector(NBIT-1 downto 0);
@@ -179,7 +181,7 @@ begin
 --stage 1-> inputs: PC; outputs: NPC, IR
 
 	-- PC->PC+4->NPC
-	NPC <= PC + std_logic_vector(to_unsigned(4,NBIT));  --PC_fetch from stage 4 (modify if more than 1 instruction must be executed)
+	NPC <= std_logic_vector(unsigned(PC) + to_unsigned(4,NBIT));  --PC_fetch from stage 4 (modify if more than 1 instruction must be executed)
 	-- PC->INSTR. MEM(IRAM)-> IR 
 	
 	--pipeline signals (F->D)
@@ -191,8 +193,7 @@ begin
 
 	-- IR assignement
 	IR_OP:IR_DECODE
-	Generic map (NBIT)
-	Port map(IR_26=>IR_Dec(NBIT-OP_BIT-1 downto 0), OPCODE=>IR_Dec(NBIT downto NBIT-OP_BIT),is_signed=>signed_op, RS1=>RS1, RS2=>RS2, RD=>RD, IMMEDIATE=>Imm);
+	Port map(IR_26=>IR_Dec(NBIT-OP_CODE_SIZE-1 downto 0), OPCODE=>IR_Dec(NBIT downto NBIT-OP_CODE_SIZE),is_signed=>signed_op, RS1=>RS1, RS2=>RS2, RD=>RD, IMMEDIATE=>Imm);
 
 	--RF mapping
 	 RF: register_file
@@ -201,9 +202,9 @@ begin
 	--pipeline signals (D->E)
 	pipeline_newpc2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>NPC_Dec, Q=>NPC_ex);
 	pipeline_A2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>regA, Q=>regA_ex);
-	pipeline_B2: regFFD Generic map (NBIT) Port map(CLK=>CLK, RESET=>RST,ENABLE=>EN1, D=>regB, Q=>regB_ex);
-	pipeline_IMM2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=EN1, D=>Imm, Q=>Imm_ex);
-	pipeline_RD2: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=EN1, D=>RD, Q=>RD_ex);
+	pipeline_B2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>regB, Q=>regB_ex);
+	pipeline_IMM2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>Imm, Q=>Imm_ex);
+	pipeline_RD2: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>RD, Q=>RD_ex);
 	pipeline_IR2:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>IR_Dec, Q=>IR_ex);
 	
 --stage 3-> in: NPC, A, B, Imm, PC; out: NPC, cond, alu_out, B
@@ -230,14 +231,21 @@ begin
 
 --pipeline signals (E->M)
 	pipeline_newpc3: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN2, D=>NPC_ex, Q=>NPC_mem);
-	pipeline_cond3: FF Port map(CK=>CLK, RESET=>RST,EN=>EN2, D=>cond, Q=>cond_mem);
+	pipeline_cond3: FF Port map(CLK=>CLK, RESET=>RST,EN=>EN2, D=>cond, Q=>cond_mem);
 	pipeline_alu3:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=> EN2, D=>ALU_out, Q=>ALU_mem);
 	pipeline_B3: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN2, D=>regB_ex, Q=>regB_mem);
    pipeline_RD3: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN2, D=>RD_ex, Q=>RD_mem);
 
 --	stage 4-> in: NPC, cond, alu_out, B; out: PC, ALU_out, LMD_out
+
+
+	mux_npc_op: process (cond_mem, jump_en )
+	begin
+	sel_npc <= (cond_mem or jump_en);
+	end process;
+
 	MUX_PC: MUX21_GENERIC 
-	Port Map (NPC_mem, ALU_mem, cond_mem or jump_en, PC_fetch); 
+	Port Map (NPC_mem, ALU_mem, sel_npc, PC_fetch); 
 	--if branch taken or jump instruction-> pc =alu_out
 	
 	--data_memory -- guarda dov'è sta cazzo di data memory
@@ -251,7 +259,7 @@ begin
 	pipeline_alu4:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN3, D=>ALU_mem, Q=>ALU_wb);
 	pipeline_LMD4: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN3, D=>DATA_MEM_OUT, Q=>LMD_wb);
 	pipeline_RD4: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN3, D=>RD_mem, Q=>RD_wb);
-	pipeline_WM: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN3, D=>WM, Q=>WM_wb);
+	pipeline_WM: FF Port map(CLK=>CLK, RESET=>RST,EN=>EN3, D=>WM, Q=>WM_wb);
 	
 --	stage 5-> in: ALU_out, LMD_out, out: OUT_WB
 	MUX_WB: MUX21_GENERIC 
