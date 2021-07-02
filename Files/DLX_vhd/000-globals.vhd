@@ -12,6 +12,7 @@ package myTypes is
 	constant OP_CODE_SIZE : integer :=  6;                                              -- OPCODE field size
     constant FUNC_SIZE    : integer :=  11;                                             -- FUNC field size
 	constant numBit : integer :=  32; 
+	constant REG_SIZE : integer :=  5;
 	
 	
 	-- R-Type instruction -> FUNC field
