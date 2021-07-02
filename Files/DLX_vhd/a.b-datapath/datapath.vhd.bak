@@ -10,7 +10,7 @@ use IEEE.std_logic_arith.all;
 use work.myTypes.all;
 
 entity DATAPTH is
-Generic (NBIT: integer:= numBit);
+Generic (NBIT: integer:= BIT_DLX);
 	Port (	
 		CLK:	in	std_logic;
 		RST:	in	std_logic;
@@ -50,7 +50,7 @@ end DATAPTH;
 architecture STRUCTURAL of DATAPTH is 
 --components: 
 component MUX21_GENERIC is
-	generic (NBIT: integer:=numBit);
+	generic (NBIT: integer:=BIT_DLX);
 	Port (	
 		A:	In	std_logic_vector(NBIT-1 DOWNTO 0);
 		B:	In	std_logic_vector(NBIT-1 DOWNTO 0);
@@ -67,7 +67,7 @@ end component;
 
 
 component regFFD is
-Generic (NBIT: integer:= numBit);
+Generic (NBIT: integer:= BIT_DLX);
 	Port (	
 		CK:	In	std_logic;
 		RESET:	In	std_logic;
@@ -77,7 +77,7 @@ Generic (NBIT: integer:= numBit);
 end component;
 
 component IR_DECODE is 
-Generic (NBIT: integer:= numBit;opBIT: integer:= OP_size; regBIT: integer:= REG_SIZE ); 
+Generic (NBIT: integer:= BIT_DLX;opBIT: integer:= OP_BIT; regBIT: integer:= REG_BIT ); 
 	Port (	
 		IR_26:	in	std_logic_vector(NBIT-opBIT-1 downto 0); 
 		OPCODE:	in	std_logic_vector(opBIT-1 downto 0); 
