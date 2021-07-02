@@ -55,7 +55,8 @@ begin
 
 	dec_IR : process(IR_26,is_signed)
 	begin
-	if (OPCODE = rTYPE)  then   
+	case OPCODE is
+		when rTYPE =>   
 			RS1  <= IR_26(25 downto 21);
 			RS2  <= IR_26(20 downto 16);
 			RD   <= IR_26(15 downto 11);
@@ -63,20 +64,22 @@ begin
 			--nop??
 			
 
-	elsif (OPCODE = jTYPE)  then 
+		when jTYPE => 
 			RS1  <= (others => '0');
 			RS2  <= (others => '0');
 			RD   <= (others => '0');
 			IMMEDIATE <=IMMEDIATE_26;
 
 
-	else
+		when others =>
 		--I-TYPE
 			RS1  <= IR_26(25 downto 21);
 			RD  <= IR_26(20 downto 16);
 			RS2  <= (others => '0');
 			IMMEDIATE <=IMMEDIATE_16;
-end if;
+
+			
+		end case;
 	end process;
 end architecture;
 

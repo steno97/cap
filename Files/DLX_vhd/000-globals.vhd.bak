@@ -13,7 +13,7 @@ package myTypes is
     constant FUNC_SIZE    : integer :=  11;                                             -- FUNC field size
 	constant numBit : integer :=  32; 
 	constant REG_SIZE : integer :=  5;
-	--2^5=32
+	constant reg: positive := positive(ceil(log2(real(REG_SIZE ))));
 	
 	
 	-- R-Type instruction -> FUNC field

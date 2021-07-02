@@ -48,6 +48,6 @@ end CFG_FFD_SYNC;
 
 
 configuration CFG_FFD_ASYNC of FF is
-	for ASYNCH_BHV 
+	for ASYNC_BHV 
 	end for;
 end CFG_FFD_ASYNC;
