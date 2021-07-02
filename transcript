@@ -1,0 +1,212 @@
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:03:13 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# ** Error: (vcom-11) Could not find work.constants.
+# ** Error (suppressible): /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd(4): (vcom-1195) Cannot find expanded name "work.constants".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd(4): Unknown expanded name.
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd(6): VHDL Compiler exiting
+# End time: 17:03:13 on Jul 02,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:04:20 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity zero_eval
+# -- Compiling architecture bhv of zero_eval
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd(16): (vcom-1136) Unknown identifier "to_unsigned".
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd(18): VHDL Compiler exiting
+# End time: 17:04:20 on Jul 02,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:05:14 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity zero_eval
+# -- Compiling architecture bhv of zero_eval
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd(16): (vcom-1394) Type conversion operand must be a single expression that is not a range.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd(16): (vcom-1583) Illegal type converson from 'Integer' to 'ieee.std_logic_arith.UNSIGNED' (numeric to array).
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd(18): VHDL Compiler exiting
+# End time: 17:05:15 on Jul 02,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:08:09 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling entity zero_eval
+# -- Compiling architecture bhv of zero_eval
+# End time: 17:08:10 on Jul 02,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:08:22 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# ** Error: (vcom-11) Could not find work.constants.
+# ** Error (suppressible): /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(4): (vcom-1195) Cannot find expanded name "work.constants".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(4): Unknown expanded name.
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(6): VHDL Compiler exiting
+# End time: 17:08:22 on Jul 02,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:08:39 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity sign_eval
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(7): (vcom-1136) Unknown identifier "N_BIT".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(8): (vcom-1136) Unknown identifier "N_BIT".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(8): Type error resolving infix expression "*" as type std.STANDARD.INTEGER.
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(13): VHDL Compiler exiting
+# End time: 17:08:39 on Jul 02,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:12:47 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity sign_eval
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(8): (vcom-1136) Unknown identifier "numBit".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(9): (vcom-1136) Unknown identifier "numBit".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(9): Type error resolving infix expression "*" as type std.STANDARD.INTEGER.
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(14): VHDL Compiler exiting
+# End time: 17:12:47 on Jul 02,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:13:29 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package myTypes
+# End time: 17:13:29 on Jul 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:13:42 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity sign_eval
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(8): (vcom-1136) Unknown identifier "numBit".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(9): (vcom-1136) Unknown identifier "numBit".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(9): Type error resolving infix expression "*" as type std.STANDARD.INTEGER.
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(14): VHDL Compiler exiting
+# End time: 17:13:42 on Jul 02,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:13:54 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package myTypes
+# End time: 17:13:54 on Jul 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:13:58 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity sign_eval
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(8): (vcom-1136) Unknown identifier "numBit".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(9): (vcom-1136) Unknown identifier "numBit".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(9): Type error resolving infix expression "*" as type std.STANDARD.INTEGER.
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(14): VHDL Compiler exiting
+# End time: 17:13:58 on Jul 02,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:14:37 on Jul 02,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity sign_eval
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(8): (vcom-1136) Unknown identifier "numBit".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(9): (vcom-1136) Unknown identifier "numBit".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(9): (vcom-1136) Unknown identifier "numBit".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(9): Type error resolving infix expression "+" as type std.STANDARD.INTEGER.
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd(14): VHDL Compiler exiting
+# End time: 17:14:38 on Jul 02,2021, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0
+# Loading project dtpath
+# Compile of sign_ext.vhd failed with 2 errors.
+# Compile of 000-globals.vhd was successful.
+# Compile of zero_evaluation.vhd was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of sign_ext.vhd was successful.
+# Compile of 000-globals.vhd was successful.
+# Compile of zero_evaluation.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of mux21_generic.vhd failed with 3 errors.
+# Compile of reg.vhd failed with 3 errors.
+# 2 compiles, 2 failed with 6 errors.
+# Compile of reg.vhd was successful.
+# Compile of mux21_generic.vhd failed with 1 errors.
+# Compile of mux21_generic.vhd failed with 1 errors.
+# Compile of mux21_generic.vhd failed with 1 errors.
+# Load canceled
+# Compile of mux21_generic.vhd failed with 4 errors.
+# Compile of iv.vhd failed with 3 errors.
+# Compile of mux21.vhd failed with 3 errors.
+# Compile of nd2.vhd failed with 3 errors.
+# 3 compiles, 3 failed with 9 errors.
+# Compile of iv.vhd was successful.
+# Compile of nd2.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of mux21.vhd was successful.
+# Compile of mux21_generic.vhd was successful.
+# Compile of cond_eval.vhd failed with 1 errors.
+# Compile of cond_eval.vhd failed with 1 errors.
+# Compile of cond_eval.vhd failed with 1 errors.
+# Compile of cond_eval.vhd failed with 2 errors.
+# Compile of cond_eval.vhd was successful.
