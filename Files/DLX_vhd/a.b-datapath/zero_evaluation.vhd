@@ -16,3 +16,4 @@ architecture bhv of zero_eval is
 		res <= '1' when input=std_logic_vector(to_unsigned(0, input'length)) else '0';
 		
 end architecture;
+								   
