@@ -334,4 +334,8 @@ begin  -- dlx_cu_rtl
 	end process ALU_OP_CODE_P;
 
 
+--- devo aggiungere un segnale per quando l'istruzione è un brench o altro
+--- in modo che le 4 istruzioni successive siano nop
+
+
 end dlx_cu_hw;
