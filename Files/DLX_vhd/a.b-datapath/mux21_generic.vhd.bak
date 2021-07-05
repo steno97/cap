@@ -16,7 +16,7 @@ end MUX21_GENERIC;
 
 architecture BEHAVIOR of MUX21_GENERIC IS
   begin
-	Y <= A when SEL='1' else B; -- after delay_mux;
+	Y <= A when SEL='1' else B after delay_mux;
 
 
 end BEHAVIOR;

@@ -42,7 +42,7 @@ begin
 		end if;
 		--if CLK'event and CLK='1' and reset='1' then
 		if reset='1' then
-					registers<=(OTHERS=> (others=>'0'));	
+					registers<=(others=>'0');	
 		end if;
 		end if;
 	end process;

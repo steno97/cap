@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all; 
 use IEEE.std_logic_arith.all;
 --use WORK.constants.all;
-use work.myTypes.all;
+use work.all;
 
 entity sign_eval is
 	generic (N_in: integer := numBit;

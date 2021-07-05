@@ -1,0 +1,188 @@
+/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/reg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/reg.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity regFFD
+-- Compiling architecture SYNCBEHAV of regFFD
+-- Compiling architecture ASYNCHBEHAV of regFFD
+-- Loading entity regFFD
+-- Compiling configuration CFG_FD_SYNC
+-- Loading entity regFFD
+-- Loading architecture SYNCBEHAV of regFFD
+-- Compiling configuration CFG_FD_ASYNC
+-- Loading entity regFFD
+-- Loading architecture ASYNCHBEHAV of regFFD
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity IV
+-- Compiling architecture BEHAVIORAL of IV
+-- Compiling configuration CFG_IV_BEHAVIORAL
+-- Loading entity IV
+-- Loading architecture BEHAVIORAL of IV
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package NUMERIC_STD
+-- Compiling entity zero_eval
+-- Compiling architecture bhv of zero_eval
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity sign_eval
+-- Compiling architecture BHV of sign_eval
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity IR_DECODE
+-- Compiling architecture BEHAV of IR_DECODE
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/registerfile.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/registerfile.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity register_file
+-- Compiling architecture A of register_file
+-- Compiling configuration CFG_RF_BEH
+-- Loading entity register_file
+-- Loading architecture A of register_file
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/FFD.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/FFD.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FF
+-- Compiling architecture ASYNCH_BHV of FF
+-- Compiling architecture SYNC_BHV of FF
+-- Loading entity FF
+-- Compiling configuration CFG_FFD_SYNC
+-- Loading entity FF
+-- Loading architecture SYNC_BHV of FF
+-- Compiling configuration CFG_FFD_ASYNC
+-- Loading entity FF
+-- Loading architecture ASYNCH_BHV of FF
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/mux21_generic.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/mux21_generic.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity MUX21_GENERIC
+-- Compiling architecture BEHAVIOR of MUX21_GENERIC
+-- Compiling architecture struct of MUX21_GENERIC
+-- Loading entity MUX21_GENERIC
+-- Compiling configuration CFG_MUX21_GEN_BEHAVIORAL
+-- Loading entity MUX21_GENERIC
+-- Loading architecture BEHAVIOR of MUX21_GENERIC
+-- Compiling configuration CFG_MUX21_GEN_STRUCTURAL
+-- Loading entity MUX21_GENERIC
+-- Loading architecture struct of MUX21_GENERIC
+-- Loading entity MUX21
+-- Loading configuration cfg_mux21_structural
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity COND_BT
+-- Compiling architecture BHV of COND_BT
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/nd2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/nd2.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity ND2
+-- Compiling architecture ARCH1 of ND2
+-- Compiling architecture ARCH2 of ND2
+-- Loading entity ND2
+-- Compiling configuration CFG_ND2_ARCH1
+-- Loading entity ND2
+-- Loading architecture ARCH1 of ND2
+-- Compiling configuration CFG_ND2_ARCH2
+-- Loading entity ND2
+-- Loading architecture ARCH2 of ND2
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package MATH_REAL
+-- Compiling package myTypes
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/mux21.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/mux21.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity MUX21
+-- Compiling architecture BEHAVIORAL_1 of MUX21
+-- Compiling architecture BEHAVIORAL_2 of MUX21
+-- Loading entity MUX21
+-- Compiling architecture BEHAVIORAL_3 of MUX21
+-- Loading entity MUX21
+-- Compiling architecture STRUCTURAL of MUX21
+-- Loading entity MUX21
+-- Compiling configuration CFG_MUX21_BEHAVIORAL_1
+-- Loading entity MUX21
+-- Loading architecture BEHAVIORAL_1 of MUX21
+-- Compiling configuration CFG_MUX21_BEHAVIORAL_2
+-- Loading entity MUX21
+-- Loading architecture BEHAVIORAL_2 of MUX21
+-- Compiling configuration CFG_MUX21_BEHAVIORAL_3
+-- Loading entity MUX21
+-- Loading architecture BEHAVIORAL_3 of MUX21
+-- Compiling configuration CFG_MUX21_STRUCTURAL
+-- Loading entity MUX21
+-- Loading architecture STRUCTURAL of MUX21
+-- Loading entity IV
+-- Loading entity ND2
+-- Loading configuration cfg_iv_behavioral
+-- Loading configuration cfg_nd2_arch2
+
+} {} {}}

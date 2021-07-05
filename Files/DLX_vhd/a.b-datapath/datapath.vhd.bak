@@ -245,7 +245,7 @@ begin
 	end process;
 
 	MUX_PC: MUX21_GENERIC 
-	Port Map (NPC_mem, ALU_mem, sel_npc, PC_fetch); 
+	Port Map (NPC_mem, ALU_mem, sel_npc, PC_fetch)); 
 	--if branch taken or jump instruction-> pc =alu_out
 	
 	--data_memory -- guarda dov'è sta cazzo di data memory
