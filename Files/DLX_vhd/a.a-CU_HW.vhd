@@ -39,7 +39,6 @@ entity dlx_cu is
     
 	signed_unsigned		: out std_logic;
     
-    
     -- MEM Control Signals
     DRAM_WE            : out std_logic;  -- Data RAM Write Enable
     LMD_LATCH_EN       : out std_logic;  -- LMD Register Latch Enable
@@ -64,9 +63,9 @@ architecture dlx_cu_hw of dlx_cu is
                                 "000000000000000", 
                                 "111011111001100", -- J (0X02) instruction encoding corresponds to the address to this ROM
                                 "111011111001111", -- JAL to be filled          -- to be completed (enlarged and filled)   
-                                "000000000000000", -- BEQZ to be filled
-                                "000000000000000", -- BNEZ                       -- to be completed (enlarged and filled)   
-                                "000000000000000", 
+                                "110011110001100", -- BEQZ to be filled
+                                "110011111001100", -- BNEZ                       -- to be completed (enlarged and filled)   
+                                "000000000000000",  -- we do not implement the bfpt instruction so we use this for the stall
                                 "000000000000000",
                                 "111010110000111", -- ADD i (0X08): FILL IT!!!
                                 "111010110000111", -- ADDUI       unsigned
@@ -141,19 +140,26 @@ architecture dlx_cu_hw of dlx_cu is
   signal aluOpcode3: aluOp := NOP;
 
 
-  signal signed_unsigned_i: std_logic := NOP; -- ALUOP defined in package
-  signal signed_unsigned_1: std_logic := NOP;
-  signal signed_unsigned_2: std_logic := NOP;
-  signal signed_unsigned_3: std_logic := NOP;
-
- 
+  signal signed_unsigned_i: std_logic := 0; -- this signal is to said to the datapath if the operation is unsigned
+  signal signed_unsigned_1: std_logic := 0;  -- this signal is to said to the datapath if the operation is unsigned
+  signal signed_unsigned_2: std_logic := 0;  -- this signal is to said to the datapath if the operation is unsigned
+  signal signed_unsigned_3: std_logic := 0;  -- this signal is to said to the datapath if the operation is unsigned
+  signal jump: std_logic := 0;				--if the operation is a jump this is set to 1
+  variable iterator : integer := 0;
 begin  -- dlx_cu_rtl
 
   IR_opcode(5 downto 0) <= IR_IN(31 downto 26);
   IR_func(10 downto 0)  <= IR_IN(FUNC_SIZE - 1 downto 0);
-
-  cw <= cw_mem(conv_integer(IR_opcode));
-
+	
+	if jump = '1' then 
+		cw <=cw_mem(6);
+		iterator := iterator+1;
+		if iteratore = 3 then
+			jump = '0'
+		end if
+	else 
+	cw <= cw_mem(conv_integer(IR_opcode));
+	end if;
 
   -- stage one control signals
   IR_LATCH_EN  <= cw1(CW_SIZE - 1);
@@ -198,14 +204,15 @@ begin  -- dlx_cu_rtl
       cw3 <= cw2(CW_SIZE - 1 - 5 downto 0);
       cw4 <= cw3(CW_SIZE - 1 - 9 downto 0);
       cw5 <= cw4(CW_SIZE -1 - 13 downto 0);
-
-      aluOpcode1 <= aluOpcode_i;
-      aluOpcode2 <= aluOpcode1;
-      aluOpcode3 <= aluOpcode2;
+	  
+	  
+		aluOpcode1 <= aluOpcode_i;
+		aluOpcode2 <= aluOpcode1;
+		aluOpcode3 <= aluOpcode2;
       
-      signed_unsigned_1 <= signed_unsigned_i;
-      signed_unsigned_2 <= signed_unsigned_1;
-      signed_unsigned_3 <= signed_unsigned_2;
+		signed_unsigned_1 <= signed_unsigned_i;
+		signed_unsigned_2 <= signed_unsigned_1;
+		signed_unsigned_3 <= signed_unsigned_2;
     end if;
   end process CW_PIPE;
 
@@ -263,12 +270,16 @@ begin  -- dlx_cu_rtl
 				when others => aluOpcode_i <= NOP;
 			end case;
 		when 2 => aluOpcode_i <= NOP; -- j
+				jump <=1;
 				signed_unsigned_i<=0;
 		when 3 => aluOpcode_i <= NOP; -- jal
+				jump <=1;
 				signed_unsigned_i<=0;
 		when 4 => aluOpcode_i <= BEQZ; --beqz
+				jump <=1;
 				signed_unsigned_i<=0;
 		when 5 => aluOpcode_i <= BNEZ; --BNEZ
+				jump <=1;
 				signed_unsigned_i<=0;
 		when 8 => aluOpcode_i <= ADDS; -- addi
 				signed_unsigned_i<=0;
@@ -286,9 +297,11 @@ begin  -- dlx_cu_rtl
 				signed_unsigned_i<=1;
 		when 15 => aluOpcode_i <= NOP; --LHI , LHI carica solo un valore nel registro non deve essere eseguita alcuna operazione
 				signed_unsigned_i<=0;
-		when 18 => aluOpcode_i <= JR; --SLLI
+		when 18 => aluOpcode_i <= NOP; --jr
+				jump <=1;
 				signed_unsigned_i<=1;
-		when 19 => aluOpcode_i <= JALR; --JALR
+		when 19 => aluOpcode_i <= NOP; --JALR
+				jump <=1;
 				signed_unsigned_i<=0;
 		when 20 => aluOpcode_i <= SLLI; --SLLI
 				signed_unsigned_i<=1;

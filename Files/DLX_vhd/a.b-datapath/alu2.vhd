@@ -126,8 +126,15 @@ P_ALU: process (FUNC, DATA1, DATA2)
 					data2i<= not(data2)+"00000000000000000000000000000001";
 	    --ricordarsi di gestire l"unsigned
       
-      
-      
+    when sra1 => 	LOGIC_ARITH_i <='0'; --da inserire il segnale -- 1 = logic, '0' = arith
+		 			LEFT_RIGHT_i  <='0'; --da inserire il segnale	-- 1 = left, '0' = right
+					SHIFT_ROTATE_i <='1';
+					OUTALU<= output1;  
+     
+    when srai => 	LOGIC_ARITH_i <='0'; --da inserire il segnale -- 1 = logic, '0' = arith
+		 			LEFT_RIGHT_i  <='0'; --da inserire il segnale	-- 1 = left, '0' = right
+					SHIFT_ROTATE_i <='1';
+					OUTALU<= output1;    
       
 	when SLLI => 	LOGIC_ARITH_i <='1'; --da inserire il segnale -- 1 = logic, '0' = arith
 		 			LEFT_RIGHT_i  <='1'; --da inserire il segnale	-- 1 = left, '0' = right
@@ -210,15 +217,17 @@ P_ALU: process (FUNC, DATA1, DATA2)
 				OUTALU<= output2;
 	when LBU => 	Cin_i<='0';
 				OUTALU<= output2;
+	when LHU => Cin_i<='0';
+				OUTALU<= output2;
 	
 	------------------------------  load and store
 	
 	
 	when SEQ | SEQI =>  if (signed(data1) == signed(data2)) then
-					OUTALU<="00000000000000000000000000000001";----snei
+					OUTALU<="00000000000000000000000000000001";----SEQ | SEQI
 				end if;
 				 if (signed(data1) /= signed(data2)) then
-					OUTALU<="00000000000000000000000000000000";----snei
+					OUTALU<="00000000000000000000000000000000";----SEQ | SEQI
 				end if;
 	
 	when SLT | SLTI  =>      if (signed(data1) >= signed(data2)) then
@@ -227,7 +236,7 @@ P_ALU: process (FUNC, DATA1, DATA2)
 				 if (signed(data1) < signed(data2)) then
 					OUTALU<="00000000000000000000000000000001";----slei
 				end if;
-	when | SLTU |SLTUI =>      if (unsigned(data1) >= unsigned(data2)) then
+	when SLTU |SLTUI =>      if (unsigned(data1) >= unsigned(data2)) then
 					OUTALU<="00000000000000000000000000000000";----slei
 				end if;
 				 if (unsigned(data1) < unsigned(data2)) then
