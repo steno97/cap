@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 --use IEEE.std_logic_unsigned.all;
 use IEEE.std_logic_signed.all;
-use IEEE.std_logic_arith.all;
+--use IEEE.std_logic_arith.all;
 use IEEE.numeric_std.all;
 --use IEEE.std.standard.BOOLEAN;
 use WORK.myTypes.all;
@@ -223,14 +223,14 @@ P_ALU: process (FUNC, DATA1, DATA2)
 	------------------------------  load and store
 	
 	
-	when SEQ | SEQI =>  if (signed(data1) == signed(data2)) then
+	when SEQ | SEQI =>  if (signed(data1) = signed(data2)) then
 					OUTALU<="00000000000000000000000000000001";----SEQ | SEQI
 				end if;
 				 if (signed(data1) /= signed(data2)) then
 					OUTALU<="00000000000000000000000000000000";----SEQ | SEQI
 				end if;
 	
-	when SLT | SLTI  =>      if (signed(data1) >= signed(data2)) then
+	when SLT | SLTI  => if (signed(data1) >= signed(data2)) then
 					OUTALU<="00000000000000000000000000000000";----slei
 				end if;
 				 if (signed(data1) < signed(data2)) then
@@ -248,7 +248,7 @@ P_ALU: process (FUNC, DATA1, DATA2)
 				 if (signed(data1) > signed(data2)) then
 					OUTALU<="00000000000000000000000000000001";----slei
 				end if;
-	 when SGTUI |SGTU  =>    if (unsigned(data1) < signed(data2)) then
+	 when SGTUI |SGTU => if (unsigned(data1) < unsigned(data2)) then
 					OUTALU<="00000000000000000000000000000000";----slei
 				end if;
 				 if (unsigned(data1) > unsigned(data2)) then

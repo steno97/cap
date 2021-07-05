@@ -14,598 +14,434 @@
 # //
 vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:28:37 on Jun 14,2021
+# Start time: 21:40:07 on Jul 05,2021
 # vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
 # -- Compiling package myTypes
-# End time: 19:28:38 on Jun 14,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:28:38 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package myTypes
-# End time: 19:28:38 on Jun 14,2021, Elapsed time: 0:00:00
+# End time: 21:40:07 on Jul 05,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:28:42 on Jun 14,2021
+# Start time: 21:40:12 on Jul 05,2021
 # vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
 # -- Loading package myTypes
 # -- Compiling entity dlx_cu
 # -- Compiling architecture dlx_cu_hw of dlx_cu
-# End time: 19:28:42 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(143): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(144): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(145): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(146): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(147): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(154): Illegal concurrent statement.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(156): Illegal concurrent statement.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): (vcom-1136) Unknown identifier "iteratore".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): Illegal concurrent statement.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(158): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(221): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(233): near "when": (vcom-1576) expecting END.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(234): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(235): near "when": (vcom-1576) expecting END.
+# End time: 21:40:12 on Jul 05,2021, Elapsed time: 0:00:00
+# Errors: 16, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:28:48 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 
+# Start time: 21:41:52 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Loading package std_logic_textio
-# -- Compiling entity IRAM
-# -- Compiling architecture IRam_Bhe of IRAM
-# End time: 19:28:48 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(154): Illegal concurrent statement.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(156): Illegal concurrent statement.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): (vcom-1136) Unknown identifier "iteratore".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): Illegal concurrent statement.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(158): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(221): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(233): near "when": (vcom-1576) expecting END.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(234): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(235): near "when": (vcom-1576) expecting END.
+# End time: 21:41:52 on Jul 05,2021, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:28:53 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd 
+# Start time: 21:44:44 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
 # -- Loading package myTypes
-# -- Compiling entity DLX
-# -- Compiling architecture dlx_rtl of DLX
-# End time: 19:28:53 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(196): (vcom-1136) Unknown identifier "iteratore".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(196): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(197): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(216): near "process": (vcom-1576) expecting IF.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(220): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(231): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): near "when": (vcom-1576) expecting END.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(233): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(234): near "when": (vcom-1576) expecting END.
+# End time: 21:44:44 on Jul 05,2021, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:28:58 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd 
+# Start time: 21:45:21 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_dlx
-# -- Compiling architecture TEST of tb_dlx
-# -- Compiling configuration CFG_TB
-# -- Loading entity tb_dlx
-# -- Loading architecture TEST of tb_dlx
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
 # -- Loading package myTypes
-# -- Loading entity DLX
-# End time: 19:28:58 on Jun 14,2021, Elapsed time: 0:00:00
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(197): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(199): near "else": (vcom-1576) expecting ';'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(220): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(231): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): near "when": (vcom-1576) expecting END.
+# End time: 21:45:21 on Jul 05,2021, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 21:46:17 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(199): near "then": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(220): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(231): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): near "when": (vcom-1576) expecting END.
+# End time: 21:46:17 on Jul 05,2021, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 21:47:13 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(220): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(231): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): near "when": (vcom-1576) expecting END.
+# End time: 21:47:13 on Jul 05,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 21:48:21 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(231): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(233): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(235): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(237): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(239): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(241): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(243): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(245): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(247): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(249): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(251): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(253): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(255): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(257): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(259): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(261): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(263): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(265): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(267): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(272): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(273): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(275): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(276): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(278): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(279): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(281): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(282): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(284): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(286): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(288): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(290): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(292): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(294): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(296): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(298): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(300): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(301): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(303): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(304): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(306): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(308): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(310): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(312): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(314): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(316): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(318): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(320): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(322): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(324): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(326): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(328): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(330): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(332): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(334): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(336): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(338): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(340): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(342): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(148): Variable declaration 'iterator' not allowed in this region.
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(353): VHDL Compiler exiting
+# End time: 21:48:22 on Jul 05,2021, Elapsed time: 0:00:01
+# Errors: 59, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 21:51:17 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(148): Variable declaration 'iterator' not allowed in this region.
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(353): VHDL Compiler exiting
+# End time: 21:51:17 on Jul 05,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 21:52:16 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(179): near "variable": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(195): (vcom-1136) Unknown identifier "iterator".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(195): (vcom-1136) Unknown identifier "iterator".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(195): Bad right hand side (infix expression) in variable assignment.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(196): (vcom-1136) Unknown identifier "iterator".
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(196): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(353): VHDL Compiler exiting
+# End time: 21:52:16 on Jul 05,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 21:54:37 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# End time: 21:54:37 on Jul 05,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.tb_dlx(test)
-# vsim work.tb_dlx(test) 
-# Start time: 19:29:14 on Jun 14,2021
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(54): (vopt-1192) Array length is 10; aggregate length is 44.
-# ** Note: Vopt Compiler exiting
-# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 2.
-# Error loading design
-# End time: 19:29:15 on Jun 14,2021, Elapsed time: 0:00:01
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 21:54:42 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(180): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(180): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(180): Type error resolving infix expression "<" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(183): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(183): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(183): Type error resolving infix expression ">=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(186): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(186): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(186): Type error resolving infix expression "<" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(189): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(189): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(189): Type error resolving infix expression ">=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(192): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(192): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(192): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(195): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(195): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(195): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(199): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(199): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(199): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(202): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(202): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(202): Type error resolving infix expression "<=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(226): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(229): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(229): (vcom-1078) Identifier "signed" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
+#         ieee.std_logic_arith.SIGNED (type declaration)
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(229): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(233): near "when": (vcom-1576) expecting END.
+# End time: 21:54:42 on Jul 05,2021, Elapsed time: 0:00:00
+# Errors: 29, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 22:11:48 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(226): near "=": syntax error
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(233): near "when": (vcom-1576) expecting END.
+# End time: 22:11:48 on Jul 05,2021, Elapsed time: 0:00:00
 # Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:31:22 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package myTypes
-# End time: 19:31:22 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:31:24 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
+# Start time: 22:13:22 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
 # -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# End time: 19:31:25 on Jun 14,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(251): (vcom-1581) No feasible entries for infix operator '<'.
+# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(251): Type error resolving infix expression "<" as type std.STANDARD.BOOLEAN.
+# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(262): VHDL Compiler exiting
+# End time: 22:13:22 on Jul 05,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:31:28 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 
+# Start time: 22:14:42 on Jul 05,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Loading package std_logic_textio
-# -- Compiling entity IRAM
-# -- Compiling architecture IRam_Bhe of IRAM
-# End time: 19:31:28 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:31:29 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
 # -- Loading package myTypes
-# -- Compiling entity DLX
-# -- Compiling architecture dlx_rtl of DLX
-# End time: 19:31:30 on Jun 14,2021, Elapsed time: 0:00:01
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# -- Compiling configuration CFG_ALU_Architectural
+# -- Loading entity ALU
+# -- Loading architecture Architectural of ALU
+# End time: 22:14:42 on Jul 05,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:31:33 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_dlx
-# -- Compiling architecture TEST of tb_dlx
-# -- Compiling configuration CFG_TB
-# -- Loading entity tb_dlx
-# -- Loading architecture TEST of tb_dlx
-# -- Loading package myTypes
-# -- Loading entity DLX
-# End time: 19:31:33 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.tb_dlx(test)
-# vsim work.tb_dlx(test) 
-# Start time: 19:31:43 on Jun 14,2021
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.mytypes
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.tb_dlx(test)#1
-add wave *
-add wave *
-run 44ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: (vsim-7) Failed to open VHDL file "test.asm.mem" in r mode.
-# No such file or directory. (errno = ENOENT)
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Fatal: (vsim-7) Failed to open VHDL file "test.asm.mem" in r mode.
-# No such file or directory. (errno = ENOENT)
-#    Time: 0 ns  Iteration: 1  Process: /tb_dlx/U1/IRAM_I/FILL_MEM_P File: /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
-# Fatal error in Process FILL_MEM_P at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd line 45
-# 
-# HDL call sequence:
-# Stopped at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 45 Process FILL_MEM_P
-# 
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:34:17 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package myTypes
-# End time: 19:34:17 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:34:20 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# End time: 19:34:20 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:34:21 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package myTypes
-# -- Compiling entity DLX
-# -- Compiling architecture dlx_rtl of DLX
-# End time: 19:34:21 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:34:22 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_textio
-# -- Compiling entity IRAM
-# -- Compiling architecture IRam_Bhe of IRAM
-# End time: 19:34:22 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:34:24 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package myTypes
-# -- Compiling entity DLX
-# -- Compiling architecture dlx_rtl of DLX
-# End time: 19:34:24 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:34:27 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_dlx
-# -- Compiling architecture TEST of tb_dlx
-# -- Compiling configuration CFG_TB
-# -- Loading entity tb_dlx
-# -- Loading architecture TEST of tb_dlx
-# -- Loading package myTypes
-# -- Loading entity DLX
-# End time: 19:34:28 on Jun 14,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vsim work.tb_dlx(test)
-# End time: 19:34:42 on Jun 14,2021, Elapsed time: 0:02:59
-# Errors: 2, Warnings: 9
-# vsim work.tb_dlx(test) 
-# Start time: 19:34:42 on Jun 14,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.mytypes
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.tb_dlx(test)#1
-add wave *
-run 44 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 3  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 3  Instance: /tb_dlx/U1/CU_I
-# ** Fatal: (vsim-3341) Cannot open file "../asm_example/test.asm.mem"; it is already open.
-#    Time: 11 ns  Iteration: 0  Process: /tb_dlx/U1/IRAM_I/FILL_MEM_P File: /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
-# Fatal error in Process FILL_MEM_P at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd line 44
-# 
-# HDL call sequence:
-# Stopped at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 44 Process FILL_MEM_P
-# 
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:40:25 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package myTypes
-# End time: 19:40:25 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:40:26 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# End time: 19:40:26 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:40:28 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_textio
-# -- Compiling entity IRAM
-# -- Compiling architecture IRam_Bhe of IRAM
-# End time: 19:40:28 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:40:29 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package myTypes
-# -- Compiling entity DLX
-# -- Compiling architecture dlx_rtl of DLX
-# End time: 19:40:29 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:40:33 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_dlx
-# -- Compiling architecture TEST of tb_dlx
-# -- Compiling configuration CFG_TB
-# -- Loading entity tb_dlx
-# -- Loading architecture TEST of tb_dlx
-# -- Loading package myTypes
-# -- Loading entity DLX
-# End time: 19:40:33 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.tb_dlx(test)
-# End time: 19:40:54 on Jun 14,2021, Elapsed time: 0:06:12
-# Errors: 3, Warnings: 12
-# vsim work.tb_dlx(test) 
-# Start time: 19:40:54 on Jun 14,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.mytypes
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.tb_dlx(test)#1
-add wave *
-run 44 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Fatal: (vsim-3341) Cannot open file "../asm_example/test.asm.mem"; it is already open.
-#    Time: 11 ns  Iteration: 0  Process: /tb_dlx/U1/IRAM_I/FILL_MEM_P File: /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
-# Fatal error in Process FILL_MEM_P at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd line 44
-# 
-# HDL call sequence:
-# Stopped at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 44 Process FILL_MEM_P
-# 
-add wave *
-add wave *
-run 150 ns
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 44 Process FILL_MEM_P
-# 
-vsim work.tb_dlx(test)
-# End time: 19:43:03 on Jun 14,2021, Elapsed time: 0:02:09
-# Errors: 4, Warnings: 10
-# vsim work.tb_dlx(test) 
-# Start time: 19:43:03 on Jun 14,2021
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.mytypes
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.tb_dlx(test)#1
-add wave *
-run 150 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Fatal: (vsim-3341) Cannot open file "../asm_example/test.asm.mem"; it is already open.
-#    Time: 11 ns  Iteration: 0  Process: /tb_dlx/U1/IRAM_I/FILL_MEM_P File: /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
-# Fatal error in Process FILL_MEM_P at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd line 44
-# 
-# HDL call sequence:
-# Stopped at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 44 Process FILL_MEM_P
-# 
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:48:46 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package myTypes
-# End time: 19:48:46 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:48:47 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package myTypes
-# -- Compiling entity DLX
-# -- Compiling architecture dlx_rtl of DLX
-# End time: 19:48:47 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:48:49 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# End time: 19:48:49 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:48:51 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_textio
-# -- Compiling entity IRAM
-# -- Compiling architecture IRam_Bhe of IRAM
-# End time: 19:48:51 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:48:52 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package myTypes
-# -- Compiling entity DLX
-# -- Compiling architecture dlx_rtl of DLX
-# End time: 19:48:52 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 19:48:55 on Jun 14,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_dlx
-# -- Compiling architecture TEST of tb_dlx
-# -- Compiling configuration CFG_TB
-# -- Loading entity tb_dlx
-# -- Loading architecture TEST of tb_dlx
-# -- Loading package myTypes
-# -- Loading entity DLX
-# End time: 19:48:55 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.tb_dlx(test)
-# End time: 19:49:07 on Jun 14,2021, Elapsed time: 0:06:04
-# Errors: 3, Warnings: 10
-# vsim work.tb_dlx(test) 
-# Start time: 19:49:07 on Jun 14,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.mytypes
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.tb_dlx(test)#1
-add wave *
-run 150 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
-# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
-# End time: 19:53:14 on Jun 14,2021, Elapsed time: 0:04:07
-# Errors: 1, Warnings: 10

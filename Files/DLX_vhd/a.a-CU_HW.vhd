@@ -140,27 +140,18 @@ architecture dlx_cu_hw of dlx_cu is
   signal aluOpcode3: aluOp := NOP;
 
 
-  signal signed_unsigned_i: std_logic := 0; -- this signal is to said to the datapath if the operation is unsigned
-  signal signed_unsigned_1: std_logic := 0;  -- this signal is to said to the datapath if the operation is unsigned
-  signal signed_unsigned_2: std_logic := 0;  -- this signal is to said to the datapath if the operation is unsigned
-  signal signed_unsigned_3: std_logic := 0;  -- this signal is to said to the datapath if the operation is unsigned
-  signal jump: std_logic := 0;				--if the operation is a jump this is set to 1
-  variable iterator : integer := 0;
+  signal signed_unsigned_i: std_logic := '0'; -- this signal is to said to the datapath if the operation is unsigned
+  signal signed_unsigned_1: std_logic := '0';  -- this signal is to said to the datapath if the operation is unsigned
+  signal signed_unsigned_2: std_logic := '0';  -- this signal is to said to the datapath if the operation is unsigned
+  signal signed_unsigned_3: std_logic := '0';  -- this signal is to said to the datapath if the operation is unsigned
+  signal jump: std_logic := '0';				--if the operation is a jump this is set to 1
+  
 begin  -- dlx_cu_rtl
 
   IR_opcode(5 downto 0) <= IR_IN(31 downto 26);
   IR_func(10 downto 0)  <= IR_IN(FUNC_SIZE - 1 downto 0);
 	
-	if jump = '1' then 
-		cw <=cw_mem(6);
-		iterator := iterator+1;
-		if iteratore = 3 then
-			jump = '0'
-		end if
-	else 
 	cw <= cw_mem(conv_integer(IR_opcode));
-	end if;
-
   -- stage one control signals
   IR_LATCH_EN  <= cw1(CW_SIZE - 1);
   NPC_LATCH_EN <= cw1(CW_SIZE - 2);
@@ -185,9 +176,10 @@ begin  -- dlx_cu_rtl
   -- stage five control signals
   WB_MUX_SEL <= cw5(CW_SIZE - 14);
   RF_WE      <= cw5(CW_SIZE - 15);
-
+ 
   -- process to pipeline control words
   CW_PIPE: process (Clk, Rst)
+   variable iterator : integer := 0;
   begin  -- process Clk
     if Rst = '0' then                   -- asynchronous reset (active low)
       cw1 <= (others => '0');
@@ -199,8 +191,16 @@ begin  -- dlx_cu_rtl
       aluOpcode2 <= NOP;
       aluOpcode3 <= NOP;
     elsif Clk'event and Clk = '1' then  -- rising clock edge
-      cw1 <= cw;
-      cw2 <= cw1(CW_SIZE - 1 - 2 downto 0);
+      if jump = '1' then 
+		cw <=cw_mem(6);
+		iterator := iterator+1;
+		if iterator = 3 then
+			jump <= '0';
+		end if;
+	  else 
+	    cw1 <= cw;
+	  end if;  
+	  cw2 <= cw1(CW_SIZE - 1 - 2 downto 0);
       cw3 <= cw2(CW_SIZE - 1 - 5 downto 0);
       cw4 <= cw3(CW_SIZE - 1 - 9 downto 0);
       cw5 <= cw4(CW_SIZE -1 - 13 downto 0);
@@ -218,10 +218,10 @@ begin  -- dlx_cu_rtl
 
   ALU_OPCODE <= aluOpcode3;
 
-  purpose: Generation of ALU OpCode
-  type   : combinational
-  inputs : IR_i
-  outputs: aluOpcode
+ -- purpose: Generation of ALU_OpCode
+  --type   : combinational
+  --inputs : IR_i
+  --outputs: aluOpcode
    ALU_OP_CODE_P : process (IR_opcode, IR_func)
    begin  -- process ALU_OP_CODE_P
 	case conv_integer(unsigned(IR_opcode)) is
@@ -229,118 +229,118 @@ begin  -- dlx_cu_rtl
 		when 0 =>
 			case conv_integer(unsigned(IR_func)) is
 				when 4 => aluOpcode_i <= LLS; -- sll according to instruction set coding
-							signed_unsigned_i<=1;
+							signed_unsigned_i<='1';
 				when 6 => aluOpcode_i <= LRS; -- srl
-							signed_unsigned_i<=1;
+							signed_unsigned_i<='1';
 				when 7 => aluOpcode_i <= SRA1; -- SRA
-							signed_unsigned_i<=0;
+							signed_unsigned_i<='0';
 				when 32 => aluOpcode_i <= ADD; -- ADD
-							signed_unsigned_i<=0;
+							signed_unsigned_i<='0';
 				when 33 => aluOpcode_i <= ADDU; -- ADDU
-							signed_unsigned_i<=1;
+							signed_unsigned_i<='1';
 				when 34 => aluOpcode_i <= SUB; -- SUB
-							signed_unsigned_i<=0;
+							signed_unsigned_i<='0';
 				when 35 => aluOpcode_i <= SUBU; -- SUBU
-							signed_unsigned_i<=1;
+							signed_unsigned_i<='1';
 				when 36 => aluOpcode_i <= ANDR; -- AND
-							signed_unsigned_i<=1;
+							signed_unsigned_i<='1';
 				when 37 => aluOpcode_i <= ORR; -- OR
-							signed_unsigned_i<=1;
+							signed_unsigned_i<='1';
 				when 38 => aluOpcode_i <= XORR; -- XOR
-							signed_unsigned_i<=1;
+							signed_unsigned_i<='1';
 				when 40 => aluOpcode_i <= SEQ; -- SEQ
-							signed_unsigned_i<=0;
+							signed_unsigned_i<='0';
 				when 41 => aluOpcode_i <= SNE; -- SNE
-							signed_unsigned_i<=0;
+							signed_unsigned_i<='0';
 				when 42 => aluOpcode_i <= SLT; -- SLT
-							signed_unsigned_i<=0;
+							signed_unsigned_i<='0';
 				when 43 => aluOpcode_i <= SGT; -- SGT
-							signed_unsigned_i<=0;
+							signed_unsigned_i<='0';
 				when 44 => aluOpcode_i <= SLE; -- SLE
-							signed_unsigned_i<=0;
+							signed_unsigned_i<='0';
 				when 45 => aluOpcode_i <= SGE; -- SGE
-							signed_unsigned_i<=0;
+							signed_unsigned_i<='0';
 				when 58 => aluOpcode_i <= SLTU; -- SLTU
-							signed_unsigned_i<=1;
+							signed_unsigned_i<='1';
 				when 59 => aluOpcode_i <= SGTU; -- SGTU
-							signed_unsigned_i<=1;
+							signed_unsigned_i<='1';
 				when 61 => aluOpcode_i <= SGEU; -- SGEU
-							signed_unsigned_i<=1;
+							signed_unsigned_i<='1';
 				-- to be continued and filled with all the other instructions  
 				when others => aluOpcode_i <= NOP;
 			end case;
 		when 2 => aluOpcode_i <= NOP; -- j
-				jump <=1;
-				signed_unsigned_i<=0;
+				jump <='1';
+				signed_unsigned_i<='0';
 		when 3 => aluOpcode_i <= NOP; -- jal
-				jump <=1;
-				signed_unsigned_i<=0;
+				jump <='1';
+				signed_unsigned_i<='0';
 		when 4 => aluOpcode_i <= BEQZ; --beqz
-				jump <=1;
-				signed_unsigned_i<=0;
+				jump <='1';
+				signed_unsigned_i<='0';
 		when 5 => aluOpcode_i <= BNEZ; --BNEZ
-				jump <=1;
-				signed_unsigned_i<=0;
+				jump <='1';
+				signed_unsigned_i<='0';
 		when 8 => aluOpcode_i <= ADDS; -- addi
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 9 => aluOpcode_i <= ADDUI; -- addUi
-				signed_unsigned_i<=1;
+				signed_unsigned_i<='1';
 		when 10 => aluOpcode_i <= SUBI; --SUBI
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 11 => aluOpcode_i <= SUBUI; --SUBUI
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 12 => aluOpcode_i <= ANDI; --ANDI
-				signed_unsigned_i<=1;
+				signed_unsigned_i<='1';
 		when 13 => aluOpcode_i <= ORI; --ORI
-				signed_unsigned_i<=1;
+				signed_unsigned_i<='1';
 		when 14 => aluOpcode_i <= XORI; --XORI
-				signed_unsigned_i<=1;
+				signed_unsigned_i<='1';
 		when 15 => aluOpcode_i <= NOP; --LHI , LHI carica solo un valore nel registro non deve essere eseguita alcuna operazione
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 18 => aluOpcode_i <= NOP; --jr
-				jump <=1;
-				signed_unsigned_i<=1;
+				jump <='1';
+				signed_unsigned_i<='1';
 		when 19 => aluOpcode_i <= NOP; --JALR
-				jump <=1;
-				signed_unsigned_i<=0;
+				jump <='1';
+				signed_unsigned_i<='0';
 		when 20 => aluOpcode_i <= SLLI; --SLLI
-				signed_unsigned_i<=1;
+				signed_unsigned_i<='1';
 		when 21 => aluOpcode_i <= NOP; --NOP
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 22 => aluOpcode_i <= SRLI; --SRLI
-				signed_unsigned_i<=1;
+				signed_unsigned_i<='1';
 		when 23 => aluOpcode_i <= SRAI; --SRAI
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 24 => aluOpcode_i <= SEQI; --SEQI
-				signed_unsigned_i<=0;		
+				signed_unsigned_i<='0';		
 		when 25 => aluOpcode_i <= SNEI; --SNEI
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 26 => aluOpcode_i <= SLTI; --SLTI
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 27 => aluOpcode_i <= SGTI; --SGTI
-				signed_unsigned_i<=0;		
+				signed_unsigned_i<='0';		
 		when 28 => aluOpcode_i <= SLEI; --SLEI
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 29 => aluOpcode_i <= SGEI; --SGEI
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 32 => aluOpcode_i <= LB; --LB
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 35 => aluOpcode_i <= LW; --LW
-				signed_unsigned_i<=1;
+				signed_unsigned_i<='1';
 		when 36 => aluOpcode_i <= LBU; --LBU
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 37 => aluOpcode_i <= LHU; --LHU
-				signed_unsigned_i<=0;
+				signed_unsigned_i<='0';
 		when 40 => aluOpcode_i <= SB; --SB
-				signed_unsigned_i<=0;		
+				signed_unsigned_i<='0';		
 		when 43 => aluOpcode_i <= SW; --SW
-				signed_unsigned_i<=1;
+				signed_unsigned_i<='1';
 		when 58 => aluOpcode_i <= SLTUI; --SLTUI
-				signed_unsigned_i<=1;
+				signed_unsigned_i<='1';
 		when 59 => aluOpcode_i <= SGTUI; --SGTUI
-				signed_unsigned_i<=1;
+				signed_unsigned_i<='1';
 		when 61 => aluOpcode_i <= SGEUI; --SGEUI
-				signed_unsigned_i<=1;
+				signed_unsigned_i<='1';
 		-- to be continued and filled with other cases
 		when others => aluOpcode_i <= NOP;
 	 end case;
