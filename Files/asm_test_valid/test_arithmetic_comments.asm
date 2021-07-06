@@ -1,3 +1,4 @@
+l1: 
 addi r1,r0,#2	# r1 = 2
 subi r2,r1,#1	# r2 = 1
 addi r3,r1,#-4	# r3 = -2
@@ -6,7 +7,9 @@ addui r5,r1,#4	# r5 = 6
 subui r6,r5,#3	# r6 = 3
 add r7,r1,r2	# r7 = 3
 sub r8,r5,r6	# r8 = 3
-addu r9,r6,r1	# r9 = 5
+addu r9,r6,r1	# r9 = 5 
+subu r9,r6,#1   # r9 = 4
+addu r9,r6,#1   # r9 = 5
 sge r10,r1,r2	# r10= 1
 sge r10,r2,r1	# r10= 0
 sge r10,r1,r1	# r10= 1
@@ -47,16 +50,20 @@ sltui r10,r1,#1	# r10= 0
 sltui r10,r1,#3	# r10= 1
 addui r11,r0,#65535	# r11= 65535
 lhi r12,#65535
-or r13,r11,r12
-ori r14,r12,#65535
-and r15,r14,r2
-andi r16,r14,#1
+or r13,r11,r12        # r13= 65535
+ori r14,r12,#65535    # r14= 65535
+and r15,r14,r2        # r15= 65535
+andi r16,r14,#1       # r16= 1
 sll r17,r16,r2
 slli r18,r16,#1
 srl r19,r16,r2
 srli r20,r16,#1
 sra r21,r12,r2
 srai r22,r12,#1
-mult r23,r1,r5
 xor r24,r1,r1
-xori r25,r1,#2
+xori r25,r1,#2   
+nop 
+j l1            
+
+
+#in this file we test all the instruction that we implement
