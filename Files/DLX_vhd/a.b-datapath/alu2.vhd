@@ -160,7 +160,7 @@ P_ALU: process (FUNC, DATA1, DATA2)
 					SHIFT_ROTATE_i <='1';
 					OUTALU<= output1;
      
-                                                                                 
+    ---------------------------------------------------------------------- logic                                                                              
 	when ANDR => gen_and: for i in 0 to N-1 loop
 								OUTALU(i) <= DATA1(i) and DATA2(i); 	-- and op
 						 end loop;  
