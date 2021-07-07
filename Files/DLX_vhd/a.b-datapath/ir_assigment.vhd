@@ -22,6 +22,7 @@ end IR_DECODE;
 
 architecture BEHAV of IR_DECODE is
 --signals
+ signal IMMEDIATE_5: std_logic_vector(NBIT-1 downto 0);
  signal IMMEDIATE_16: std_logic_vector(NBIT-1 downto 0);
  signal IMMEDIATE_26: std_logic_vector(NBIT-1 downto 0);
 --constants
@@ -41,6 +42,9 @@ architecture BEHAV of IR_DECODE is
 --process
 begin
 		
+	SIGN_EXTENSION_imm5: sign_eval
+	generic map (16, NBIT)
+	port map (IR_26(15 downto 11), is_signed, IMMEDIATE_5);
 
 	SIGN_EXTENSION_imm16: sign_eval
 	generic map (16, NBIT)
@@ -51,16 +55,15 @@ begin
 	generic map (NBIT-opBIT, NBIT)
 	port map (IR_26, '1', IMMEDIATE_26);
 	--j,jal (signed imm)
-	--JR, JALR SONO DI CHE TIPO?
+	--JR, JALR SONO DI TIPO I_TYPE 
 
-	dec_IR : process(IR_26,is_signed)
+	dec_IR : process(OPCODE)
 	begin
 	if (OPCODE = rTYPE)  then   
 			RS1  <= IR_26(25 downto 21);
 			RS2  <= IR_26(20 downto 16);
 			RD   <= IR_26(15 downto 11);
-			IMMEDIATE <= (others => '0'); --func
-			--nop??
+			IMMEDIATE <= IR_26(15 downto 11); --func
 			
 
 	elsif (OPCODE = jTYPE)  then 

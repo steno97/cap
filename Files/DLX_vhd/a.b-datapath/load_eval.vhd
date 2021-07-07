@@ -1,0 +1,34 @@
+library IEEE;
+use IEEE.std_logic_1164.all; 
+use work.myTypes.all;
+use IEEE.numeric_std.all;
+
+entity load_data is
+	port (
+	  data_in: in std_logic_vector(31 downto 0);
+      signed_val: in std_logic; 
+      load_type: in std_logic_vector(1 downto 0); --load byte, halfword, word (3 valori=2 bit)
+      data_out: out std_logic_vector (31 downto 0));	
+end load_data;
+
+architecture bhv_load of load_data is
+begin
+	load_id: process(signed_val, load_type)
+	begin
+if load_type = "01" then --word
+	data_out<= data_in;
+elsif load_type= "10" then --halfword (lh e lhu)
+ 	data_out(15 downto 0)<= data_in(15 downto 0);
+ 	if signed_val='0' then data_out(31 downto 16)<= (others=>'0');
+	else data_out(31 downto 16)<= (others=>data_in(31));
+	end if;
+elsif load_type= "11" then --byte (lb e lbu)
+ data_out(7 downto 0)<= data_in(7 downto 0);
+    if signed_val='0' then data_out(31 downto 8)<= (others=>'0');
+	else data_out(31 downto 8)<= (others=>data_in(31));
+	end if;
+
+else data_out<= (others=>'0');
+end if;
+		end process;
+end architecture;

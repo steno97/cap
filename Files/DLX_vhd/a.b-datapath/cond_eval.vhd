@@ -17,7 +17,7 @@ architecture BHV of COND_BT is
 	--beqz(0x4=000100), regA=0 (cioè ZERO_BIT=1)--> branch taken
 	--bnez(0x5=000101), regA!=0 (ZERO_BIT=0) --> branch taken
 begin	
-	dec_cond: process (branch_op, OPCODE_0, ZERO_BIT)
+	dec_cond: process (branch_op)
 	begin
 	if (branch_op='1') then 
 			con_sign <= (OPCODE_0 xor ZERO_BIT);
