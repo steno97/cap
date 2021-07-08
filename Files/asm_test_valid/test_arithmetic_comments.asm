@@ -49,13 +49,13 @@ sgtui r10,r1,#1	# r10= 1
 sltui r10,r1,#1	# r10= 0
 sltui r10,r1,#3	# r10= 1
 addui r11,r0,#65535	# r11= 65535
-lhi r12,#65535
+lhi r12,#65535        # r12= 65535
 or r13,r11,r12        # r13= 65535
 ori r14,r12,#65535    # r14= 65535
 and r15,r14,r2        # r15= 65535
 andi r16,r14,#1       # r16= 1
-sll r17,r16,r2
-slli r18,r16,#1
+sll r17,r16,r2        # r17=? r16=1 ,r2=1
+slli r18,r16,#1       #r18=?,r16=1
 srl r19,r16,r2
 srli r20,r16,#1
 sra r21,r12,r2
@@ -66,4 +66,5 @@ nop
 j l1            
 
 
-#in this file we test all the instruction that we implement
+#in this file we test all the instruction that we implement          
+#branch and memory instructions are in other files
