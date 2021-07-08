@@ -10,6 +10,7 @@ package myTypes is
 			);--SRA1,SRAI
 	constant MEM_SIZE : integer := 62; 
 	constant OP_CODE_SIZE : integer :=  6;                                              -- OPCODE field size
+<<<<<<< HEAD
     	constant FUNC_SIZE    : integer :=  11;                                             -- FUNC field size
 	constant numBit : integer :=  32;
 	constant Numreg : integer := 32; 
@@ -21,6 +22,13 @@ package myTypes is
 	constant virt_addr: integer := integer(ceil(log2(real(RF_WIDTH)))); --log2(N*3+M) virtual address lenght
  	constant phy_lenght: integer := num_global_regs+2*num_local_inout_regs*num_windows; --physical RF lenght= M+2*N*F
 	constant phy_addr: integer:= integer(ceil(log2(real(phy_lenght)))); --physical address lenght= log2(M+2*N*F)
+=======
+    constant FUNC_SIZE    : integer :=  11;                                             -- FUNC field size
+	constant numBit : integer :=  32; 
+	constant REG_SIZE : integer :=  5;
+	
+ 
+>>>>>>> 7040e43e46b94271da3165d3487217dcc4d57bb9
 end myTypes;
 
 
