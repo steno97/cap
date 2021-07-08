@@ -1,12 +1,11 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-use WORK.all;
-use work.constants.all;
+use work.myTypes.all;
 
---M= #GLOBAL_REGS=8
---N= #LOCAL/IN/OUT_REGS=8
---F= #WINDOWS=2 better for testing cases
+--M= #GLOBAL_REGS=5
+--N= #LOCAL/IN/OUT_REGS=3
+--F= #WINDOWS=3
 entity windRF is
  generic(
 		M:	integer:=num_global_regs;
@@ -154,12 +153,17 @@ begin
 			--RF part equal to RF of exercise 1
 			if wr='1' then
 				registers(to_integer(unsigned(conv_addr(add_wr,CWP))))<=datain;
+				--bypass
+				if ((add_wr=add_rd1) and (rd1='1')) then 
+					out1<=datain;
+				end if;
+				if ((add_wr=add_rd2) and (rd2='1')) then 
+					out2<=datain;
+				end if;
 			end if;
-
 			if rd1='1' then
 				out1<=registers(to_integer(unsigned(conv_addr(add_rd1,CWP))));
 			end if;
-
 			if rd2='1' then
 				out2<=registers(to_integer(unsigned(conv_addr(add_rd2,CWP))));
 			end if;

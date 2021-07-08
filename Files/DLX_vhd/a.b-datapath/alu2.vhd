@@ -42,17 +42,12 @@ generic (
 end component;
 
 
---component BOOTHMUL
---GENERIC ( NBIT_A : integer := NumBit_A;
-				-- NBIT_B : integer := NumBit_B;
-				-- NBIT_P : integer := NumBit_P
-				--);
-	
---	PORT ( A 	: IN  std_logic_vector ( NBIT_A-1 downto 0);
-	--       B		: IN  std_logic_vector ( NBIT_B-1 downto 0);
-		--	 P    : OUT std_logic_vector ( NBIT_P-1 downto 0)
-		  -- )
---end component;
+component comparator
+Port (	DATA1:	In	std_logic_vector(numBit-1 downto 0);
+		DATA2i:	In	std_logic;
+		tipo :In aluOp;
+		Y:	Out	std_logic_vector(numBit-1 downto 0));
+end component;
 
 signal Cin_i : std_logic;
 signal LOGIC_ARITH_i : std_logic;
@@ -61,8 +56,17 @@ signal SHIFT_ROTATE_i : std_logic;
 signal OUTPUT1: std_logic_vector(N-1 downto 0);
 signal OUTPUT2: std_logic_vector(N-1 downto 0);
 signal data2i: std_logic_vector(N-1 downto 0);
+signal OUTPUT3: std_logic_vector(N-1 downto 0);
+signal Cout_i :  std_logic;
 begin
-
+  
+  comp: comparator
+    port map (
+		data1 => output2,
+		data21 => Cout_i;
+		tipo => func;
+		Y => output3);
+    
   shifter:  SHIFTER_GENERIC
 	port map(
 		A 			=> 			DATA1,
@@ -78,7 +82,7 @@ begin
 		B 		=> DATA2i,
 		Cin 	=> Cin_i   , -- da inserire 0
 		S 		=> OUTPUT2   ,  --da inserire 0
-		Cout =>	open); --we mantain the Cout signal for future implementation of the DLX with status flags
+		Cout =>	Cout_i); -- open se non funge --we mantain the Cout signal for future implementation of the DLX with status flags
 
 ----da fare tutto il process
 P_ALU: process (FUNC, DATA1, DATA2)
@@ -114,16 +118,16 @@ P_ALU: process (FUNC, DATA1, DATA2)
 	
 			
     --ricordarsi di gestire l"unsigned          
-    when SUBI | SUBUI	=> 	Cin_i<='0';
+    when SUBI | SUBUI	=> 	Cin_i<='1';
 					OUTALU<= output2;
-					data2i<=not(data2)+"00000000000000000000000000000001";
+					data2i<=not(data2);
 
 	    --ricordarsi di gestire l"unsigned
     when ADD | ADDU	=> 	Cin_i<='0';
 					OUTALU<= output2;
-    when SUB | SUBU	=> 	Cin_i<='0';
+    when SUB | SUBU	=> 	Cin_i<='1';
 					OUTALU<= output2;
-					data2i<= not(data2)+"00000000000000000000000000000001";
+					data2i<= not(data2);
 	    --ricordarsi di gestire l"unsigned
       
     when sra1 => 	LOGIC_ARITH_i <='0'; --da inserire il segnale -- 1 = logic, '0' = arith
@@ -156,7 +160,7 @@ P_ALU: process (FUNC, DATA1, DATA2)
 					SHIFT_ROTATE_i <='1';
 					OUTALU<= output1;
      
-                                                                                 
+    ---------------------------------------------------------------------- logic                                                                              
 	when ANDR => gen_and: for i in 0 to N-1 loop
 								OUTALU(i) <= DATA1(i) and DATA2(i); 	-- and op
 						 end loop;  
@@ -177,31 +181,7 @@ P_ALU: process (FUNC, DATA1, DATA2)
 						 end loop; 
 						 
 	
-	when SGE| SGEI =>    if (signed(data1) < signed(data2)) then
-					OUTALU<="00000000000000000000000000000000";----slei
-				end if;
-				 if (signed(data1) >= signed(data2)) then
-					OUTALU<="00000000000000000000000000000001";----slei
-				end if;
-	when  SGEUI |SGEU =>    if (unsigned(data1) < unsigned(data2)) then
-					OUTALU<="00000000000000000000000000000000";----slei
-				end if;
-				 if (unsigned(data1) >= unsigned(data2)) then
-					OUTALU<="00000000000000000000000000000001";----slei
-				end if;
-	when SNE | SNEI => if (signed(data1) /= signed(data2)) then
-					OUTALU<="00000000000000000000000000000001";----snei
-				end if;
-				 if (signed(data1) = signed(data2)) then
-					OUTALU<="00000000000000000000000000000000";----snei
-				end if;
-				
-	when SLE | SLEI =>      if (signed(data1) > signed(data2)) then
-					OUTALU<="00000000000000000000000000000000";----slei
-				end if;
-				 if (signed(data1) <= signed(data2)) then
-					OUTALU<="00000000000000000000000000000001";----slei
-				end if;
+
 	
 	
 	---------------------------- load and store 
@@ -221,40 +201,69 @@ P_ALU: process (FUNC, DATA1, DATA2)
 				OUTALU<= output2;
 	
 	------------------------------  load and store
+	when SEQ | SEQI | SLT | SLTI | SLTU |SLTUI | SGT | SGTI | SGTUI |SGTUSGE | SGEI | SGEUI |SGEU |
+			 SNE | SNEI | SLE | SLEI => Cin_i<='1';
+										data2i<= not(data2);
+										OUTALU <= output3;
+							
 	
+--	when SEQ | SEQI =>  if (signed(data1) = signed(data2)) then
+--					OUTALU<="00000000000000000000000000000001";----SEQ | SEQI
+--				end if;
+--				 if (signed(data1) /= signed(data2)) then
+--					OUTALU<="00000000000000000000000000000000";----SEQ | SEQI
+--				end if;
 	
-	when SEQ | SEQI =>  if (signed(data1) = signed(data2)) then
-					OUTALU<="00000000000000000000000000000001";----SEQ | SEQI
-				end if;
-				 if (signed(data1) /= signed(data2)) then
-					OUTALU<="00000000000000000000000000000000";----SEQ | SEQI
-				end if;
-	
-	when SLT | SLTI  => if (signed(data1) >= signed(data2)) then
-					OUTALU<="00000000000000000000000000000000";----slei
-				end if;
-				 if (signed(data1) < signed(data2)) then
-					OUTALU<="00000000000000000000000000000001";----slei
-				end if;
-	when SLTU |SLTUI =>      if (unsigned(data1) >= unsigned(data2)) then
-					OUTALU<="00000000000000000000000000000000";----slei
-				end if;
-				 if (unsigned(data1) < unsigned(data2)) then
-					OUTALU<="00000000000000000000000000000001";----slei
-				end if;
-	when SGT | SGTI  =>    if (signed(data1) < signed(data2)) then
-					OUTALU<="00000000000000000000000000000000";----slei
-				end if;
-				 if (signed(data1) > signed(data2)) then
-					OUTALU<="00000000000000000000000000000001";----slei
-				end if;
-	 when SGTUI |SGTU => if (unsigned(data1) < unsigned(data2)) then
-					OUTALU<="00000000000000000000000000000000";----slei
-				end if;
-				 if (unsigned(data1) > unsigned(data2)) then
-					OUTALU<="00000000000000000000000000000001";----slei
-				end if;
+--	when SLT | SLTI  => if (signed(data1) >= signed(data2)) then
+--					OUTALU<="00000000000000000000000000000000";----slei
+--				end if;
+--				 if (signed(data1) < signed(data2)) then
+--					OUTALU<="00000000000000000000000000000001";----slei
+--				end if;
+--	when SLTU |SLTUI =>      if (unsigned(data1) >= unsigned(data2)) then
+					
+					--OUTALU<="00000000000000000000000000000000";----slei
+				--end if;
+				 --if (unsigned(data1) < unsigned(data2)) then
+					--OUTALU<="00000000000000000000000000000001";----slei
+				--end if;
+	--when SGT | SGTI  =>    if (signed(data1) < signed(data2)) then
+					--OUTALU<="00000000000000000000000000000000";----slei
+				--end if;
+				 --if (signed(data1) > signed(data2)) then
+					--OUTALU<="00000000000000000000000000000001";----slei
+				--end if;
+	 --when SGTUI |SGTU => if (unsigned(data1) < unsigned(data2)) then
+					--OUTALU<="00000000000000000000000000000000";----slei
+				--end if;
+				 --if (unsigned(data1) > unsigned(data2)) then
+					--OUTALU<="00000000000000000000000000000001";----slei
+				--end if;
+		--when SGE| SGEI =>    if (signed(data1) < signed(data2)) then
+					--OUTALU<="00000000000000000000000000000000";----slei
+				--end if;
+				 --if (signed(data1) >= signed(data2)) then
+					--OUTALU<="00000000000000000000000000000001";----slei
+				--end if;
+	--when  SGEUI |SGEU =>    if (unsigned(data1) < unsigned(data2)) then
+					--OUTALU<="00000000000000000000000000000000";----slei
+				--end if;
+				 --if (unsigned(data1) >= unsigned(data2)) then
+					--OUTALU<="00000000000000000000000000000001";----slei
+				--end if;
+	--when SNE | SNEI => if (signed(data1) /= signed(data2)) then
+					--OUTALU<="00000000000000000000000000000001";----snei
+				--end if;
+				 --if (signed(data1) = signed(data2)) then
+					--OUTALU<="00000000000000000000000000000000";----snei
+				--end if;
 				
+	--when SLE | SLEI =>      if (signed(data1) > signed(data2)) then
+					--OUTALU<="00000000000000000000000000000000";----slei
+				--end if;
+				 --if (signed(data1) <= signed(data2)) then
+					--OUTALU<="00000000000000000000000000000001";----slei
+				--end if;
 	when others => null;
     end case; 
   end process P_ALU;

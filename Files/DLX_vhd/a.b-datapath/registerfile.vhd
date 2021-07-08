@@ -29,20 +29,28 @@ begin
 	process (CLK)
 	begin
 		if CLK'event and CLK='1' then --and enable='1' then
-		if enable='1' then
+		if reset='1' then
+			registers<=(OTHERS=> (others=>'0'));	
+		else --if CLK'event and CLK='1' and reset='1' then
+        if enable='1' then
 			if wr='1' then
-					registers(to_integer(unsigned(add_wr)))<=datain;
+				registers(to_integer(unsigned(add_wr)))<=datain;
+				--bypass
+				if ((add_wr=add_rd1) and (rd1='1')) then 
+					out1<=datain;
+				end if;
+				if ((add_wr=add_rd2) and (rd2='1')) then 
+					out2<=datain;
+				end if;
 			end if;
 			if rd1='1' then
-					out1<=registers(to_integer(unsigned(add_rd1)));
+				out1<=registers(to_integer(unsigned(add_rd1)));
 			end if;
 			if rd2='1' then
-					out2<=registers(to_integer(unsigned(add_rd2)));
+				out2<=registers(to_integer(unsigned(add_rd2)));
 			end if;
+
 		end if;
-		--if CLK'event and CLK='1' and reset='1' then
-		if reset='1' then
-					registers<=(OTHERS=> (others=>'0'));	
 		end if;
 		end if;
 	end process;

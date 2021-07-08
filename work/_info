@@ -13,7 +13,7 @@ Z1 eregFFD
 aASYNCHBEHAV
 DAx4 work 6 regffd 11 asynchbehav 22 ^;M3Wc32:`[>8:CER9?bm1
 Z2 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
-Z3 DPx4 work 7 mytypes 0 22 X8kc=F7Xeha6FjSlGl>Rz3
+Z3 DPx4 work 7 mytypes 0 22 [FYBEfbN6XjWCF_zO1U_60
 Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
@@ -28,9 +28,9 @@ V1l<_:RENoMVIl^1Y1XZ4C3
 !s100 H:VNHNC7:N;[d36mThZeA3
 Z11 OL;C;10.7c;67
 32
-Z12 !s110 1625683689
+Z12 !s110 1625710694
 !i10b 0
-Z13 !s108 1625683689.000000
+Z13 !s108 1625710694.000000
 Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/reg.vhd|
 Z15 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/reg.vhd|
 !i113 0
@@ -81,11 +81,11 @@ V6g@Y2COg3m;WO6YQjX?Ad1
 !s100 zL>0eFoX5Pl;o4D6K4G5Z0
 R11
 32
-R12
+Z22 !s110 1625710693
 !i10b 0
-Z22 !s108 1625683688.000000
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/FFD.vhd|
-Z24 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/FFD.vhd|
+Z23 !s108 1625710693.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/FFD.vhd|
+Z25 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/FFD.vhd|
 !i113 0
 R16
 R17
@@ -106,11 +106,11 @@ V8MH@<Q:hbfRMUA]6Tl^ah3
 !s100 cJCN]?7PSK3VVfSGjJ6VM1
 R11
 32
-R12
-!i10b 0
 R22
+!i10b 0
 R23
 R24
+R25
 !i113 0
 R16
 R17
@@ -122,20 +122,20 @@ R2
 R3
 R5
 R6
-Z25 DEx4 work 2 iv 0 22 VCh@XFWfdTDFaSIo7K1:60
-Z26 w1625239658
+Z26 DEx4 work 2 iv 0 22 VCh@XFWfdTDFaSIo7K1:60
+Z27 w1625239658
 R0
-Z27 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd
-Z28 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd
+Z28 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd
+Z29 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd
 l0
 L19
 VOkMC0Gi@?=JOCNFVbC?PO3
 !s100 J^D:lcUfc_6VD4AD?iJiU2
 R11
 32
-Z29 !s110 1625683688
-!i10b 0
 R22
+!i10b 0
+R23
 Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd|
 Z31 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd|
 !i113 0
@@ -286,7 +286,7 @@ Ccfg_mux21_structural
 R32
 aSTRUCTURAL
 Z47 DEx4 work 3 nd2 0 22 k^1?@I1miC`QkW6[n?aKG1
-R25
+R26
 DCx4 work 13 cfg_nd2_arch2 0 22 oO<C<;6RF2Z[TNZoDz]MH0
 DCx4 work 17 cfg_iv_behavioral 0 22 OkMC0Gi@?=JOCNFVbC?PO3
 DAx4 work 5 mux21 10 structural 22 o07AW=m?bzJ7oa7nPfcWc0
@@ -332,9 +332,9 @@ VoQN?=b6kIAl@b7;:TRC]?0
 !s100 E@8<=L1e;1WRQ?F]TON?43
 R11
 32
-R29
-!i10b 0
 R22
+!i10b 0
+R23
 Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/nd2.vhd|
 Z52 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/nd2.vhd|
 !i113 0
@@ -359,9 +359,9 @@ VoO<C<;6RF2Z[TNZoDz]MH0
 !s100 dQYng`K0YXdSKRjaAazG[0
 R11
 32
-R29
-!i10b 0
 R22
+!i10b 0
+R23
 R51
 R52
 !i113 0
@@ -370,7 +370,7 @@ R17
 Ccfg_rf_beh
 eregister_file
 aA
-DAx4 work 13 register_file 1 a 22 TnUOh:V>YgVP<PW0X0HmP0
+DAx4 work 13 register_file 1 a 22 T0m=VA@dHCU^^SJV49B@>1
 R2
 R3
 Z53 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
@@ -379,14 +379,14 @@ R40
 R5
 R6
 Z54 DEx4 work 13 register_file 0 22 ?HU>Qz:DB9=AIQ=?6XMzA3
-Z55 w1625242802
+Z55 w1625709452
 R0
 Z56 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/registerfile.vhd
 Z57 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/registerfile.vhd
 l0
-L54
-Vj3kB2?7KP5I>lg2:K>bnY3
-!s100 30M3]Hl=lRBVzj2[MNNg10
+L62
+V[BHd@g7?Nl29h35CocloD3
+!s100 eWF?39[EPPonS^]fTE2f]2
 R11
 32
 R12
@@ -397,27 +397,55 @@ Z59 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/registerfile.vhd|
 !i113 0
 R16
 R17
+Ccfg_windrf_bhv
+ewindRF
+abhv
+DAx4 work 6 windrf 3 bhv 22 A@e_F7A]Gn4W8UTLemEFg3
+R2
+R3
+R53
+R5
+R6
+Z60 DEx4 work 6 windrf 0 22 PCA5_R@CR6zi=ao6=nF<;2
+Z61 w1625710456
+R0
+Z62 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd
+Z63 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd
+l0
+L189
+V?9^oR85V:0U76Kgn>3a3S0
+!s100 Xd5fGaP<9ERBObWld2U6K2
+R11
+32
+Z64 !s110 1625710695
+!i10b 0
+R13
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd|
+Z66 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd|
+!i113 0
+R16
+R17
 Econd_bt
-Z60 w1625595284
+Z67 w1625595284
 R2
 R3
 R4
 R5
 R6
 R0
-Z61 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd
-Z62 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd
+Z68 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd
+Z69 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd
 l0
 L6
 VeFG27ICW1LTefjURPJ60C1
 !s100 ^I1K9VOTTieK?18TZAP<A0
 R11
 32
-R29
-!i10b 1
 R22
-Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd|
-Z64 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd|
+!i10b 1
+R23
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd|
+Z71 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd|
 !i113 0
 R16
 R17
@@ -434,42 +462,42 @@ V?dhQFWA0RQOKm]danS_=82
 !s100 WJnNV?f_ZE>V:VX]PjHll1
 R11
 32
-R29
-!i10b 1
 R22
-R63
-R64
+!i10b 1
+R23
+R70
+R71
 !i113 0
 R16
 R17
 Edatapth
-Z65 w1625683680
+Z72 w1625707341
 R53
 R2
 R3
 R5
 R6
 R0
-Z66 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd
-Z67 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd
+Z73 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd
+Z74 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd
 l0
 L12
-VS6_CknAdhaHUhZQZJffTI1
-!s100 o9;J:GV0=N`=Uda_<Dl021
+VKLfJDSL13gRd1DUO>gg:X0
+!s100 H8Ge?4PonV<6aahCMA6Ac0
 R11
 32
-Z68 !s110 1625683690
+R64
 !i10b 1
-!s108 1625683690.000000
-Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd|
-Z70 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd|
+!s108 1625710695.000000
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd|
+Z76 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd|
 !i113 0
 R16
 R17
 Astructural
 R53
 R2
-R3
+DPx4 work 7 mytypes 0 22 X8kc=F7Xeha6FjSlGl>Rz3
 R5
 R6
 DEx4 work 7 datapth 0 22 S6_CknAdhaHUhZQZJffTI1
@@ -482,8 +510,8 @@ R11
 !s110 1625595580
 !i10b 1
 !s108 1625595580.000000
-R69
-R70
+R75
+R76
 !i113 0
 R16
 R17
@@ -500,11 +528,11 @@ VN0]EeRdQ`A^knWPzX?OWf0
 !s100 lJG5kX]LaDz5VNj9l`0A]2
 R11
 32
-R12
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 0
 R16
 R17
@@ -518,11 +546,11 @@ V6<GHeZ:QgOmXkO9=iC9iX3
 !s100 [1?DQ:2T=Sa[2=G6EN1hQ1
 R11
 32
-R12
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 0
 R16
 R17
@@ -536,24 +564,24 @@ VSD_UYDBHkz5WC^]9Kcc6z2
 !s100 N`86kb3KoOj[NgXU[bKS]3
 R11
 32
-R12
-!i10b 1
 R22
+!i10b 1
 R23
 R24
+R25
 !i113 0
 R16
 R17
 Eir_decode
-Z71 w1625682046
+Z77 w1625682046
 R2
 R3
 R4
 R5
 R6
 R0
-Z72 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd
-Z73 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd
+Z78 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd
+Z79 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd
 l0
 L6
 ViV:DA_O`lFBLTdPSbjHa[3
@@ -563,8 +591,8 @@ R11
 R12
 !i10b 1
 R13
-Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd|
-Z75 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd|
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd|
+Z81 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd|
 !i113 0
 R16
 R17
@@ -584,29 +612,29 @@ R11
 R12
 !i10b 1
 R13
-R74
-R75
+R80
+R81
 !i113 0
 R16
 R17
 Eiv
-R26
+R27
 R2
 R3
 R5
 R6
 R0
-R27
 R28
+R29
 l0
 L5
 VVCh@XFWfdTDFaSIo7K1:60
 !s100 di@CHNVzOj=deLlnMz49>2
 R11
 32
-R29
-!i10b 1
 R22
+!i10b 1
+R23
 R30
 R31
 !i113 0
@@ -617,42 +645,42 @@ R2
 R3
 R5
 R6
-R25
+R26
 l13
 L11
 V_`bM8fF]gl]FVg;RE7?AE1
 !s100 z>QTJd;NF61m?GS]QYA<T1
 R11
 32
-R29
-!i10b 1
 R22
+!i10b 1
+R23
 R30
 R31
 !i113 0
 R16
 R17
 Eload_data
-Z76 w1625595475
+Z82 w1625595475
 R53
 R2
 R3
 R5
 R6
 R0
-Z77 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd
-Z78 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd
+Z83 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd
+Z84 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd
 l0
 L6
 V07LB5CP1aE=m<=a`L0N;]2
 !s100 cO0:U^0?R@kJ@zBEXHoa[3
 R11
 32
-R68
+R12
 !i10b 1
 R13
-Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd|
-Z80 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd|
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd|
+Z86 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd|
 !i113 0
 R16
 R17
@@ -669,11 +697,11 @@ Vm20_20S9k^2N;MJ34G<bN3
 !s100 F8Y`_m8PFVQTNH>6a?j:H0
 R11
 32
-R68
+R12
 !i10b 1
 R13
-R79
-R80
+R85
+R86
 !i113 0
 R16
 R17
@@ -853,19 +881,19 @@ Pmytypes
 R2
 R5
 R6
-w1625513918
+w1625710683
 R0
 8/home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
 F/home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
 l0
 L4
-VX8kc=F7Xeha6FjSlGl>Rz3
-!s100 20dFXN63=>Nb6]WlE@iS_2
+V[FYBEfbN6XjWCF_zO1U_60
+!s100 YN3OWHj>;E==jfFOIn3z[3
 R11
 32
-R29
-!i10b 1
 R22
+!i10b 1
+R23
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd|
 !s107 /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd|
 !i113 0
@@ -886,9 +914,9 @@ Vk^1?@I1miC`QkW6[n?aKG1
 !s100 <id3CD;QfVNHb371Jeb[^3
 R11
 32
-R29
-!i10b 1
 R22
+!i10b 1
+R23
 R51
 R52
 !i113 0
@@ -906,9 +934,9 @@ VO9X7eBkJc6HAo4?QW>GjJ3
 !s100 o;8lGYGRF>FYHRG@gi:c20
 R11
 32
-R29
-!i10b 1
 R22
+!i10b 1
+R23
 R51
 R52
 !i113 0
@@ -926,9 +954,9 @@ V?J[QVC?MG[i9mW^F0fSU^3
 !s100 e<E77?^cBmJQUA688FlkW0
 R11
 32
-R29
-!i10b 1
 R22
+!i10b 1
+R23
 R51
 R52
 !i113 0
@@ -1037,8 +1065,8 @@ R6
 R54
 l28
 L22
-VTnUOh:V>YgVP<PW0X0HmP0
-!s100 I?ZW@n@J]XD[7N6Sf_nKG1
+VT0m=VA@dHCU^^SJV49B@>1
+!s100 T:omLTCEg@hif>]>?ilPf2
 R11
 32
 R12
@@ -1050,15 +1078,15 @@ R59
 R16
 R17
 Esign_eval
-Z81 w1625239116
+Z87 w1625239116
 R2
 R3
 R4
 R5
 R6
 R0
-Z82 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd
-Z83 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd
+Z88 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd
+Z89 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd
 l0
 L7
 VQX=Lkb_2niMg6VaPgG?]Q3
@@ -1067,9 +1095,9 @@ R11
 32
 R12
 !i10b 1
-R13
-Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd|
-Z85 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd|
+R23
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd|
+Z91 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/sign_ext.vhd|
 !i113 0
 R16
 R17
@@ -1088,32 +1116,77 @@ R11
 32
 R12
 !i10b 1
+R23
+R90
+R91
+!i113 0
+R16
+R17
+Ewindrf
+R61
+R2
+R3
+R53
+R5
+R6
+R0
+R62
+R63
+l0
+L9
+VPCA5_R@CR6zi=ao6=nF<;2
+!s100 _WIPX>86PNj0m@=7]m6:C1
+R11
+32
+R64
+!i10b 1
 R13
-R84
-R85
+R65
+R66
+!i113 0
+R16
+R17
+Abhv
+R2
+R3
+R53
+R5
+R6
+R60
+l76
+L39
+VA@e_F7A]Gn4W8UTLemEFg3
+!s100 :@fP1=eaC=6HU[[4gN=Oe2
+R11
+32
+R64
+!i10b 1
+R13
+R65
+R66
 !i113 0
 R16
 R17
 Ezero_eval
-Z86 w1625238485
+Z92 w1625238485
 R53
 R4
 R5
 R6
 R0
-Z87 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd
-Z88 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd
+Z93 8/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd
+Z94 F/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd
 l0
 L7
 V>:b9LPnkS_W?8aBk7ka:G0
 !s100 ;ReeJE4cDhSaYMmYOiM[A0
 R11
 32
-R29
-!i10b 1
 R22
-Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd|
-Z90 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd|
+!i10b 1
+R23
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd|
+Z96 !s107 /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd|
 !i113 0
 R16
 R17
@@ -1129,11 +1202,11 @@ VgzX6;8M9INnIclLa7W0M_1
 !s100 6R>ehG6IMSa7V_T@D=2N[2
 R11
 32
-R29
-!i10b 1
 R22
-R89
-R90
+!i10b 1
+R23
+R95
+R96
 !i113 0
 R16
 R17
