@@ -4,7 +4,7 @@ use IEEE.numeric_std.all;
 use work.myTypes.all;
 
 --M= #GLOBAL_REGS=5
---N= #LOCAL/IN/OUT_REGS=3
+--N= #LOCAL/IN/OUT_REGS=5
 --F= #WINDOWS=3
 entity windRF is
  generic(

@@ -17,7 +17,7 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading entity regFFD
 -- Loading architecture ASYNCHBEHAV of regFFD
 
-} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -27,10 +27,8 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package NUMERIC_STD
 -- Compiling entity DATAPTH
 -- Compiling architecture STRUCTURAL of DATAPTH
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd(305): Signal [mode IN port] "RM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/datapath.vhd(325): VHDL Compiler exiting
 
-} {11.0 12.0} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -64,6 +62,17 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Compiling entity sign_eval
 -- Compiling architecture BHV of sign_eval
 
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity IR_DECODE
+-- Compiling architecture BEHAV of IR_DECODE
+
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/registerfile.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/registerfile.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package STANDARD
@@ -80,18 +89,7 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading entity register_file
 -- Loading architecture A of register_file
 
-} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd
-QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package MATH_REAL
--- Loading package myTypes
--- Compiling entity IR_DECODE
--- Compiling architecture BEHAV of IR_DECODE
-
-} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -100,21 +98,12 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package MATH_REAL
 -- Loading package myTypes
 -- Compiling entity windRF
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(11): (vcom-1136) Unknown identifier "num_global_regs".
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(12): (vcom-1136) Unknown identifier "num_local_inout_regs".
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(13): (vcom-1136) Unknown identifier "num_windows".
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(27): (vcom-1136) Unknown identifier "virt_addr".
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(27): (vcom-1591) Bad expression in left bound of range expression.
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(27): Type error in range expression.
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(28): (vcom-1136) Unknown identifier "virt_addr".
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(28): (vcom-1591) Bad expression in left bound of range expression.
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(28): Type error in range expression.
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(29): (vcom-1136) Unknown identifier "virt_addr".
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(29): (vcom-1591) Bad expression in left bound of range expression.
-** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(29): Type error in range expression.
-** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/window_RF.vhd(34): VHDL Compiler exiting
+-- Compiling architecture bhv of windRF
+-- Compiling configuration CFG_WINDRF_BHV
+-- Loading entity windRF
+-- Loading architecture bhv of windRF
 
-} {10.0 22.0} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/load_eval.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -191,6 +180,14 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Compiling configuration CFG_ND2_ARCH2
 -- Loading entity ND2
 -- Loading architecture ARCH2 of ND2
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package MATH_REAL
+-- Compiling package myTypes
 
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/mux21.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/mux21.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018

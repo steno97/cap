@@ -23,11 +23,12 @@
 # Compile of mux21.vhd was successful.
 # Compile of mux21_generic.vhd was successful.
 # Compile of reg.vhd was successful.
-# Compile of ir_assigment.vhd was successful.
+# Compile of ir_assigment.vhd failed with 1 errors.
 # Compile of registerfile.vhd was successful.
 # Compile of load_eval.vhd was successful.
-# Compile of datapath.vhd failed with 4 errors.
-# 14 compiles, 1 failed with 4 errors.
+# Compile of window_RF.vhd was successful.
+# Compile of datapath.vhd failed with 7 errors.
+# 15 compiles, 2 failed with 8 errors.
 # Compile of 000-globals.vhd was successful.
 # Compile of zero_evaluation.vhd was successful.
 # Compile of cond_eval.vhd was successful.
@@ -41,78 +42,9 @@
 # Compile of ir_assigment.vhd was successful.
 # Compile of registerfile.vhd was successful.
 # Compile of load_eval.vhd was successful.
-# Compile of datapath.vhd failed with 2 errors.
-# 14 compiles, 1 failed with 2 errors.
-# Compile of datapath.vhd failed with 1 errors.
-# Compile of 000-globals.vhd was successful.
-# Compile of zero_evaluation.vhd was successful.
-# Compile of cond_eval.vhd was successful.
-# Compile of iv.vhd was successful.
-# Compile of nd2.vhd was successful.
-# Compile of FFD.vhd was successful.
-# Compile of sign_ext.vhd was successful.
-# Compile of mux21.vhd was successful.
-# Compile of mux21_generic.vhd was successful.
-# Compile of reg.vhd was successful.
-# Compile of ir_assigment.vhd was successful.
-# Compile of registerfile.vhd failed with 2 errors.
-# Compile of load_eval.vhd was successful.
-# Compile of window_RF.vhd failed with 3 errors.
-# Compile of datapath.vhd failed with 1 errors.
-# 15 compiles, 3 failed with 6 errors.
-# Compile of registerfile.vhd was successful.
-# Compile of window_RF.vhd failed with 3 errors.
-# Compile of window_RF.vhd failed with 12 errors.
-# Compile of 000-globals.vhd failed with 2 errors.
-# Compile of zero_evaluation.vhd was successful.
-# Compile of cond_eval.vhd was successful.
-# Compile of iv.vhd was successful.
-# Compile of nd2.vhd was successful.
-# Compile of FFD.vhd was successful.
-# Compile of sign_ext.vhd was successful.
-# Compile of mux21.vhd was successful.
-# Compile of mux21_generic.vhd was successful.
-# Compile of reg.vhd was successful.
-# Compile of ir_assigment.vhd was successful.
-# Compile of registerfile.vhd was successful.
-# Compile of load_eval.vhd was successful.
-# Compile of window_RF.vhd failed with 12 errors.
-# Compile of datapath.vhd failed with 1 errors.
-# 15 compiles, 3 failed with 15 errors.
-# Compile of 000-globals.vhd failed with 1 errors.
-# Compile of 000-globals.vhd failed with 1 errors.
-# Compile of 000-globals.vhd failed with 1 errors.
-# Compile of zero_evaluation.vhd was successful.
-# Compile of cond_eval.vhd was successful.
-# Compile of iv.vhd was successful.
-# Compile of nd2.vhd was successful.
-# Compile of FFD.vhd was successful.
-# Compile of sign_ext.vhd was successful.
-# Compile of mux21.vhd was successful.
-# Compile of mux21_generic.vhd was successful.
-# Compile of reg.vhd was successful.
-# Compile of ir_assigment.vhd was successful.
-# Compile of registerfile.vhd was successful.
-# Compile of load_eval.vhd was successful.
 # Compile of window_RF.vhd was successful.
-# Compile of datapath.vhd failed with 1 errors.
-# 15 compiles, 2 failed with 2 errors.
-# Compile of 000-globals.vhd failed with 1 errors.
-# Compile of zero_evaluation.vhd was successful.
-# Compile of cond_eval.vhd was successful.
-# Compile of iv.vhd was successful.
-# Compile of nd2.vhd was successful.
-# Compile of FFD.vhd was successful.
-# Compile of sign_ext.vhd was successful.
-# Compile of mux21.vhd was successful.
-# Compile of mux21_generic.vhd was successful.
-# Compile of reg.vhd was successful.
-# Compile of ir_assigment.vhd was successful.
-# Compile of registerfile.vhd was successful.
-# Compile of load_eval.vhd was successful.
-# Compile of window_RF.vhd was successful.
-# Compile of datapath.vhd failed with 1 errors.
-# 15 compiles, 2 failed with 2 errors.
+# Compile of datapath.vhd failed with 7 errors.
+# 15 compiles, 1 failed with 7 errors.
 # Compile of 000-globals.vhd was successful.
 # Compile of zero_evaluation.vhd was successful.
 # Compile of cond_eval.vhd was successful.
@@ -129,3 +61,86 @@
 # Compile of window_RF.vhd was successful.
 # Compile of datapath.vhd failed with 1 errors.
 # 15 compiles, 1 failed with 1 error.
+# Compile of 000-globals.vhd was successful.
+# Compile of zero_evaluation.vhd was successful.
+# Compile of cond_eval.vhd was successful.
+# Compile of iv.vhd was successful.
+# Compile of nd2.vhd was successful.
+# Compile of FFD.vhd was successful.
+# Compile of sign_ext.vhd was successful.
+# Compile of mux21.vhd was successful.
+# Compile of mux21_generic.vhd was successful.
+# Compile of reg.vhd was successful.
+# Compile of ir_assigment.vhd was successful.
+# Compile of registerfile.vhd was successful.
+# Compile of load_eval.vhd was successful.
+# Compile of window_RF.vhd was successful.
+# Compile of datapath.vhd failed with 2 errors.
+# 15 compiles, 1 failed with 2 errors.
+# Compile of datapath.vhd failed with 3 errors.
+# Compile of datapath.vhd failed with 3 errors.
+# Compile of 000-globals.vhd was successful.
+# Compile of zero_evaluation.vhd was successful.
+# Compile of cond_eval.vhd was successful.
+# Compile of iv.vhd was successful.
+# Compile of nd2.vhd was successful.
+# Compile of FFD.vhd was successful.
+# Compile of sign_ext.vhd was successful.
+# Compile of mux21.vhd was successful.
+# Compile of mux21_generic.vhd was successful.
+# Compile of reg.vhd was successful.
+# Compile of ir_assigment.vhd was successful.
+# Compile of registerfile.vhd was successful.
+# Compile of load_eval.vhd was successful.
+# Compile of window_RF.vhd was successful.
+# Compile of datapath.vhd failed with 3 errors.
+# 15 compiles, 1 failed with 3 errors.
+# Compile of datapath.vhd was successful.
+# Compile of 000-globals.vhd was successful.
+# Compile of zero_evaluation.vhd was successful.
+# Compile of cond_eval.vhd was successful.
+# Compile of iv.vhd was successful.
+# Compile of nd2.vhd was successful.
+# Compile of FFD.vhd was successful.
+# Compile of sign_ext.vhd was successful.
+# Compile of mux21.vhd was successful.
+# Compile of mux21_generic.vhd was successful.
+# Compile of reg.vhd was successful.
+# Compile of ir_assigment.vhd was successful.
+# Compile of registerfile.vhd was successful.
+# Compile of load_eval.vhd was successful.
+# Compile of window_RF.vhd was successful.
+# Compile of datapath.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+# Compile of 000-globals.vhd was successful.
+# Compile of zero_evaluation.vhd was successful.
+# Compile of cond_eval.vhd was successful.
+# Compile of iv.vhd was successful.
+# Compile of nd2.vhd was successful.
+# Compile of FFD.vhd was successful.
+# Compile of sign_ext.vhd was successful.
+# Compile of mux21.vhd was successful.
+# Compile of mux21_generic.vhd was successful.
+# Compile of reg.vhd was successful.
+# Compile of ir_assigment.vhd was successful.
+# Compile of registerfile.vhd was successful.
+# Compile of load_eval.vhd was successful.
+# Compile of window_RF.vhd was successful.
+# Compile of datapath.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+# Compile of 000-globals.vhd was successful.
+# Compile of zero_evaluation.vhd was successful.
+# Compile of cond_eval.vhd was successful.
+# Compile of iv.vhd was successful.
+# Compile of nd2.vhd was successful.
+# Compile of FFD.vhd was successful.
+# Compile of sign_ext.vhd was successful.
+# Compile of mux21.vhd was successful.
+# Compile of mux21_generic.vhd was successful.
+# Compile of reg.vhd was successful.
+# Compile of ir_assigment.vhd was successful.
+# Compile of registerfile.vhd was successful.
+# Compile of load_eval.vhd was successful.
+# Compile of window_RF.vhd was successful.
+# Compile of datapath.vhd was successful.
+# 15 compiles, 0 failed with no errors.

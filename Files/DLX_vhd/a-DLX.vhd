@@ -39,7 +39,46 @@ architecture dlx_rtl of DLX is
 
   -- Data Ram (MISSING!You must include it in your final project!)
 
-  -- Datapath (MISSING!You must include it in your final project!)
+  -- Datapath 
+entity DATAPTH is
+Generic (NBIT: integer:= numBit; REG_BIT: integer:= REG_SIZE);
+	Port (	
+		CLK:	in	std_logic;
+		RST:	in	std_logic;
+		PC: in	std_logic_vector(NBIT-1 downto 0);
+		IR: in	std_logic_vector(NBIT-1 downto 0);
+		PC_BUS: out	std_logic_vector(NBIT-1 downto 0); --pc_out
+		--DTPTH_OUT: out std_logic_vector(NBIT-1 downto 0);
+		
+		--cu signals
+		EN0: in	std_logic;
+		signed_op: in	std_logic;
+		RF1: in	std_logic;
+		RF2: in	std_logic;
+		WF1: in	std_logic; --sel WB
+		EN1: in	std_logic;
+		S1: in	std_logic; --sel A
+		S2: in	std_logic; --sel B
+		EN2: in	std_logic;
+		lhi_sel: in	std_logic;
+		jump_en:in	std_logic;
+		branch_cond: in	std_logic;
+		sb_op: in	std_logic;
+		RM: in	std_logic;
+		WM: in	std_logic;
+		EN3: in	std_logic;
+		S3: in	std_logic;
+		--alu signals
+		instruction_alu:  in aluOp;
+		
+		--data memory signals
+		DATA_MEM_ADDR: out	std_logic_vector(NBIT-1 downto 0);
+		DATA_MEM_IN: out	std_logic_vector(NBIT-1 downto 0);
+		DATA_MEM_OUT: in	std_logic_vector(NBIT-1 downto 0);
+		DATA_MEM_ENABLE: out	std_logic;
+		DATA_MEM_RM: out	std_logic;
+		DATA_MEM_WM: out	std_logic);
+end DATAPTH;
   
   -- Control Unit
   component dlx_cu
@@ -119,14 +158,6 @@ architecture dlx_rtl of DLX is
 
   begin  -- DLX
 
-    -- This is the input to program counter: currently zero 
-    -- so no uptade of PC happens
-    -- TO BE REMOVED AS SOON AS THE DATAPATH IS INSERTED!!!!!
-    -- a proper connection must be made here if more than one
-    -- instruction must be executed
-    PC_BUS <= (others => '0'); 
-
-
     -- purpose: Instruction Register Process
     -- type   : sequential
     -- inputs : Clk, Rst, IRam_DOut, IR_LATCH_EN_i
@@ -187,6 +218,40 @@ architecture dlx_rtl of DLX is
           Rst  => Rst,
           Addr => PC,
           Dout => IRam_DOut);
+
+	    -- Datapath Instantiation
+    DTPTH_I: DATAPTH
+      port map (
+          CLK => Clk,
+          RST => Rst,
+		  PC =>PC,
+		  IR=>IR,
+		  PC_OUT=>PC_BUS,
+          EN0 => NPC_LATCH_EN_i,
+		signed_op=>, --metti
+          RF1 => RegA_LATCH_EN_i,
+          RF2 => RegB_LATCH_EN_i,
+		  WF1 => RF_WE_i
+          EN1 => RegIMM_LATCH_EN_i,
+          S1 => MUXA_SEL_i,
+          S2 => MUXB_SEL_i,
+          EN2 => ALU_OUTREG_EN_i,
+		lhi_sel=>,--metti
+		  jump_en => JUMP_EN_i,
+          branch_cond => EQ_COND_i,
+        sb_op=>,--metti
+          RM => LMD_LATCH_EN_i,
+          WM => DRAM_WE_i,
+          EN3 => PC_LATCH_EN_i,
+          S3 => WB_MUX_SEL_i,
+          instruction_alu=> ALU_OPCODE_i,
+		--metti per data memory
+		DATA_MEM_ADDR=>,
+		DATA_MEM_IN=>,
+		DATA_MEM_OUT=>,
+		DATA_MEM_ENABLE=>,
+		DATA_MEM_RM=>,
+		DATA_MEM_WM=>);
 
     
     

@@ -16,7 +16,7 @@ Generic (NBIT: integer:= numBit; REG_BIT: integer:= REG_SIZE);
 		RST:	in	std_logic;
 		PC: in	std_logic_vector(NBIT-1 downto 0);
 		IR: in	std_logic_vector(NBIT-1 downto 0);
-		PC_BUS: out	std_logic_vector(NBIT-1 downto 0); --pc_out
+		PC_OUT: out	std_logic_vector(NBIT-1 downto 0); --pc_out
 		--DTPTH_OUT: out std_logic_vector(NBIT-1 downto 0);
 		
 		--cu signals
@@ -45,13 +45,15 @@ Generic (NBIT: integer:= numBit; REG_BIT: integer:= REG_SIZE);
 		DATA_MEM_IN: out	std_logic_vector(NBIT-1 downto 0);
 		DATA_MEM_OUT: in	std_logic_vector(NBIT-1 downto 0);
 		DATA_MEM_ENABLE: out	std_logic;
-		DATA_MEM_RM: out	std_logic; --segnale unico con WM?
+		DATA_MEM_RM: out	std_logic;
 		DATA_MEM_WM: out	std_logic);
 end DATAPTH;
 
 
 architecture STRUCTURAL of DATAPTH is 
 --components: 
+
+--MUX: IF SEL=1 ->Y=A, ELSE Y=B
 component MUX21_GENERIC is
 	generic (NBIT: integer:=numBit);
 	Port (	
@@ -162,17 +164,15 @@ component load_data is
 	port (
 	  data_in: in std_logic_vector(31 downto 0);
       signed_val: in std_logic; 
+	load_op: in std_logic;
       load_type: in std_logic_vector(1 downto 0); --load byte, halfword, word (3 valori=2 bit)
       data_out: out std_logic_vector (31 downto 0));	
 end component;
 
---RIGUARDA TUTTI I MUXSELECT
---metti windowedRF (+ bypass+ read and write @same time ecc)
 
 --signals
 	--stage 1
 	signal NPC: std_logic_vector(NBIT-1 downto 0);
-	signal PC_OUT: std_logic_vector(NBIT-1 downto 0);
 	--pipe
 	signal NPC_Dec: std_logic_vector(NBIT-1 downto 0);
 	signal PC_Dec: std_logic_vector(NBIT-1 downto 0);
@@ -191,7 +191,7 @@ end component;
 	signal regB_ex: std_logic_vector(NBIT-1 downto 0);
 	signal Imm_ex: std_logic_vector(NBIT-1 downto 0);
 	signal RD_ex: std_logic_vector(REG_BIT-1 downto 0);
-	signal IR_26_ex: std_logic;
+	signal IR_26_ex: std_logic_vector(1 downto 0);
 	signal LHI_ex:std_logic_vector(NBIT-1 downto 0);
 	signal signed_op_ex: std_logic;
 	--stage 3 
@@ -208,7 +208,7 @@ end component;
 	signal regB_mem: std_logic_vector(NBIT-1 downto 0);
 	signal RD_mem: std_logic_vector(REG_BIT-1 downto 0);
 	signal signed_op_mem: std_logic;
-	signal IR_26_mem: std_logic;
+	signal IR_26_mem: std_logic_vector(1 downto 0);
 	--stage 4:
 	signal sel_saved_reg: std_logic;
 	signal sel_npc: std_logic;
@@ -232,7 +232,15 @@ begin
 	-- PC->PC+4->NPC
 	NPC <= std_logic_vector(unsigned(PC) + to_unsigned(4,NBIT));  --PC_fetch from stage 4 (modify if more than 1 instruction must be executed)
 	-- PC->INSTR. MEM(IRAM)-> IR 
-	
+
+	sel_pc: process (sel_npc)
+	begin
+		if (sel_npc='1') then
+		PC_OUT<=PC_fetch;
+		else PC_OUT<=NPC;
+		end if;
+	end process;
+
 	--pipeline signals (F->D)
 	pipeline_newpc1: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN0, D=>NPC, Q=>NPC_Dec);
 	pipeline_pc1:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN0, D=>PC, Q=>PC_Dec);
@@ -245,8 +253,12 @@ begin
 	Port map(IR_26=>IR_Dec(NBIT-OP_CODE_SIZE-1 downto 0), OPCODE=>IR_Dec(NBIT downto NBIT-OP_CODE_SIZE),is_signed=>signed_op, RS1=>RS1, RS2=>RS2, RD=>RD, IMMEDIATE=>Imm);
 
 	--RF mapping
-	 RF: register_file
-	 port map (CLK, RST, EN1, RF1, RF2, WF1, RD_wb, RS1, RS2, OUT_wb, regA, regB);
+	RF: windRF
+ 	generic map (M=>5,N=>5, F=>3, NBIT=>32)
+ 	port map( CLK=>CLK, RESET=>RST, ENABLE=> EN1, CALL=>'0', RETRN=>'0', FILL=>open, SPILL=>open, BUSin=>(others=>'0'), BUSout=>open, RD1=> RF1, RD2=> RF2, WR=>WF1, ADD_WR=>RD_wb, ADD_RD1=>RS1, ADD_RD2=>RS2, DATAIN=>OUT_wb, OUT1=>regA, OUT2=>regB);
+	-- RF: register_file
+	-- port map (CLK, RST, EN1, RF1, RF2, WF1, RD_wb, RS1, RS2, OUT_wb, regA, regB);
+	--CALL=>open, RETRN=>open, FILL=>open, SPILL=>open, BUSin=>open, BUSout=>open, open ports (not handled subroutines: trap and ret instructions)
 
 	LHI_id(31 downto 16)<=Imm(15 downto 0);
 	LHI_id(15 downto 0)<=(others=>'0');
@@ -258,15 +270,15 @@ begin
 	pipeline_B2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>regB, Q=>regB_ex);
 	pipeline_IMM2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>Imm, Q=>Imm_ex);
 	pipeline_RD2: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>RD, Q=>RD_ex);
-	pipeline_IR2: FF Port map(CLK=>CLK, RESET=>RST,EN=>EN1, D=>IR_Dec(26), Q=>IR_26_ex);
-	pipeline_LHI2: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>LHI_id, Q=>LHI_ex);
+	pipeline_IR2: regFFD Generic map (2) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>IR_Dec(27 downto 26), Q=>IR_26_ex);
+	pipeline_LHI2: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN1, D=>LHI_id, Q=>LHI_ex);
 	
 --stage 3-> in: NPC, A, B, Imm, PC; out: NPC, cond, alu_out, B
 
 	MUX_ALU_A: MUX21_GENERIC 
 	Port Map (NPC_ex, regA_ex, S1, input1_ALU);
 	MUX_ALU_B: MUX21_GENERIC 
-	Port Map (regB_ex, Imm_ex, S2, input2_ALU);
+	Port Map (Imm_ex, regB_ex,S2, input2_ALU);
 	
 	ALU_OP: ALU
 	generic map(NBIT)
@@ -278,7 +290,7 @@ begin
 	  
 	COND_OP: COND_BT
 	generic map (NBIT)
-	  port map (is_zero, IR_26_ex,branch_cond, cond); 
+	  port map (is_zero, IR_26_ex(0),branch_cond, cond); 
 	--branch taken--> cond_sign=1; bnot taken or not branch opcode-->cond_sign=0;
 	--- IF JUMP OR BRANCH TAKEN=> NPC=ALUOUT fai nop delle istruzioni 
 
@@ -292,12 +304,11 @@ begin
 	pipeline_alu3:regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=> EN2, D=>ALU_ex, Q=>ALU_mem);
 	pipeline_B3: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN2, D=>regB_ex, Q=>regB_mem);
    	pipeline_RD3: regFFD Generic map (REG_BIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN2, D=>RD_ex, Q=>RD_mem);
-	pipeline_IR3: FF Port map(CLK=>CLK, RESET=>RST,EN=>EN2, D=>IR_26_ex, Q=>IR_26_mem);
-
+	pipeline_IR3: regFFD Generic map (2) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN2, D=>IR_26_ex, Q=>IR_26_mem);
 --	stage 4-> in: NPC, cond, alu_out, B; out: PC, ALU_out, LMD_out
-	jal_op: process (IR_26_mem, jump_en )
+	jal_op: process (IR_26_mem(0), jump_en )
 	begin
-	sel_saved_reg <= (IR_26_mem and jump_en);
+	sel_saved_reg <= (IR_26_mem(0) and jump_en);
 	end process;
 	--if jal o jalr: save npc in r31
 
@@ -307,7 +318,7 @@ begin
 	end process;
 
 	MUX_PC: MUX21_GENERIC 
-	Port Map (NPC_mem, ALU_mem, sel_npc, PC_fetch); 
+	Port Map (ALU_mem, NPC_mem, sel_npc, PC_fetch); 
 	--if branch taken or jump instruction-> pc =alu_out
 	
 	MUX_data_in: process (sb_op)
@@ -319,7 +330,7 @@ begin
 		end if;
 	end process;
 	
-	--data_memory -- guarda dov'è sta cazzo di data memory
+	--data_memory -- guarda dov'è data memory
 	DATA_MEM_ADDR<= ALU_mem;
 	DATA_MEM_IN<= regB_in;
 	DATA_MEM_RM<=RM; --read=load op
@@ -328,7 +339,7 @@ begin
 	
 	--lmd
 	LOAD_DATA_OUT: load_data
-	port map(data_in=>DATA_MEM_OUT, signed_val=>signed_op_mem, load_type=>RM, data_out=>LMD_out);
+	port map(data_in=>DATA_MEM_OUT, signed_val=>signed_op_mem, load_op=>RM, load_type=>IR_26_mem, data_out=>LMD_out);
 
 	--pipeline signals (M->W)
 	pipeline_newpc4: regFFD Generic map (NBIT) Port map(CK=>CLK, RESET=>RST,ENABLE=>EN3, D=>NPC_mem, Q=>NPC_wb);
@@ -340,12 +351,11 @@ begin
 --	stage 5-> in: ALU_out, LMD_out, out: OUT_WB
 
 	MUX_WB: MUX21_GENERIC 
-	Port Map (LMD_wb, ALU_wb, S3, OUT_data);-- sel_WB==S3
+	Port Map (ALU_wb, LMD_wb, S3, OUT_data);-- sel_WB==S3
 	
 	MUX_jal: MUX21_GENERIC 
-	Port Map (OUT_WB, NPC_wb, sel_saved_reg_wb, OUT_wb);-- CHECK(saved_reg='1'-->npc else out wb)
+	Port Map (NPC_wb, OUT_WB, sel_saved_reg_wb, OUT_wb);-- saved_reg='1'-->npc else out wb
    --DTPTH_OUT<=OUT_wb;
-
-	-- WF1 disponibile
+   -- WF1 disponibile
 	
 end architecture;
