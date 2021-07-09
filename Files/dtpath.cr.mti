@@ -62,6 +62,16 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Compiling entity DATAPTH
 -- Compiling architecture STRUCTURAL of DATAPTH
 
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package NUMERIC_STD
+-- Compiling entity zero_eval
+-- Compiling architecture bhv of zero_eval
+
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/iv.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package STANDARD
@@ -74,16 +84,6 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Compiling configuration CFG_IV_BEHAVIORAL
 -- Loading entity IV
 -- Loading architecture BEHAVIORAL of IV
-
-} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/zero_evaluation.vhd
-QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package NUMERIC_STD
--- Compiling entity zero_eval
--- Compiling architecture bhv of zero_eval
 
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/rca.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/rca.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
@@ -198,6 +198,16 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading entity P
 -- Loading architecture behave of p
 
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/comparator.vhdl {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/comparator.vhdl
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity comparator
+-- Compiling architecture Architectural of comparator
+
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/mux21_generic.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/mux21_generic.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package STANDARD
@@ -218,16 +228,6 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading architecture struct of MUX21_GENERIC
 -- Loading entity MUX21
 -- Loading configuration cfg_mux21_behavioral_2
-
-} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/comparator.vhdl {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/comparator.vhdl
-QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package MATH_REAL
--- Loading package myTypes
--- Compiling entity comparator
--- Compiling architecture Architectural of comparator
 
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/ir_assigment.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
@@ -255,6 +255,18 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Compiling configuration CFG_RF_BEH
 -- Loading entity register_file
 -- Loading architecture A of register_file
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity dlx_cu
+-- Compiling architecture dlx_cu_hw of dlx_cu
 
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/01-generic_shifter.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/01-generic_shifter.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
@@ -307,18 +319,6 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package NUMERIC_STD
 -- Compiling entity load_data
 -- Compiling architecture bhv_load of load_data
-
-} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package MATH_REAL
--- Loading package myTypes
--- Compiling entity dlx_cu
--- Compiling architecture dlx_cu_hw of dlx_cu
 
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/mux21.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/mux21.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
@@ -412,6 +412,26 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading entity MUX21
 -- Loading configuration cfg_mux21_structural
 
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/carry_generator.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/carry_generator.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package MATH_REAL
+-- Loading package CONSTANTS
+-- Loading package NUMERIC_STD
+-- Compiling entity CARRY_GENERATOR
+-- Compiling architecture arch of carry_generator
+-- Compiling configuration CFG_CARRY_GENERATOR_arch
+-- Loading entity CARRY_GENERATOR
+-- Loading architecture arch of carry_generator
+-- Loading entity G
+-- Loading entity PG
+-- Loading configuration cfg_g_behave
+-- Loading configuration cfg_pg_arch
+
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/lfsr.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/lfsr.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package STANDARD
@@ -434,26 +454,6 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading entity G
 -- Loading architecture behave of g
 
-} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/carry_generator.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/p4/carry_generator.vhd
-QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package MATH_REAL
--- Loading package CONSTANTS
--- Loading package NUMERIC_STD
--- Compiling entity CARRY_GENERATOR
--- Compiling architecture arch of carry_generator
--- Compiling configuration CFG_CARRY_GENERATOR_arch
--- Loading entity CARRY_GENERATOR
--- Loading architecture arch of carry_generator
--- Loading entity G
--- Loading entity PG
--- Loading configuration cfg_g_behave
--- Loading configuration cfg_pg_arch
-
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/cond_eval.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package STANDARD
@@ -464,24 +464,6 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading package myTypes
 -- Compiling entity COND_BT
 -- Compiling architecture BHV of COND_BT
-
-} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/nd2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/nd2.vhd
-QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package MATH_REAL
--- Loading package myTypes
--- Compiling entity ND2
--- Compiling architecture ARCH1 of ND2
--- Compiling architecture ARCH2 of ND2
--- Loading entity ND2
--- Compiling configuration CFG_ND2_ARCH1
--- Loading entity ND2
--- Loading architecture ARCH1 of ND2
--- Compiling configuration CFG_ND2_ARCH2
--- Loading entity ND2
--- Loading architecture ARCH2 of ND2
 
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
@@ -503,6 +485,34 @@ QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
 -- Loading entity SHIFTER_GENERIC
 -- Loading package CONSTANTS
 -- Loading entity P4_ADDER
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/nd2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/nd2.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package MATH_REAL
+-- Loading package myTypes
+-- Compiling entity ND2
+-- Compiling architecture ARCH1 of ND2
+-- Compiling architecture ARCH2 of ND2
+-- Loading entity ND2
+-- Compiling configuration CFG_ND2_ARCH1
+-- Loading entity ND2
+-- Loading architecture ARCH1 of ND2
+-- Compiling configuration CFG_ND2_ARCH2
+-- Loading entity ND2
+-- Loading architecture ARCH2 of ND2
+
+} {} {}} /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
+QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_textio
+-- Compiling entity IRAM
+-- Compiling architecture IRam_Bhe of IRAM
 
 } {} {}} /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
 QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018

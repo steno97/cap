@@ -50,8 +50,8 @@ entity dlx_cu is
     RF_WE              : out std_logic;
     
     -----
-    lhi_sel: in	std_logic;
-    sb_op: in	std_logic
+    lhi_sel: out	std_logic;
+    sb_op: out	std_logic
     );  -- Register File Write Enable
 	
 	
@@ -150,7 +150,8 @@ architecture dlx_cu_hw of dlx_cu is
   signal signed_unsigned_2: std_logic := '0';  -- this signal is to said to the datapath if the operation is unsigned
   signal signed_unsigned_3: std_logic := '0';  -- this signal is to said to the datapath if the operation is unsigned
   signal jump: std_logic := '0';				--if the operation is a jump this is set to 1
-  
+  signal lhi_sel_i: std_logic :='0';
+  signal sb_op_i: std_logic :='0';
 begin  -- dlx_cu_rtl
 
   IR_opcode(5 downto 0) <= IR_IN(31 downto 26);
@@ -332,7 +333,7 @@ begin  -- dlx_cu_rtl
 				signed_unsigned_i<='1';
 		when 15 => aluOpcode_i <= NOP; --LHI , LHI carica solo un valore nel registro non deve essere eseguita alcuna operazione
 				signed_unsigned_i<='0';
-				 lhi_sel_i<=1;
+				 lhi_sel_i<='1';
 		when 18 => aluOpcode_i <= NOP; --jr
 				jump <='1';
 				signed_unsigned_i<='1';
@@ -369,7 +370,7 @@ begin  -- dlx_cu_rtl
 				signed_unsigned_i<='0';
 		when 40 => aluOpcode_i <= SB; --SB
 				signed_unsigned_i<='0';		
-				sb_op_i<=1;
+				sb_op_i<='1';
 		when 43 => aluOpcode_i <= SW; --SW
 				signed_unsigned_i<='1';
 		when 58 => aluOpcode_i <= SLTUI; --SLTUI

@@ -14,12 +14,10 @@ entity sign_eval is
 end sign_eval;
 
 architecture BHV of sign_eval is
-	constant zeros : std_logic_vector(N_in-1 downto 0) := (others => '0');
+	constant zeros : std_logic_vector(N_out-N_in-1 downto 0) := (others => '0');
 	constant ones : std_logic_vector(N_in-1 downto 0) := (others => '1');
 	
 	begin
 		immediate <= ones&IR_out when (signed_val = '1' and IR_out(N_in-1) = '1') else zeros&IR_out;
 		
 end BHV;
-
-		

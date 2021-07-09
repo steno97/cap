@@ -12,436 +12,429 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd
+# Loading project dtpath
+# Compile of 000-globals.vhd was successful.
+# Compile of zero_evaluation.vhd was successful.
+# Compile of cond_eval.vhd was successful.
+# Compile of iv.vhd was successful.
+# Compile of nd2.vhd was successful.
+# Compile of FFD.vhd was successful.
+# Compile of sign_ext.vhd was successful.
+# Compile of mux21.vhd was successful.
+# Compile of mux21_generic.vhd was successful.
+# Compile of reg.vhd was successful.
+# Compile of ir_assigment.vhd was successful.
+# Compile of registerfile.vhd was successful.
+# Compile of load_eval.vhd was successful.
+# Compile of window_RF.vhd was successful.
+# Compile of datapath.vhd was successful.
+# Compile of constants.vhd was successful.
+# Compile of fa.vhd was successful.
+# Compile of g.vhd was successful.
+# Compile of iv.vhd was successful.
+# Compile of lfsr.vhd was successful.
+# Compile of mux21.vhd was successful.
+# Compile of mux21_generic.vhd was successful.
+# Compile of nd2.vhd was successful.
+# Compile of p.vhd was successful.
+# Compile of pg.vhd was successful.
+# Compile of rca.vhd was successful.
+# Compile of carry_generator.vhd was successful.
+# Compile of csb.vhd was successful.
+# Compile of sum_gen.vhd was successful.
+# Compile of p4_adder.vhd was successful.
+# Compile of comparator.vhdl was successful.
+# Compile of 01-generic_shifter.vhd was successful.
+# Compile of alu2.vhd was successful.
+# Compile of a.a-CU_HW.vhd was successful.
+# Compile of a.c-IRAM.vhd was successful.
+# Compile of a-DLX.vhd was successful.
+# Compile of TB_DLX.vhd was successful.
+# 37 compiles, 0 failed with no errors.
+# reading /software/mentor/questa10.7c/questasim/linux_x86_64/../modelsim.ini
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:40:07 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/000-globals.vhd 
+# Start time: 22:45:53 on Jul 09,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package MATH_REAL
-# -- Compiling package myTypes
-# End time: 21:40:07 on Jul 05,2021, Elapsed time: 0:00:00
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity IRAM
+# -- Compiling architecture IRam_Bhe of IRAM
+# End time: 22:45:53 on Jul 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
+vsim work.cfg_tb
+# vsim work.cfg_tb 
+# Start time: 22:46:07 on Jul 09,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading work.mytypes
+# Loading work.cfg_tb#1
+# Loading work.tb_dlx(test)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.dlx(dlx_rtl)#1
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.constants
+# Loading work.datapth(structural)#1
+# Loading work.windrf(bhv)#1
+# Loading work.regffd(asynchbehav)#2
+# Loading work.mux21_generic(struct)#1
+# Loading work.carry_generator(arch)#1
+# Loading work.g(behave)#1
+# Loading work.pg(arch)#1
+# Loading work.csb(structural)#1
+add wave *
+run 150ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: (vsim-7) Failed to open VHDL file "../asm_test/test1.mem" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Fatal: (vsim-7) Failed to open VHDL file "../asm_test/test1.mem" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ns  Iteration: 1  Process: /tb_dlx/U1/IRAM_I/FILL_MEM_P File: /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
+# Fatal error in Process FILL_MEM_P at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 45 Process FILL_MEM_P
+# 
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:40:12 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
+# Start time: 22:52:13 on Jul 09,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(143): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(144): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(145): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(146): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(147): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(154): Illegal concurrent statement.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(156): Illegal concurrent statement.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): (vcom-1136) Unknown identifier "iteratore".
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): Illegal concurrent statement.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(158): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(221): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(233): near "when": (vcom-1576) expecting END.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(234): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(235): near "when": (vcom-1576) expecting END.
-# End time: 21:40:12 on Jul 05,2021, Elapsed time: 0:00:00
-# Errors: 16, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:41:52 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(154): Illegal concurrent statement.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(156): Illegal concurrent statement.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): (vcom-1136) Unknown identifier "iteratore".
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(157): Illegal concurrent statement.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(158): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(221): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(233): near "when": (vcom-1576) expecting END.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(234): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(235): near "when": (vcom-1576) expecting END.
-# End time: 21:41:52 on Jul 05,2021, Elapsed time: 0:00:00
-# Errors: 11, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:44:44 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(196): (vcom-1136) Unknown identifier "iteratore".
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(196): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(197): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(216): near "process": (vcom-1576) expecting IF.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(220): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(231): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): near "when": (vcom-1576) expecting END.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(233): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(234): near "when": (vcom-1576) expecting END.
-# End time: 21:44:44 on Jul 05,2021, Elapsed time: 0:00:00
-# Errors: 9, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:45:21 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(197): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(199): near "else": (vcom-1576) expecting ';'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(220): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(231): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): near "when": (vcom-1576) expecting END.
-# End time: 21:45:21 on Jul 05,2021, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:46:17 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(199): near "then": syntax error
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(220): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(231): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): near "when": (vcom-1576) expecting END.
-# End time: 21:46:17 on Jul 05,2021, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:47:13 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(220): near "of": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(231): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(232): near "when": (vcom-1576) expecting END.
-# End time: 21:47:13 on Jul 05,2021, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:48:21 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(231): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(233): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(235): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(237): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(239): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(241): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(243): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(245): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(247): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(249): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(251): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(253): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(255): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(257): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(259): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(261): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(263): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(265): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(267): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(272): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(273): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(275): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(276): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(278): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(279): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(281): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(282): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(284): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(286): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(288): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(290): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(292): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(294): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(296): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(298): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(300): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(301): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(303): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(304): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(306): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(308): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(310): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(312): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(314): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(316): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(318): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(320): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(322): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(324): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(326): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(328): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(330): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(332): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(334): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(336): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(338): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(340): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(342): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(148): Variable declaration 'iterator' not allowed in this region.
-# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(353): VHDL Compiler exiting
-# End time: 21:48:22 on Jul 05,2021, Elapsed time: 0:00:01
-# Errors: 59, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:51:17 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(148): Variable declaration 'iterator' not allowed in this region.
-# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(353): VHDL Compiler exiting
-# End time: 21:51:17 on Jul 05,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:52:16 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(179): near "variable": syntax error
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(195): (vcom-1136) Unknown identifier "iterator".
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(195): (vcom-1136) Unknown identifier "iterator".
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(195): Bad right hand side (infix expression) in variable assignment.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(196): (vcom-1136) Unknown identifier "iterator".
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(196): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd(353): VHDL Compiler exiting
-# End time: 21:52:16 on Jul 05,2021, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:54:37 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.a-CU_HW.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity dlx_cu
-# -- Compiling architecture dlx_cu_hw of dlx_cu
-# End time: 21:54:37 on Jul 05,2021, Elapsed time: 0:00:00
+# -- Loading package std_logic_textio
+# -- Compiling entity IRAM
+# -- Compiling architecture IRam_Bhe of IRAM
+# End time: 22:52:14 on Jul 09,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 21:54:42 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
+# Start time: 22:52:21 on Jul 09,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity ALU
-# -- Compiling architecture Architectural of ALU
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(180): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(180): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(180): Type error resolving infix expression "<" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(183): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(183): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(183): Type error resolving infix expression ">=" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(186): (vcom-1078) Identifier "unsigned" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
-#         ieee.std_logic_arith.UNSIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(186): (vcom-1078) Identifier "unsigned" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
-#         ieee.std_logic_arith.UNSIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(186): Type error resolving infix expression "<" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(189): (vcom-1078) Identifier "unsigned" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
-#         ieee.std_logic_arith.UNSIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(189): (vcom-1078) Identifier "unsigned" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
-#         ieee.std_logic_arith.UNSIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(189): Type error resolving infix expression ">=" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(192): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(192): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(192): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(195): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(195): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(195): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(199): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(199): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(199): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(202): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(202): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(202): Type error resolving infix expression "<=" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(226): near "=": syntax error
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(229): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(229): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-#         ieee.std_logic_arith.SIGNED (type declaration)
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(229): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(233): near "when": (vcom-1576) expecting END.
-# End time: 21:54:42 on Jul 05,2021, Elapsed time: 0:00:00
-# Errors: 29, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 22:11:48 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity ALU
-# -- Compiling architecture Architectural of ALU
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(226): near "=": syntax error
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(233): near "when": (vcom-1576) expecting END.
-# End time: 22:11:48 on Jul 05,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 22:13:22 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity ALU
-# -- Compiling architecture Architectural of ALU
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(251): (vcom-1581) No feasible entries for infix operator '<'.
-# ** Error: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(251): Type error resolving infix expression "<" as type std.STANDARD.BOOLEAN.
-# ** Note: /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd(262): VHDL Compiler exiting
-# End time: 22:13:22 on Jul 05,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd
-# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 22:14:42 on Jul 05,2021
-# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a.b-datapath/alu2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading package myTypes
-# -- Compiling entity ALU
-# -- Compiling architecture Architectural of ALU
-# -- Compiling configuration CFG_ALU_Architectural
-# -- Loading entity ALU
-# -- Loading architecture Architectural of ALU
-# End time: 22:14:42 on Jul 05,2021, Elapsed time: 0:00:00
+# -- Loading package std_logic_textio
+# -- Compiling entity IRAM
+# -- Compiling architecture IRam_Bhe of IRAM
+# End time: 22:52:21 on Jul 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 22:52:28 on Jul 09,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/a-DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity DLX
+# -- Compiling architecture dlx_rtl of DLX
+# End time: 22:52:28 on Jul 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 22:52:31 on Jul 09,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/DLX/Files/DLX_vhd/test_bench/TB_DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dlx
+# -- Compiling architecture TEST of tb_dlx
+# -- Compiling configuration CFG_TB
+# -- Loading entity tb_dlx
+# -- Loading architecture TEST of tb_dlx
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Loading entity DLX
+# End time: 22:52:31 on Jul 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.cfg_tb
+# End time: 22:52:48 on Jul 09,2021, Elapsed time: 0:06:41
+# Errors: 2, Warnings: 59
+# vsim work.cfg_tb 
+# Start time: 22:52:48 on Jul 09,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading work.mytypes
+# Loading work.cfg_tb#1
+# Loading work.tb_dlx(test)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.dlx(dlx_rtl)#1
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.constants
+# Loading work.datapth(structural)#1
+# Loading work.windrf(bhv)#1
+# Loading work.regffd(asynchbehav)#2
+# Loading work.mux21_generic(struct)#1
+# Loading work.carry_generator(arch)#1
+# Loading work.g(behave)#1
+# Loading work.pg(arch)#1
+# Loading work.csb(structural)#1
+add wave *
+run 150ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: (vsim-7) Failed to open VHDL file "../asm_test/test_arithmetic.mem" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Fatal: (vsim-7) Failed to open VHDL file "../asm_test/test_arithmetic.mem" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ns  Iteration: 1  Process: /tb_dlx/U1/IRAM_I/FILL_MEM_P File: /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd
+# Fatal error in Process FILL_MEM_P at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at /home/ms21.42/DLX/Files/DLX_vhd/a.c-IRAM.vhd 45 Process FILL_MEM_P
+# 
+# End time: 22:56:07 on Jul 09,2021, Elapsed time: 0:03:19
+# Errors: 2, Warnings: 59

@@ -250,7 +250,7 @@ begin
 
 	-- IR assignement
 	IR_OP:IR_DECODE
-	Port map(IR_26=>IR_Dec(NBIT-OP_CODE_SIZE-1 downto 0), OPCODE=>IR_Dec(NBIT downto NBIT-OP_CODE_SIZE),is_signed=>signed_op, RS1=>RS1, RS2=>RS2, RD=>RD, IMMEDIATE=>Imm);
+	Port map(IR_26=>IR_Dec(NBIT-OP_CODE_SIZE-1 downto 0), OPCODE=>IR_Dec(NBIT-1 downto NBIT-OP_CODE_SIZE),is_signed=>signed_op, RS1=>RS1, RS2=>RS2, RD=>RD, IMMEDIATE=>Imm);
 
 	--RF mapping
 	RF: windRF

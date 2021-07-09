@@ -45,7 +45,7 @@ architecture BEHAV of IR_DECODE is
 begin
 		
 	SIGN_EXTENSION_imm5: sign_eval
-	generic map (16, NBIT)
+	generic map (5, NBIT)
 	port map (IR_26(15 downto 11), is_signed, IMMEDIATE_5);
 
 	SIGN_EXTENSION_imm16: sign_eval

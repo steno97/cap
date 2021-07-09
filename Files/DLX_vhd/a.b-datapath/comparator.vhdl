@@ -8,38 +8,18 @@ entity comparator is
 	Port (	DATA1:	In	std_logic_vector(numBit-1 downto 0);
 		DATA2i:	In	std_logic;
 		tipo :In aluOp;
-		Y:	Out	std_logic_vector(numBit-1 downto 0));
-end ND2;
+		OUTALU:	Out	std_logic_vector(numBit-1 downto 0));
+end comparator;
 
 architecture Architectural of comparator is
 
---component P4_ADDER
---generic (
-		--NBIT :		integer := numBit);
-	--port (
-		--A :	in	std_logic_vector(N-1 downto 0);
-		--B :	in	std_logic_vector(N-1 downto 0);
-		--Cin :	in	std_logic;
-		--S :	out	std_logic_vector(N-1 downto 0);
-		--Cout :	out	std_logic);
---end component;
-
+signal s_i: std_logic := '0' ;
 --signal Cin_i: std_logic;
 --signal Cout_i:std_logic
 begin
- 
- --adder: p4_adder 
-	--port map (
-		--A 		=> DATA1,
-		--B 		=> DATA2i,
-		--Cin 	=> Cin_i   , -- da inserire 0
-		--S 		=> OUTPUT2   ,  --da inserire 0
-		--Cout =>	Cout_i); --we mantain the Cout signal for future implementation of the DLX with status flags
 
 
-
-comparator_proc: process (data1, data2, tipo)
-signal s_i: std_logic := '0' ;
+comparator_proc: process (data1, data2i, tipo)
 begin
 	--Cin_i<='1';
 	--data2i<= not(data2);
@@ -84,4 +64,4 @@ begin
 		when others => null;
     end case; 
  end process comparator_proc;
-		
+end Architectural;

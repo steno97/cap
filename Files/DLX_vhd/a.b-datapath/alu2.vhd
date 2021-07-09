@@ -46,7 +46,7 @@ component comparator
 Port (	DATA1:	In	std_logic_vector(numBit-1 downto 0);
 		DATA2i:	In	std_logic;
 		tipo :In aluOp;
-		Y:	Out	std_logic_vector(numBit-1 downto 0));
+		OUTALU:	Out	std_logic_vector(numBit-1 downto 0));
 end component;
 
 signal Cin_i : std_logic;
@@ -63,9 +63,9 @@ begin
   comp: comparator
     port map (
 		data1 => output2,
-		data21 => Cout_i;
-		tipo => func;
-		Y => output3);
+		data2i => Cout_i,
+		tipo => func,
+		OUTALU => output3);
     
   shifter:  SHIFTER_GENERIC
 	port map(
@@ -201,7 +201,7 @@ P_ALU: process (FUNC, DATA1, DATA2)
 				OUTALU<= output2;
 	
 	------------------------------  load and store
-	when SEQ | SEQI | SLT | SLTI | SLTU |SLTUI | SGT | SGTI | SGTUI |SGTUSGE | SGEI | SGEUI |SGEU |
+	when SEQ | SEQI | SLT | SLTI | SLTU |SLTUI | SGT | SGTI | SGTUI |SGTU | SGE | SGEI | SGEUI |SGEU |
 			 SNE | SNEI | SLE | SLEI => Cin_i<='1';
 										data2i<= not(data2);
 										OUTALU <= output3;

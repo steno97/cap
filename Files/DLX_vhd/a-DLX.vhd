@@ -40,14 +40,14 @@ architecture dlx_rtl of DLX is
   -- Data Ram (MISSING!You must include it in your final project!)
 
   -- Datapath 
-entity DATAPTH is
+component DATAPTH 
 Generic (NBIT: integer:= numBit; REG_BIT: integer:= REG_SIZE);
 	Port (	
 		CLK:	in	std_logic;
 		RST:	in	std_logic;
 		PC: in	std_logic_vector(NBIT-1 downto 0);
 		IR: in	std_logic_vector(NBIT-1 downto 0);
-		PC_BUS: out	std_logic_vector(NBIT-1 downto 0); --pc_out
+		PC_out: out	std_logic_vector(NBIT-1 downto 0); --pc_out
 		--DTPTH_OUT: out std_logic_vector(NBIT-1 downto 0);
 		
 		--cu signals
@@ -78,7 +78,7 @@ Generic (NBIT: integer:= numBit; REG_BIT: integer:= REG_SIZE);
 		DATA_MEM_ENABLE: out	std_logic;
 		DATA_MEM_RM: out	std_logic;
 		DATA_MEM_WM: out	std_logic);
-end DATAPTH;
+end component;
   
   -- Control Unit
   component dlx_cu
@@ -118,8 +118,8 @@ end DATAPTH;
     -- WB Control signals
     WB_MUX_SEL         : out std_logic;  -- Write Back MUX Sel
     RF_WE              : out std_logic;
-    lhi_sel: in	std_logic;
-    sb_op: in	std_logic );  -- Register File Write Enable
+    lhi_sel: out	std_logic;
+    sb_op: out	std_logic );  -- Register File Write Enable
 
   end component;
 
@@ -157,10 +157,17 @@ end DATAPTH;
   signal RF_WE_i : std_logic;
   signal lhi_sel_i: 	std_logic;
   signal  sb_op_i: 	std_logic;
-  signal signed_unsigned_i std_logic;
+  signal signed_unsigned_i: std_logic;
 
-		  sb_op			  => sb_op_i,
-		  signed_unsigned =>signed_unsigned_i
+
+----------- questa parte poi è da levare
+	signal DATA_MEM_ADDR_i: 	std_logic_vector(numBit-1 downto 0) := "00000000000000000000000000000000";
+	signal DATA_MEM_IN_i: 	std_logic_vector(numBit-1 downto 0) := "00000000000000000000000000000000";
+	signal DATA_MEM_OUT_i: 	std_logic_vector(numBit-1 downto 0):= "00000000000000000000000000000000" ;
+	signal DATA_MEM_ENABLE_i:	std_logic := '0';
+	signal DATA_MEM_RM_i: std_logic := '0';
+	signal DATA_MEM_WM_i: std_logic := '0';
+---------------questa parte poi è da levare 
   -- Data Ram Bus signals
 
 
@@ -238,12 +245,12 @@ end DATAPTH;
           RST => Rst,
 		  PC =>PC,
 		  IR=>IR,
-		  PC_OUT=>PC_BUS,
+		  PC_out=>PC_BUS,
           EN0 => NPC_LATCH_EN_i,
 		signed_op=> signed_unsigned_i, --metti
           RF1 => RegA_LATCH_EN_i,
           RF2 => RegB_LATCH_EN_i,
-		  WF1 => RF_WE_i
+		  WF1 => RF_WE_i,
           EN1 => RegIMM_LATCH_EN_i,
           S1 => MUXA_SEL_i,
           S2 => MUXB_SEL_i,
@@ -258,13 +265,11 @@ end DATAPTH;
           S3 => WB_MUX_SEL_i,
           instruction_alu=> ALU_OPCODE_i,
 		--metti per data memory
-		DATA_MEM_ADDR=>,
-		DATA_MEM_IN=>,
-		DATA_MEM_OUT=>,
-		DATA_MEM_ENABLE=>,
-		DATA_MEM_RM=>,
-		DATA_MEM_WM=>);
-
-    
+		DATA_MEM_ADDR=>DATA_MEM_ADDR_i,
+		DATA_MEM_IN=>DATA_MEM_IN_i,
+		DATA_MEM_OUT=>DATA_MEM_OUT_i,
+		DATA_MEM_ENABLE=>DATA_MEM_ENABLE_i,
+		DATA_MEM_RM=>DATA_MEM_RM_i,
+		DATA_MEM_WM=>DATA_MEM_WM_i);
     
 end dlx_rtl;
