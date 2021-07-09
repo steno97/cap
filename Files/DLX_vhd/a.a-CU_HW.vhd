@@ -47,7 +47,12 @@ entity dlx_cu is
 
     -- WB Control signals
     WB_MUX_SEL         : out std_logic;  -- Write Back MUX Sel
-    RF_WE              : out std_logic);  -- Register File Write Enable
+    RF_WE              : out std_logic
+    
+    -----
+    lhi_sel: in	std_logic;
+    sb_op: in	std_logic;
+    );  -- Register File Write Enable
 	
 	
 -- muxA 0 = regA
@@ -180,6 +185,8 @@ begin  -- dlx_cu_rtl
   -- process to pipeline control words
   CW_PIPE: process (Clk, Rst)
    variable iterator : integer := 0;
+   variable iterator1 : integer := 0;
+   variable iterator2 : integer := 0;
   begin  -- process Clk
     if Rst = '0' then                   -- asynchronous reset (active low)
       cw1 <= (others => '0');
@@ -192,14 +199,42 @@ begin  -- dlx_cu_rtl
       aluOpcode3 <= NOP;
     elsif Clk'event and Clk = '1' then  -- rising clock edge
       if jump = '1' then 
-		cw <=cw_mem(6);
+		cw1 <=cw_mem(6);
 		iterator := iterator+1;
 		if iterator = 3 then
 			jump <= '0';
+			iterator :=0;
 		end if;
 	  else 
 	    cw1 <= cw;
-	  end if;  
+	  end if;
+	  
+-----------------------------------------------------------------------------	  
+	  if lhi_sel_i='1' then
+		iterator1 :=iterator1+1;
+		if iterator1 = 3 then
+			iterator1 :=0;
+			lhi_sel_i <='0';
+			lhi_sel <= '1';
+		end if;
+	  else
+		lhi_sel <= '0';
+	  end if;
+			
+	  
+	  if sb_op_i='1' then
+		iterator2 :=iterator2+1;
+		if iterator2 = 4 then
+			iterator2 :=0;
+			sb_op_i <='0';
+			sb_op <= '1';
+		end if;
+	  else
+		sb_op <= '0';
+	  end if;
+-----------------------------------------------------------------------------
+	  
+	  
 	  cw2 <= cw1(CW_SIZE - 1 - 2 downto 0);
       cw3 <= cw2(CW_SIZE - 1 - 5 downto 0);
       cw4 <= cw3(CW_SIZE - 1 - 9 downto 0);
@@ -297,6 +332,7 @@ begin  -- dlx_cu_rtl
 				signed_unsigned_i<='1';
 		when 15 => aluOpcode_i <= NOP; --LHI , LHI carica solo un valore nel registro non deve essere eseguita alcuna operazione
 				signed_unsigned_i<='0';
+				 lhi_sel_i<=1;
 		when 18 => aluOpcode_i <= NOP; --jr
 				jump <='1';
 				signed_unsigned_i<='1';
@@ -333,6 +369,7 @@ begin  -- dlx_cu_rtl
 				signed_unsigned_i<='0';
 		when 40 => aluOpcode_i <= SB; --SB
 				signed_unsigned_i<='0';		
+				sb_op_i<=1;
 		when 43 => aluOpcode_i <= SW; --SW
 				signed_unsigned_i<='1';
 		when 58 => aluOpcode_i <= SLTUI; --SLTUI
