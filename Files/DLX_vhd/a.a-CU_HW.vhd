@@ -47,11 +47,11 @@ entity dlx_cu is
 
     -- WB Control signals
     WB_MUX_SEL         : out std_logic;  -- Write Back MUX Sel
-    RF_WE              : out std_logic
+    RF_WE              : out std_logic;
     
     -----
     lhi_sel: in	std_logic;
-    sb_op: in	std_logic;
+    sb_op: in	std_logic
     );  -- Register File Write Enable
 	
 	

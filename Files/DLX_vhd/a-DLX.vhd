@@ -108,6 +108,8 @@ end DATAPTH;
     EQ_COND            : out std_logic;  -- Branch if (not) Equal to Zero
     -- ALU Operation Code
     ALU_OPCODE         : out aluOp; -- choose between implicit or exlicit coding, like std_logic_vector(ALU_OPC_SIZE -1 downto 0);
+   
+	signed_unsigned		: out std_logic;
     -- MEM Control Signals
     DRAM_WE            : out std_logic;  -- Data RAM Write Enable
     LMD_LATCH_EN       : out std_logic;  -- LMD Register Latch Enable
@@ -115,7 +117,9 @@ end DATAPTH;
     PC_LATCH_EN        : out std_logic;  -- Program Counte Latch Enable
     -- WB Control signals
     WB_MUX_SEL         : out std_logic;  -- Write Back MUX Sel
-    RF_WE              : out std_logic);  -- Register File Write Enable
+    RF_WE              : out std_logic;
+    lhi_sel: in	std_logic;
+    sb_op: in	std_logic );  -- Register File Write Enable
 
   end component;
 
@@ -151,8 +155,12 @@ end DATAPTH;
   signal PC_LATCH_EN_i : std_logic;
   signal WB_MUX_SEL_i : std_logic;
   signal RF_WE_i : std_logic;
+  signal lhi_sel_i: 	std_logic;
+  signal  sb_op_i: 	std_logic;
+  signal signed_unsigned_i std_logic;
 
-
+		  sb_op			  => sb_op_i,
+		  signed_unsigned =>signed_unsigned_i
   -- Data Ram Bus signals
 
 
@@ -210,7 +218,11 @@ end DATAPTH;
           JUMP_EN         => JUMP_EN_i,
           PC_LATCH_EN     => PC_LATCH_EN_i,
           WB_MUX_SEL      => WB_MUX_SEL_i,
-          RF_WE           => RF_WE_i);
+          RF_WE           => RF_WE_i,
+          lhi_sel		  => lhi_sel_i,
+		  sb_op			  => sb_op_i,
+		  signed_unsigned => signed_unsigned_i
+          );
 
     -- Instruction Ram Instantiation
     IRAM_I: IRAM
@@ -228,7 +240,7 @@ end DATAPTH;
 		  IR=>IR,
 		  PC_OUT=>PC_BUS,
           EN0 => NPC_LATCH_EN_i,
-		signed_op=>, --metti
+		signed_op=> signed_unsigned_i, --metti
           RF1 => RegA_LATCH_EN_i,
           RF2 => RegB_LATCH_EN_i,
 		  WF1 => RF_WE_i
@@ -236,10 +248,10 @@ end DATAPTH;
           S1 => MUXA_SEL_i,
           S2 => MUXB_SEL_i,
           EN2 => ALU_OUTREG_EN_i,
-		lhi_sel=>,--metti
+		lhi_sel=> lhi_sel_i,--metti
 		  jump_en => JUMP_EN_i,
           branch_cond => EQ_COND_i,
-        sb_op=>,--metti
+        sb_op=> sb_op_i,--metti
           RM => LMD_LATCH_EN_i,
           WM => DRAM_WE_i,
           EN3 => PC_LATCH_EN_i,
