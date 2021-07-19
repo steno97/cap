@@ -1,0 +1,1502 @@
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vsim work.cfg_tb
+# vsim work.cfg_tb 
+# Start time: 11:10:25 on Jul 19,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading work.mytypes
+# Loading work.cfg_tb#1
+# Loading work.tb_dlx(test)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.dlx(dlx_rtl)#1
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.constants
+# Loading work.datapth(structural)#1
+# Loading work.windrf(bhv)#1
+# Loading work.regffd(asynchbehav)#2
+# Loading work.mux21_generic(struct)#1
+# Loading work.carry_generator(arch)#1
+# Loading work.g(behave)#1
+# Loading work.pg(arch)#1
+# Loading work.csb(structural)#1
+add wave *
+run 150ns
+# Break key hit
+# Break in Process P_ALU at /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd line 93
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:11:03 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Warning: /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd(269): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+# -- Compiling configuration CFG_ALU_Architectural
+# -- Loading entity ALU
+# -- Loading architecture Architectural of ALU
+# -- Loading entity comparator
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity SHIFTER_GENERIC
+# -- Loading package CONSTANTS
+# -- Loading entity P4_ADDER
+# End time: 11:11:03 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:11:04 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DATAPTH
+# -- Compiling architecture STRUCTURAL of DATAPTH
+# End time: 11:11:04 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:11:07 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# ** Warning: /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd(269): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+# -- Compiling configuration CFG_ALU_Architectural
+# -- Loading entity ALU
+# -- Loading architecture Architectural of ALU
+# -- Loading entity comparator
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity SHIFTER_GENERIC
+# -- Loading package CONSTANTS
+# -- Loading entity P4_ADDER
+# End time: 11:11:07 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:17:50 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# -- Compiling configuration CFG_ALU_Architectural
+# -- Loading entity ALU
+# -- Loading architecture Architectural of ALU
+# -- Loading entity comparator
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity SHIFTER_GENERIC
+# -- Loading package CONSTANTS
+# -- Loading entity P4_ADDER
+# End time: 11:17:50 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:17:52 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DATAPTH
+# -- Compiling architecture STRUCTURAL of DATAPTH
+# End time: 11:17:52 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:17:55 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# End time: 11:17:55 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:17:56 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity IRAM
+# -- Compiling architecture IRam_Bhe of IRAM
+# End time: 11:17:56 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a-DLX.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:17:57 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a-DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity DLX
+# -- Compiling architecture dlx_rtl of DLX
+# End time: 11:17:57 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/TB_DLX.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:17:58 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/TB_DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dlx
+# -- Compiling architecture TEST of tb_dlx
+# -- Compiling configuration CFG_TB
+# -- Loading entity tb_dlx
+# -- Loading architecture TEST of tb_dlx
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Loading entity DLX
+# End time: 11:17:59 on Jul 19,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.cfg_tb
+# End time: 11:18:08 on Jul 19,2021, Elapsed time: 0:07:43
+# Errors: 0, Warnings: 2
+# vsim work.cfg_tb 
+# Start time: 11:18:08 on Jul 19,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading work.mytypes
+# Loading work.cfg_tb#1
+# Loading work.tb_dlx(test)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.dlx(dlx_rtl)#1
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.constants
+# Loading work.datapth(structural)#1
+# Loading work.windrf(bhv)#1
+# Loading work.regffd(asynchbehav)#2
+# Loading work.mux21_generic(struct)#1
+# Loading work.carry_generator(arch)#1
+# Loading work.g(behave)#1
+# Loading work.pg(arch)#1
+# Loading work.csb(structural)#1
+add wave *
+run 150ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Fatal: (vsim-3421) Value 36 is out of range 0 to 34.
+#    Time: 139 ns  Iteration: 0  Process: /tb_dlx/U1/DTPTH_I/RF/line__77 File: /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd
+# Fatal error in Process line__77 at /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd line 155
+# 
+# HDL call sequence:
+# Stopped at /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd 155 Process line__77
+# 
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:22:50 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# -- Compiling configuration CFG_ALU_Architectural
+# -- Loading entity ALU
+# -- Loading architecture Architectural of ALU
+# -- Loading entity comparator
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity SHIFTER_GENERIC
+# -- Loading package CONSTANTS
+# -- Loading entity P4_ADDER
+# End time: 11:22:50 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:22:51 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DATAPTH
+# -- Compiling architecture STRUCTURAL of DATAPTH
+# End time: 11:22:51 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:22:55 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# End time: 11:22:55 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:22:56 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity IRAM
+# -- Compiling architecture IRam_Bhe of IRAM
+# End time: 11:22:56 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a-DLX.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:22:57 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a-DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity DLX
+# -- Compiling architecture dlx_rtl of DLX
+# End time: 11:22:58 on Jul 19,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/TB_DLX.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:22:59 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/TB_DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dlx
+# -- Compiling architecture TEST of tb_dlx
+# -- Compiling configuration CFG_TB
+# -- Loading entity tb_dlx
+# -- Loading architecture TEST of tb_dlx
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Loading entity DLX
+# End time: 11:22:59 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.cfg_tb
+# End time: 11:23:13 on Jul 19,2021, Elapsed time: 0:05:05
+# Errors: 3, Warnings: 110
+# vsim work.cfg_tb 
+# Start time: 11:23:13 on Jul 19,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading work.mytypes
+# Loading work.cfg_tb#1
+# Loading work.tb_dlx(test)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.dlx(dlx_rtl)#1
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.constants
+# Loading work.datapth(structural)#1
+# Loading work.windrf(bhv)#1
+# Loading work.regffd(asynchbehav)#2
+# Loading work.mux21_generic(struct)#1
+# Loading work.carry_generator(arch)#1
+# Loading work.g(behave)#1
+# Loading work.pg(arch)#1
+# Loading work.csb(structural)#1
+add wave *
+run 150ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 4  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17 ns  Iteration: 3  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Fatal: (vsim-3421) Value 36 is out of range 0 to 34.
+#    Time: 139 ns  Iteration: 0  Process: /tb_dlx/U1/DTPTH_I/RF/line__77 File: /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd
+# Fatal error in Process line__77 at /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd line 155
+# 
+# HDL call sequence:
+# Stopped at /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd 155 Process line__77
+# 
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:27:54 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# -- Compiling configuration CFG_ALU_Architectural
+# -- Loading entity ALU
+# -- Loading architecture Architectural of ALU
+# -- Loading entity comparator
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity SHIFTER_GENERIC
+# -- Loading package CONSTANTS
+# -- Loading entity P4_ADDER
+# End time: 11:27:54 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:27:55 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DATAPTH
+# -- Compiling architecture STRUCTURAL of DATAPTH
+# End time: 11:27:56 on Jul 19,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:28:00 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# End time: 11:28:00 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:28:01 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity IRAM
+# -- Compiling architecture IRam_Bhe of IRAM
+# End time: 11:28:01 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a-DLX.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:28:02 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a-DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity DLX
+# -- Compiling architecture dlx_rtl of DLX
+# End time: 11:28:03 on Jul 19,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/TB_DLX.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:28:04 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/TB_DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dlx
+# -- Compiling architecture TEST of tb_dlx
+# -- Compiling configuration CFG_TB
+# -- Loading entity tb_dlx
+# -- Loading architecture TEST of tb_dlx
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Loading entity DLX
+# End time: 11:28:04 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.cfg_tb
+# End time: 11:28:17 on Jul 19,2021, Elapsed time: 0:05:04
+# Errors: 3, Warnings: 114
+# vsim work.cfg_tb 
+# Start time: 11:28:17 on Jul 19,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading work.mytypes
+# Loading work.cfg_tb#1
+# Loading work.tb_dlx(test)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.dlx(dlx_rtl)#1
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.constants
+# Loading work.datapth(structural)#1
+# Loading work.windrf(bhv)#1
+# Loading work.regffd(asynchbehav)#2
+# Loading work.mux21_generic(struct)#1
+# Loading work.carry_generator(arch)#1
+# Loading work.g(behave)#1
+# Loading work.pg(arch)#1
+# Loading work.csb(structural)#1
+add wave *
+add wave *
+run 150ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Fatal: (vsim-3421) Value 36 is out of range 0 to 34.
+#    Time: 139 ns  Iteration: 0  Process: /tb_dlx/U1/DTPTH_I/RF/line__77 File: /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd
+# Fatal error in Process line__77 at /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd line 155
+# 
+# HDL call sequence:
+# Stopped at /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd 155 Process line__77
+# 
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+add wave *
+run 150ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Fatal: (vsim-3421) Value 36 is out of range 0 to 34.
+#    Time: 139 ns  Iteration: 0  Process: /tb_dlx/U1/DTPTH_I/RF/line__77 File: /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd
+# Fatal error in Process line__77 at /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd line 155
+# 
+# HDL call sequence:
+# Stopped at /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd 155 Process line__77
+# 
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:34:11 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/path/30-alu2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity ALU
+# -- Compiling architecture Architectural of ALU
+# -- Compiling configuration CFG_ALU_Architectural
+# -- Loading entity ALU
+# -- Loading architecture Architectural of ALU
+# -- Loading entity comparator
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity SHIFTER_GENERIC
+# -- Loading package CONSTANTS
+# -- Loading entity P4_ADDER
+# End time: 11:34:11 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:34:12 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/path/31-datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DATAPTH
+# -- Compiling architecture STRUCTURAL of DATAPTH
+# End time: 11:34:12 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:34:15 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a.a-CU_HW.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity dlx_cu
+# -- Compiling architecture dlx_cu_hw of dlx_cu
+# End time: 11:34:15 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:34:16 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a.c-IRAM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity IRAM
+# -- Compiling architecture IRam_Bhe of IRAM
+# End time: 11:34:16 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/a-DLX.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:34:17 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/a-DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Compiling entity DLX
+# -- Compiling architecture dlx_rtl of DLX
+# End time: 11:34:17 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/ms21.42/Desktop/prova progetto/TB_DLX.vhd}
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 11:34:18 on Jul 19,2021
+# vcom -reportprogress 300 -work work /home/ms21.42/Desktop/prova progetto/TB_DLX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dlx
+# -- Compiling architecture TEST of tb_dlx
+# -- Compiling configuration CFG_TB
+# -- Loading entity tb_dlx
+# -- Loading architecture TEST of tb_dlx
+# -- Loading package MATH_REAL
+# -- Loading package myTypes
+# -- Loading entity DLX
+# End time: 11:34:18 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.cfg_tb
+# End time: 11:34:33 on Jul 19,2021, Elapsed time: 0:06:16
+# Errors: 4, Warnings: 66
+# vsim work.cfg_tb 
+# Start time: 11:34:33 on Jul 19,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading work.mytypes
+# Loading work.cfg_tb#1
+# Loading work.tb_dlx(test)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.dlx(dlx_rtl)#1
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.constants
+# Loading work.datapth(structural)#1
+# Loading work.windrf(bhv)#1
+# Loading work.regffd(asynchbehav)#2
+# Loading work.mux21_generic(struct)#1
+# Loading work.carry_generator(arch)#1
+# Loading work.g(behave)#1
+# Loading work.pg(arch)#1
+# Loading work.csb(structural)#1
+add wave *
+run 150ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(7)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(6)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(5)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(4)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(3)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(2)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(1)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/adder/sum_logic/SumBlock(0)/CSBI/RCA0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/DTPTH_I/ALU_OP/shifter
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_dlx/U1/CU_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER(UNSIGNED) input array has 32 bits and MSB is not zero.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_dlx/U1/IRAM_I
+# ** Fatal: (vsim-3421) Value 36 is out of range 0 to 34.
+#    Time: 139 ns  Iteration: 0  Process: /tb_dlx/U1/DTPTH_I/RF/line__77 File: /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd
+# Fatal error in Process line__77 at /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd line 155
+# 
+# HDL call sequence:
+# Stopped at /home/ms21.42/Desktop/prova progetto/path/12-window_RF.vhd 155 Process line__77
+# 
